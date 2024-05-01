@@ -111,7 +111,10 @@ climb.y = y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Despawn other Bodyparts
+            <string>//Outside Room
+scr_changeRoom()
+
+//Despawn other Bodyparts
 instance_destroy(krun)
 instance_destroy(lrun)
 instance_destroy(kump)

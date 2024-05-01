@@ -299,6 +299,9 @@
     <script>scripts\scr_paralaxbg.gml</script>
     <script>scripts\scr_changeRoom.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\loltest.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
     <font>fonts\fDefault24</font>

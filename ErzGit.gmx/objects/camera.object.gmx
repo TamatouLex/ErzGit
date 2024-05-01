@@ -28,6 +28,11 @@
             <string>pause = 0
 go = 1
 
+
+wentUp = false
+wentLeft = false
+wentDown = false
+wentRight = false
 </string>
           </argument>
         </arguments>
@@ -105,6 +110,68 @@ y += 8
 
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Positioning nach Screen transitions
+
+//WENT LEFT--------------------------------------------------------
+if (wentLeft = true)
+{
+obj7735.x = room_width
+wentLeft = false
+}
+
+//WENT UP--------------------------------------------------------
+if (wentUp = true)
+{
+obj7735climb.y = room_height
+wentUp = false
+}
+
+
+//WENT DOWN--------------------------------------------------------
+if (wentDown = true)
+{
+if instance_exists(obj7735climb)
+{
+obj7735climb.y = 0
+}
+
+if instance_exists(obj7735)
+{
+obj7735.y = 0
+}
+
+wentDown = false
+}
+
+
+//WENT RIGHT--------------------------------------------------------
+if (wentRight = true)
+{
+obj7735.x = 0
+wentRight = false
+}
 </string>
           </argument>
         </arguments>

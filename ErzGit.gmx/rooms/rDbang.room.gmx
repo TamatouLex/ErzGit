@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rDwald
+camera.leftLane = -2</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -54,7 +55,6 @@
     <instance objName="objBlock" x="1600" y="0" name="inst_BE8D99E3" locked="0" code="" scaleX="1" scaleY="19.6129035949707" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="0" name="inst_B41230F4" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="bangjet" x="1152" y="288" name="inst_37C60D81" locked="0" code="image_xscale = -1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="416" name="inst_41C1E4B3" locked="0" code="roomTo = rDwald;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0&#xA;warpX = 3009;&#xA;warpY = 1728;&#xA;&#xA;//Kind 1 = Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;//Kind 2 = Vertikaler durchgang mit 1600 Raum Länge" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="worldchanger" x="1472" y="384" name="inst_90D61BAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="dialogtrigger" x="992" y="-64" name="inst_A7B9A490" locked="0" code="type = 1&#xA;" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="544" name="inst_8AA28D71" locked="0" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>

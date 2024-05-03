@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rDbmxbahn
+camera.roomRight = rDbang
+camera.rightLane = 2</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,7 +54,6 @@
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="576" name="inst_128138BE" locked="0" code="" scaleX="7" scaleY="39" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="-32" name="inst_5B703838" locked="0" code="roomTo = rDbmxbahn;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 &#xA;warpX = 3009;&#xA;//warpY = 10;&#xA;&#xA;//Kind 1 = Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;//Kind 2 = Vertikaler durchgang mit 1600 Raum Länge" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="224" y="704" name="inst_18E9D3D7" locked="0" code="" scaleX="11.3548383712769" scaleY="35" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownLeft" x="224" y="576" name="inst_CEF97E96" locked="0" code="" scaleX="6" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="576" y="1760" name="inst_E135192E" locked="0" code="" scaleX="76.3871002197266" scaleY="2" colour="4294967295" rotation="0"/>
@@ -84,7 +85,6 @@
     <instance objName="objBlock" x="1856" y="992" name="inst_A49887E9" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2016" y="992" name="inst_46D13DE1" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1888" y="1536" name="inst_AA0377DF" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="3040" y="1600" name="inst_1DB7ACA9" locked="0" code="roomTo = rDbang;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0&#xA;warpX = 0;&#xA;warpY = 480;&#xA;&#xA;//Kind 1 = Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;//Kind 2 = Vertikaler durchgang mit 1600 Raum Länge" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_trees" x="1856" y="768" w="64" h="64" xo="192" yo="0" id="10003120" name="inst_662AD0D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

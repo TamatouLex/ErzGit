@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rPBlumenrad
+camera.roomRight = rPSombreo</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -56,8 +57,6 @@
     <instance objName="worldchanger" x="576" y="544" name="inst_C6C27E6A" locked="0" code="pos = 202&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="704" y="544" name="inst_F71B1974" locked="0" code="" scaleX="17" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="480" y="576" name="inst_355B22E2" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1248" y="0" name="inst_A3F24837" locked="0" code="roomTo = rPSombreo;&#xA;&#xA;smoothTransition = true;&#xA;kind = 3 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;warpY = obj7735.y+608;&#xA;" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_044B14E9" locked="0" code="roomTo = rPBlumenrad;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1600;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_street" x="0" y="544" w="64" h="64" xo="64" yo="0" id="10005565" name="inst_5A413DD2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomRight = rCU1</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -57,7 +57,6 @@
     <instance objName="debuginfo" x="544" y="480" name="inst_B0DF3ED2" locked="0" code="//Reumannplatz Podest&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="debuginfo" x="1536" y="512" name="inst_99EC5FB4" locked="0" code="//U1 Eingang + Scheich von Österreich&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="worldchanger" x="128" y="544" name="inst_1D1CEE16" locked="0" code="pos = 601&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1632" y="0" name="inst_E2C79CB2" locked="0" code="roomTo = rCU1;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

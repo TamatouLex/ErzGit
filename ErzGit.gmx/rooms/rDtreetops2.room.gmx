@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rDtreetops
+camera.roomDown = rDdrascheentrance</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -60,12 +61,10 @@
     <instance objName="objBlockInvis" x="0" y="352" name="inst_2F87A8CC" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="1452" y="352" name="inst_9C44C044" locked="0" code="" scaleX="1.5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="64" y="576" name="inst_128138BE" locked="0" code="" scaleX="43.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_533B9FC9" locked="0" code="roomTo = rDtreetops;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 &#xA;warpX = 1600;&#xA;//warpY = 10;&#xA;&#xA;//Kind 1 = Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;//Kind 2 = Vertikaler durchgang mit 1600 Raum Länge" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="ladder" x="96" y="320" name="inst_B0C0156C" locked="0" code="" scaleX="1" scaleY="4.06349229812622" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFall" x="576" y="320" name="inst_7C291719" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFall" x="832" y="320" name="inst_AE39E531" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFall" x="1312" y="320" name="inst_C57EF56C" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1504" y="640" name="inst_DD486880" locked="0" code="roomTo = rDdrascheentrance;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0 &#xA;warpX = 100;&#xA;warpY = 10;&#xA;&#xA;//Kind 1 = Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;//Kind 2 = Vertikaler durchgang mit 1600 Raum Länge&#xA;" scaleX="47.4838714599609" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3008" y="0" name="inst_C89AF7BC" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="lizard" x="1120" y="320" name="inst_74806A53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

@@ -110,6 +110,7 @@ b.image_xscale = image_xscale
 instance_destroy()
 }
 
+
 else if keyboard_check(vk_right)
 {
 a=instance_create(x,y,krun)
@@ -121,10 +122,11 @@ instance_destroy()
 
 
 //Change
-else if obj7735.grounded = 0
+else if instance_exists(obj7735)
+&amp;&amp; obj7735.grounded = 0
 {
 if !instance_exists(kump)
-and !instance_exists(kshoot)
+&amp;&amp; !instance_exists(kshoot)
 {
 a=instance_create(x,y,kump)
 a.image_xscale = image_xscale

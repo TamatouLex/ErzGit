@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rPDinoHouse
+camera.roomRight = rPBallBall</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -58,8 +59,6 @@
     <instance objName="objPlatform" x="736" y="480" name="inst_5459EDBE" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="832" y="512" name="inst_605F612D" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="928" y="544" name="inst_C17EB275" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_1655A48A" locked="0" code="roomTo = rPDinoHouse;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1216;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1248" y="0" name="inst_4BD81BBC" locked="0" code="roomTo = rPBallBall;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

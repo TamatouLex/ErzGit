@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rPSombreo
+camera.leftLane = -1
+camera.roomRight = rPFunball</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -55,8 +57,6 @@
     <instance objName="debuginfo" x="256" y="480" name="inst_8F9DBFC5" locked="0" code="//Tube wo Eeary Ding Drin ist" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="debuginfo" x="864" y="480" name="inst_A14B66B5" locked="0" code="//Tube wo Eeary Ding Drin ist&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="debuginfo" x="544" y="480" name="inst_4A57BC17" locked="0" code="//Kasse / Eingang&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1248" y="0" name="inst_C194785D" locked="0" code="roomTo = rPFunball;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_116CAA13" locked="0" code="roomTo = rPSombreo;&#xA;&#xA;smoothTransition = true;&#xA;kind = 3 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1216;&#xA;warpY = obj7735.y-404;&#xA;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_dino" x="128" y="512" w="64" h="64" xo="0" yo="192" id="10005079" name="inst_764E3ECB" depth="2000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

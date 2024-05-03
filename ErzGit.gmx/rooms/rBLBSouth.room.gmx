@@ -52,9 +52,7 @@
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="592" name="inst_D71B50D7" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="3232" y="0" name="inst_4BD81BBC" locked="0" code="roomTo = rBLBSouthEast;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="bushmaster" x="800" y="416" name="inst_159C951E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_3EECA7A7" locked="0" code="roomTo = rBLBSouthWest;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 3200;&#xA;//warpY = 100;" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="HQWall" x="1152" y="256" name="inst_3E710D2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="723" y="173" name="inst_36F62A62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="705" y="172" name="inst_9BFB22E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

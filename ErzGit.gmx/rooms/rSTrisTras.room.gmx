@@ -61,7 +61,6 @@
     <instance objName="objBlockInvis" x="864" y="1344" name="inst_1C85C05B" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="160" y="1824" name="inst_2D0B489D" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="832" y="1824" name="inst_886349C6" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="1664" name="inst_D448178D" locked="0" code="roomTo = rSPekeParkEingang;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 800;&#xA;warpY = 528&#xA;" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1344" y="496" name="inst_7D898BD7" locked="0" code="" scaleX="24" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="1664" name="inst_5E73CB99" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="-64" y="0" name="inst_51AD1222" locked="0" code="" scaleX="2" scaleY="52" colour="4294967295" rotation="0"/>

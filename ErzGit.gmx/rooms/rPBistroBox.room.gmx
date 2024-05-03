@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomLeft = rPBallBall
+camera.roomRight = rPRiesenradPlaza</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -56,8 +57,6 @@
     <instance objName="objBlockInvis" x="0" y="576" name="inst_F48B5F75" locked="0" code="" scaleX="50" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="544" name="inst_3C0B4940" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="512" name="inst_D9F75B21" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1632" y="0" name="inst_7D7C9CB7" locked="0" code="roomTo = rPRiesenradPlaza;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="-32" name="inst_8F86AD30" locked="0" code="roomTo = rPBallBall;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 800;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bAllTiles" x="0" y="576" w="32" h="32" xo="64" yo="96" id="10003890" name="inst_7A8BAC0E" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

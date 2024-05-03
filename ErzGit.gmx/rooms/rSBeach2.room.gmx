@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="576" name="inst_D71B50D7" locked="0" code="" scaleX="50" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1632" y="0" name="inst_4BD81BBC" locked="0" code="roomTo = rSPekeParkEingang;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="-64" y="544" name="inst_A8C26A8F" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="288" y="544" name="inst_72DA0947" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="640" y="544" name="inst_5B0AEDB9" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
@@ -62,7 +61,6 @@
     <instance objName="objBlockInvis" x="1088" y="480" name="inst_4B7ADA3D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1152" y="416" name="inst_BA82F5DA" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1216" y="416" name="inst_2E15DF08" locked="0" code="" scaleX="14" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-32" y="-32" name="inst_B27C9D27" locked="0" code="roomTo = rSBeach;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1600;&#xA;//warpY = 100;&#xA;" scaleX="-1" scaleY="19" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

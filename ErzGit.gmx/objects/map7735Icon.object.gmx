@@ -250,8 +250,7 @@ arrowA = true
 arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rPEntrance
 }
 }
@@ -262,8 +261,7 @@ arrowA = false
 arrowB = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rSBeach
 }
 }
@@ -284,8 +282,7 @@ arrowA = true
 arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rPlaceholderWest
 }
 }
@@ -296,8 +293,7 @@ arrowA = false
 arrowB = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rBLBSouthWest
 }
 }
@@ -314,8 +310,7 @@ arrowA = true
 arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rDbang
 }
 }
@@ -326,8 +321,7 @@ arrowA = false
 arrowB = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rSBeach
 }
 }
@@ -348,8 +342,7 @@ arrowA = true
 arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rBLBSouthEast
 }
 }
@@ -360,8 +353,7 @@ arrowA = false
 arrowB = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rPlaceholderEast
 }
 }
@@ -378,8 +370,7 @@ arrowA = true
 arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rPEntrance
 }
 }
@@ -390,8 +381,7 @@ arrowA = false
 arrowB = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rDbang
 }
 }
@@ -407,8 +397,7 @@ y = mapBLBHQ.y-30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rSaEntrance
 }
 }
@@ -421,8 +410,7 @@ y = mapBLBHQ.y-30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rCreumann
 }
 }
@@ -440,8 +428,7 @@ arrowA = false
 arrowB = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rPRiesenradPlaza
 }
 }
@@ -458,8 +445,7 @@ arrowA = true
 arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rSBeach
 }
 }
@@ -473,8 +459,7 @@ y = mapSatzberg.y+30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rBLBNorthWest
 }
 }
@@ -487,8 +472,7 @@ y = mapReumann.y+30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-obj7735.x = 400
-obj7735.y = 300
+instance_create(400,300,obj7735)
 room = rBLBNorthEast
 }
 }

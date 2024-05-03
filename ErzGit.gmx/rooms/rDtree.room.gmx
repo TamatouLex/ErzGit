@@ -60,9 +60,6 @@ camera.roomUp = rDtreetops</code>
     <instance objName="objBlockInvis" x="480" y="256" name="inst_2D16BC65" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownLeft" x="1152" y="544" name="inst_441A9A93" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder" x="512" y="0" name="inst_DB233FF2" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="352" y="-288" name="inst_2B30C346" locked="0" code="roomTo = rDtreetops;&#xA;&#xA;smoothTransition = true;&#xA;kind = 2 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;//warpX = 1600;&#xA;warpY = 598;&#xA;" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-448" y="192" name="inst_9D469EE6" locked="0" code="roomTo = rDcaveexit;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1600;&#xA;//warpY = 100;" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="2048" y="0" name="inst_14B3EF62" locked="0" code="roomTo = rDbabybarentrance;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="lizard" x="800" y="544" name="inst_A8C33271" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="96" y="544" name="inst_0122D983" locked="0" code="" scaleX="13" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="640" y="544" name="inst_47EAC799" locked="0" code="" scaleX="13" scaleY="2" colour="4294967295" rotation="0"/>

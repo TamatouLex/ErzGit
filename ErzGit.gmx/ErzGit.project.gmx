@@ -121,8 +121,6 @@
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_debugflag</sprite>
     <sprites name="Dialog">
-      <sprite>sprites\spr_conpaddy</sprite>
-      <sprite>sprites\spr_7735dia</sprite>
       <sprite>sprites\spr_dialogbox</sprite>
     </sprites>
     <sprites name="Weapons">
@@ -136,7 +134,6 @@
       <sprite>sprites\spr_plant</sprite>
       <sprite>sprites\spr_plantbite</sprite>
     </sprites>
-    <sprite>sprites\spr_bangjet</sprite>
     <sprites name="Cate">
       <sprite>sprites\spr_catefall</sprite>
       <sprite>sprites\spr_catewalk</sprite>
@@ -162,7 +159,16 @@
       <sprite>sprites\spr_knifeitem</sprite>
       <sprite>sprites\spr_stoneitem</sprite>
     </sprites>
-    <sprite>sprites\spr_drakken</sprite>
+    <sprites name="NPCs">
+      <sprite>sprites\spr_7735dia</sprite>
+      <sprite>sprites\spr_pandyDia</sprite>
+      <sprite>sprites\spr_drakken</sprite>
+      <sprite>sprites\spr_bangjet</sprite>
+      <sprites name="Arielle">
+        <sprite>sprites\spr_arielleIdle</sprite>
+      </sprites>
+      <sprite>sprites\spr_conpaddy</sprite>
+    </sprites>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_newevent</sprite>
     <sprite>sprites\spr_clearevent</sprite>
@@ -208,12 +214,17 @@
     <sprite>sprites\spr_bushes</sprite>
     <sprite>sprites\spr_testskew</sprite>
     <sprite>sprites\spr_redpixel</sprite>
+    <sprites name="BlockoutSprites">
+      <sprite>sprites\spr_blockoutRed</sprite>
+      <sprite>sprites\spr_blockoutYellow</sprite>
+      <sprite>sprites\spr_blockoutGreen</sprite>
+      <sprite>sprites\spr_blockoutBlue</sprite>
+      <sprite>sprites\spr_blockoutNavy</sprite>
+      <sprite>sprites\spr_blockoutPurple</sprite>
+    </sprites>
     <sprite>sprites\spr_3DFloor</sprite>
     <sprite>sprites\spr_3DFloor2</sprite>
     <sprite>sprites\spr_3DFloorWood</sprite>
-    <sprites name="Arielle">
-      <sprite>sprites\spr_arielleIdle</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -456,6 +467,7 @@
       <object>objects\conBangFirst</object>
       <object>objects\conBangSecond</object>
       <object>objects\conArielleSewer</object>
+      <object>objects\conPandy</object>
       <object>objects\dialogbox</object>
       <objects name="Fonts">
         <object>objects\objarial</object>
@@ -491,7 +503,6 @@
       <object>objects\newevent</object>
       <object>objects\clearevent</object>
     </objects>
-    <object>objects\bangjet</object>
     <objects name="Pause">
       <objects name="Inventory">
         <object>objects\stoneitem</object>
@@ -529,6 +540,10 @@
     <object>objects\timemaster</object>
     <object>objects\debug</object>
     <object>objects\worldchanger</object>
+    <objects name="LevelGimmicks">
+      <object>objects\windUp</object>
+      <object>objects\windDown</object>
+    </objects>
     <object>objects\debuginfo</object>
     <objects name="Map">
       <object>objects\mapDrasche</object>
@@ -543,15 +558,28 @@
     <object>objects\BGPlantMaster</object>
     <object>objects\BGPlant</object>
     <object>objects\explosion</object>
-    <object>objects\testHQL</object>
-    <object>objects\testHQR</object>
-    <object>objects\HQWall</object>
-    <object>objects\HQTower</object>
-    <object>objects\bushmaster</object>
-    <object>objects\bush</object>
-    <object>objects\testskew</object>
-    <object>objects\hilfslinie</object>
-    <object>objects\arielleIdle</object>
+    <objects name="BlockOut">
+      <object>objects\boRed</object>
+      <object>objects\boYellow</object>
+      <object>objects\boGreen</object>
+      <object>objects\boBlue</object>
+      <object>objects\boNavy</object>
+      <object>objects\boPurple</object>
+    </objects>
+    <objects name="BLBHQ Effect">
+      <object>objects\testskew</object>
+      <object>objects\bush</object>
+      <object>objects\bushmaster</object>
+      <object>objects\hilfslinie</object>
+      <object>objects\testHQR</object>
+      <object>objects\testHQL</object>
+      <object>objects\HQWall</object>
+      <object>objects\HQTower</object>
+    </objects>
+    <objects name="NPCs">
+      <object>objects\arielleIdle</object>
+      <object>objects\bangjet</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -591,16 +619,22 @@
     <room>rooms\rInventory</room>
     <room>rooms\rTemplate</room>
     <room>rooms\rbgtest</room>
-    <room>rooms\rBLBSouthWest</room>
-    <room>rooms\rBLBSouth</room>
-    <room>rooms\rBLBSouthEast</room>
-    <room>rooms\rBLBEast</room>
-    <room>rooms\rBLBNorthEast</room>
-    <room>rooms\rBLBNorth</room>
-    <room>rooms\rBLBNorthWest</room>
-    <room>rooms\rBLBWest</room>
-    <room>rooms\rPlaceholderWest</room>
-    <room>rooms\rPlaceholderEast</room>
+    <rooms name="BLBHQ">
+      <room>rooms\rBLBSouthWest</room>
+      <room>rooms\rBLBSouthEast</room>
+      <room>rooms\rBLBNorthWest</room>
+      <room>rooms\rBLBNorthEast</room>
+    </rooms>
+    <rooms name="Unused">
+      <room>rooms\rBLBNorth</room>
+      <room>rooms\rBLBWest</room>
+      <room>rooms\rBLBSouth</room>
+      <room>rooms\rBLBEast</room>
+      <room>rooms\rPlaceholderWest</room>
+      <room>rooms\rPlaceholderEast</room>
+      <room>rooms\rSSteg</room>
+      <room>rooms\rSBeach4</room>
+    </rooms>
     <rooms name="Prater">
       <room>rooms\rPEntrance</room>
       <room>rooms\rPSombreo</room>
@@ -618,13 +652,10 @@
       <room>rooms\rSBeach</room>
       <room>rooms\rSBeach2</room>
       <room>rooms\rSPekeParkEingang</room>
-      <room>rooms\rSSoco1</room>
-      <room>rooms\rSSoco2</room>
+      <room>rooms\rSSoco</room>
       <room>rooms\rSTrisTras</room>
       <room>rooms\rSBeach3</room>
-      <room>rooms\rSSteg</room>
-      <room>rooms\rSBeach4</room>
-      <room>rooms\rBusStop</room>
+      <room>rooms\rSBusStop</room>
     </rooms>
     <rooms name="City">
       <room>rooms\rCreumann</room>
@@ -637,9 +668,11 @@
     <rooms name="Sewer">
       <room>rooms\rSewerEntrance</room>
       <room>rooms\rSewerPond</room>
-      <room>rooms\rSewerUpDown</room>
       <room>rooms\rSewerPits</room>
+      <room>rooms\rSewerPandy</room>
       <room>rooms\rSewerAirVents</room>
+      <room>rooms\rSewerUpDown</room>
+      <room>rooms\rSewerSlide</room>
     </rooms>
     <rooms name="Satzberg">
       <room>rooms\rSaEntrance</room>

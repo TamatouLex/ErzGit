@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>851968</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomRight = rBLBSouthEast
+camera.roomLeft = rBLBNorthWest</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,14 +53,12 @@
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="592" name="inst_D71B50D7" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="3232" y="0" name="inst_4BD81BBC" locked="0" code="roomTo = rBLBSouth;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="worldchanger" x="192" y="544" name="inst_BEA7DD59" locked="0" code="pos = 403" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testHQL" x="800" y="224" name="inst_EB12A3AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testHQR" x="800" y="224" name="inst_B6F13913" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bushmaster" x="800" y="416" name="inst_159C951E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testskew" x="448" y="448" name="inst_BFF49491" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="1440" y="592" name="inst_4EF6F65C" locked="0" code="depth = -5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="-16" name="inst_A0DEC003" locked="0" code="roomTo = rBLBWest;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 3200;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

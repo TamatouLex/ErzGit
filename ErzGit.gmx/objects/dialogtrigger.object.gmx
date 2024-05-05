@@ -109,6 +109,10 @@ if room = rSewerPond
 {
 instance_create(x,y,conArielleSewer)
 }
+if room = rSewerPandy
+{
+instance_create(x,y,conPandy)
+}
 
 
 }

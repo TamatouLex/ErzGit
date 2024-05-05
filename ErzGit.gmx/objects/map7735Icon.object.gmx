@@ -446,7 +446,7 @@ arrowB = false
 if keyboard_check_pressed(vk_shift)
 {
 instance_create(400,300,obj7735)
-room = rSBeach
+room = rSBusStop
 }
 }
 }

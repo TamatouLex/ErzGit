@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomRight = rSBusStop
+camera.roomLeft = rSTrisTras
+camera.leftLane = -3</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -62,6 +64,7 @@
     <instance objName="objBlockInvis" x="864" y="384" name="inst_9C35795E" locked="0" code="" scaleX="5" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1152" y="320" name="inst_D990BC0A" locked="0" code="" scaleX="5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1408" y="544" name="inst_E5440827" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="debuginfo" x="384" y="512" name="inst_45C0367A" locked="0" code="//Sand Castle 7777 Dungeon&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -10,7 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomRight = rSSoco
+camera.rightLane = -1
+
+camera.roomLeft = rSBeach2</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -51,9 +54,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objRoomChanger" x="832" y="0" name="inst_4BD81BBC" locked="0" code="roomTo = rSTrisTras;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;warpY = 2352&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="-32" y="576" name="inst_A1F6F2A8" locked="0" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_7072BCD4" locked="0" code="roomTo = rSBeach2;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1600;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="416" name="inst_35328CC5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="64" y="480" name="inst_2F5C737B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="128" y="544" name="inst_AF077132" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>

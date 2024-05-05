@@ -2,15 +2,19 @@
 <room>
   <caption></caption>
   <width>1600</width>
-  <height>916</height>
+  <height>1216</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>4868682</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomRight = rCreumannGangster
+camera.rightLane = 0
+
+camera.roomLeft = rCU1c
+camera.leftLane = 1</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -51,27 +55,17 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objBlockInvis" x="1344" y="576" name="inst_0F1E0EE5" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1280" y="608" name="inst_3A3DE6B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1312" y="608" name="inst_BA5CA94A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1216" y="640" name="inst_C3A75D67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1248" y="640" name="inst_3D0FB764" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1184" y="672" name="inst_C96566BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1152" y="672" name="inst_0560AFC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1120" y="704" name="inst_9526F4A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1088" y="704" name="inst_F6A024B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1024" y="736" name="inst_3B320AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1056" y="736" name="inst_734A0229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="960" y="768" name="inst_2A265791" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="992" y="768" name="inst_3881501C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="896" y="800" name="inst_F4366C78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="928" y="800" name="inst_A53959C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="832" y="832" name="inst_EBA551A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="864" y="832" name="inst_FBDEA54A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="800" y="864" name="inst_486CCE4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="864" name="inst_BC0E6495" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="416" name="inst_424DDCC4" locked="0" code="roomTo = rCU1c;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 928;&#xA;warpY = 688;&#xA;" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="1632" y="352" name="inst_F72132D3" locked="0" code="roomTo = rCreumannGangster;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1376" y="576" name="inst_0F1E0EE5" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1312" y="608" name="inst_BA5CA94A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1248" y="672" name="inst_C96566BC" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1184" y="736" name="inst_9526F4A7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1120" y="800" name="inst_3881501C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="992" y="928" name="inst_F4366C78" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1056" y="864" name="inst_A53959C5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="864" y="1056" name="inst_EBA551A6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="928" y="992" name="inst_FBDEA54A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="800" y="1120" name="inst_486CCE4E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="1184" name="inst_BC0E6495" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1600" y="0" name="inst_8E96B74B" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="-32" y="0" name="inst_38E219DC" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
   </instances>

@@ -73,17 +73,7 @@ else
 visible = false
 }
 
-if keyboard_check_pressed(ord('L'))
-{
-if global.lua = 0
-{
-global.lua = 1
-}
-else
-{
-global.lua = 0
-}
-}
+
 
 if !instance_exists(cameraflag)
 {
@@ -137,9 +127,31 @@ y += 8
             <kind>1</kind>
             <string>///Debug Keys
 
+
+//TELEPORT 1
 if keyboard_check_pressed(ord('B'))
 {
-room = rPEntrance
+room = rSewerAirVents
+}
+
+//TELEPORT 2
+if keyboard_check_pressed(ord('V'))
+{
+room = rSewerPandy
+}
+
+
+//ENABLE DEBUG MODE
+if keyboard_check_pressed(vk_f1)
+{
+if global.lua = 0
+{
+global.lua = 1
+}
+else
+{
+global.lua = 0
+}
 }
 </string>
           </argument>
@@ -202,6 +214,12 @@ if (wentRight = true)
 {
 obj7735.x = 0
 wentRight = false
+}
+
+if instance_exists(obj7735)
+{
+x = obj7735.x
+y = obj7735.y
 }
 </string>
           </argument>

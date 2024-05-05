@@ -84,7 +84,7 @@
     <instance objName="objCherry" x="471" y="182" name="inst_8A83B63D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testskew" x="177" y="420" name="inst_001AEFCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bangjet" x="1472" y="416" name="inst_4DAB2BAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="dialogtrigger" x="1408" y="256" name="inst_857F2702" locked="0" code="type = 1&#xA;" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
+    <instance objName="dialogtrigger" x="1408" y="256" name="inst_857F2702" locked="0" code="type = 1" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="dialogtrigger" x="1504" y="256" name="inst_404C117B" locked="0" code="type = 1&#xA;" scaleX="1" scaleY="11.3548383712769" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

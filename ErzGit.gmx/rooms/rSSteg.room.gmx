@@ -51,8 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objRoomChanger" x="1632" y="0" name="inst_4BD81BBC" locked="0" code="roomTo = rSBeach4;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-32" y="-32" name="inst_B27C9D27" locked="0" code="roomTo = rSBeach3;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1600;&#xA;//warpY = 100;&#xA;" scaleX="-1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="-32" y="544" name="inst_E5440827" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="768" y="544" name="inst_94F56BA1" locked="0" code="" scaleX="33.0322570800781" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

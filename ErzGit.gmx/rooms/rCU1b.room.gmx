@@ -10,7 +10,12 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>camera.roomRight = rCU1c
+camera.rightLane = 0
+
+
+camera.roomLeft = rCU1
+camera.leftLane = -1</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,8 +57,6 @@
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="576" name="inst_44D4ED5E" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-64" y="0" name="inst_CC08E5E8" locked="0" code="roomTo = rCU1;&#xA;&#xA;smoothTransition = true;&#xA;kind = 0 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 1600;&#xA;warpY = 815;&#xA;" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="832" y="0" name="inst_D3EE9D04" locked="0" code="roomTo = rCU1c;&#xA;&#xA;smoothTransition = true;&#xA;kind = 1 //Horizontaler durchgang mit 608 Standart Raumhöhe&#xA;warpX = 0;&#xA;//warpY = 100;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

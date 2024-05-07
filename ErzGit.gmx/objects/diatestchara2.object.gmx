@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>charasize = 1
+image_xscale = -1
 
 active = 0
 if image_xscale &gt; 0
@@ -83,8 +84,8 @@ image_yscale = lerp(image_yscale,charasize*0.9,0.5)
 
 else if side = 1
 {
-image_xscale = lerp(image_xscale,charasize*0.8,0.5)
-image_yscale = lerp(image_xscale,charasize*0.8,0.5)
+image_xscale = lerp(image_xscale,charasize*-0.8,0.5)
+image_yscale = lerp(image_yscale,charasize*0.8,0.5)
 }
 
 }
@@ -107,7 +108,7 @@ image_yscale = lerp(image_yscale,charasize*1.1,0.5)
 
 else if side = 1
 {
-image_xscale = lerp(image_xscale,charasize*1.1,0.5)
+image_xscale = lerp(image_xscale,charasize*-1.1,0.5)
 image_yscale = lerp(image_yscale,charasize*1.1,0.5)
 }
 

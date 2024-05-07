@@ -236,8 +236,15 @@ if go = 9
 instance_destroy(objarial)
 scr_textarial("Ich zeigs dir!",0.75)
 print = false
-diatestchara1.active = 1
-diatestchara2.active = 0
+diatestchara1.active = 0
+diatestchara2.active = 1
+}
+
+if go = 10
+{
+instance_destroy(dialogtrigger)
+instance_destroy()
+instance_destroy(dialogbox)
 }
 
 
@@ -266,7 +273,7 @@ diatestchara2.active = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if go != 14
+            <string>if go != 10
 &amp;&amp; go != 404
 &amp;&amp; delay &lt;= 0
 {

@@ -1,0 +1,737 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://core/MapData.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+version = "1.0"
+config = {
+"color_bg": Color( 0.5, 0.5, 0.5, 1 ),
+"grid_subd": 5
+}
+map_data = {
+"BLBHQ": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 100, -20 ),"color":Color( 0.423529, 0.396078, 0.478431, 1 ),"rect":Rect2( 120, -300, 360, 60 ),"visible":true,"rooms":{
+"NordOst": {
+"cells": {
+Vector2( 19, -14 ): 0,
+Vector2( 20, -14 ): 0,
+Vector2( 21, -14 ): 0,
+Vector2( 22, -14 ): 0
+},
+"name": "Room"
+},
+"NordWest": {
+"cells": {
+Vector2( 7, -14 ): 0,
+Vector2( 8, -14 ): 0,
+Vector2( 9, -14 ): 0,
+Vector2( 10, -14 ): 0
+},
+"name": "Room"
+},
+"SüdOst": {
+"cells": {
+Vector2( 15, -14 ): 0,
+Vector2( 16, -14 ): 0,
+Vector2( 17, -14 ): 0,
+Vector2( 18, -14 ): 0
+},
+"name": "Room1"
+},
+"SüdWest": {
+"cells": {
+Vector2( 11, -14 ): 0,
+Vector2( 12, -14 ): 0,
+Vector2( 13, -14 ): 0,
+Vector2( 14, -14 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+},"icons":{
+},"texts":[ {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 7.4625, -14.7813, 46.75, 13.625 ),
+"text": "NordWest"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 11.7375, -14.8313, 75, 24 ),
+"text": "SüdWest"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 15.75, -14.7688, 75, 24 ),
+"text": "SüdOst"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 19.425, -14.7813, 75, 24 ),
+"text": "NordOst Eingang"
+} ],"shapes":[  ],"images":{
+})
+,
+"City": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( -180, -420 ),"color":Color( 0.698039, 0.368627, 1, 1 ),"rect":Rect2( -60, -160, 560, 140 ),"visible":true,"rooms":{
+"Kanaldeckel Allee": {
+"cells": {
+Vector2( 6, -6 ): 0,
+Vector2( 7, -6 ): 0
+},
+"name": "Room1"
+},
+"Reumann Platz": {
+"cells": {
+Vector2( -2, -6 ): 0,
+Vector2( -1, -6 ): 0
+},
+"name": "Room"
+},
+"Telephones": {
+"cells": {
+Vector2( 2, -5 ): 0
+},
+"name": "Room1"
+},
+"U1 Entrance": {
+"cells": {
+Vector2( 0, -6 ): 0,
+Vector2( 0, -5 ): 0,
+Vector2( 1, -6 ): 0,
+Vector2( 1, -5 ): 0
+},
+"name": "Room"
+},
+"U1 Exit": {
+"cells": {
+Vector2( 4, -6 ): 0,
+Vector2( 4, -5 ): 0,
+Vector2( 5, -6 ): 0,
+Vector2( 5, -5 ): 0
+},
+"name": "Room"
+},
+"U1 Station": {
+"cells": {
+Vector2( 1, -4 ): 0,
+Vector2( 2, -4 ): 0
+},
+"name": "Room"
+},
+"U1 Station Eingang": {
+"cells": {
+Vector2( 3, -5 ): 0,
+Vector2( 3, -4 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+Vector2( 0, -5.5 ): 0,
+Vector2( 2, -4.5 ): 0,
+Vector2( 3, -4.5 ): 0,
+Vector2( 3, -3.5 ): 0,
+Vector2( 4, -4.5 ): 0,
+Vector2( 6, -5.5 ): 0
+},"icons":{
+},"texts":[ {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( -2.20417, -7.19374, 46.25, 22.25 ),
+"text": "Reumannplatz"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 0.233334, -7.18124, 33, 22.25 ),
+"text": "U1Eingang"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 0.420834, -3.04374, 75, 24 ),
+"text": "U1 Station"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 3.97083, -7.19374, 33.75, 22.25 ),
+"text": "U1Ausgang"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 5.85833, -6.76874, 75, 24 ),
+"text": "Sewerallee"
+} ],"shapes":[  ],"images":{
+})
+,
+"DraschePark": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 0, 1, 0.180392, 1 ),"rect":Rect2( 200, 20, 460, 220 ),"visible":true,"rooms":{
+"BMXBahn": {
+"cells": {
+Vector2( 21, 5 ): 0,
+Vector2( 22, 5 ): 0,
+Vector2( 23, 5 ): 0,
+Vector2( 24, 5 ): 0
+},
+"name": "Room"
+},
+"Baby Bar": {
+"cells": {
+Vector2( 15, 5 ): 0
+},
+"name": "Room"
+},
+"Cave Exit": {
+"cells": {
+Vector2( 11, 5 ): 0,
+Vector2( 12, 5 ): 0
+},
+"name": "Room"
+},
+"Draschepark": {
+"cells": {
+Vector2( 17, 5 ): 0,
+Vector2( 18, 5 ): 0,
+Vector2( 19, 5 ): 0,
+Vector2( 20, 5 ): 0
+},
+"name": "Room"
+},
+"Exit": {
+"cells": {
+Vector2( 29, 7 ): 0,
+Vector2( 30, 7 ): 0
+},
+"name": "Room"
+},
+"Tree": {
+"cells": {
+Vector2( 13, 5 ): 0,
+Vector2( 14, 5 ): 0
+},
+"name": "Room"
+},
+"TreeTops": {
+"cells": {
+Vector2( 13, 4 ): 0,
+Vector2( 14, 4 ): 0
+},
+"name": "Room"
+},
+"TreeTops2": {
+"cells": {
+Vector2( 15, 4 ): 0,
+Vector2( 16, 4 ): 0,
+Vector2( 17, 4 ): 0,
+Vector2( 18, 4 ): 0
+},
+"name": "Room"
+},
+"Wald": {
+"cells": {
+Vector2( 25, 5 ): 0,
+Vector2( 25, 6 ): 0,
+Vector2( 25, 7 ): 0,
+Vector2( 26, 5 ): 0,
+Vector2( 26, 6 ): 0,
+Vector2( 26, 7 ): 0,
+Vector2( 27, 5 ): 0,
+Vector2( 27, 6 ): 0,
+Vector2( 27, 7 ): 0,
+Vector2( 28, 5 ): 0,
+Vector2( 28, 6 ): 0,
+Vector2( 28, 7 ): 0
+},
+"name": "Room"
+},
+"Waterfall": {
+"cells": {
+Vector2( 27, 8 ): 0,
+Vector2( 27, 9 ): 0,
+Vector2( 27, 10 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+Vector2( 11, 5.5 ): 0,
+Vector2( 13, 5.5 ): 0,
+Vector2( 13.5, 5 ): 0,
+Vector2( 15, 4.5 ): 0,
+Vector2( 15, 5.5 ): 0,
+Vector2( 17.5, 5 ): 0,
+Vector2( 18.5, 5 ): 0,
+Vector2( 21, 5.5 ): 0,
+Vector2( 25, 5.5 ): 0,
+Vector2( 26.5, 5 ): 0,
+Vector2( 27.5, 8 ): 0,
+Vector2( 29, 7.5 ): 0
+},"icons":{
+},"texts":[ {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 8,
+"rect": Rect2( 10.6708, 4.26666, 86, 24 ),
+"text": "Cave Exit"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 8,
+"rect": Rect2( 13.6417, 3.18541, 86, 24 ),
+"text": "Treetops"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 8,
+"rect": Rect2( 20.8292, 4.24791, 86, 24 ),
+"text": "BMX Bahn"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 8,
+"rect": Rect2( 27.0292, 4.23541, 86, 24 ),
+"text": "Wald"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 8,
+"rect": Rect2( 24.8917, 8.78542, 86, 24 ),
+"text": "Waterfall"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 8,
+"rect": Rect2( 29.4417, 6.28541, 86, 24 ),
+"text": "Bang"
+} ],"shapes":[  ],"images":{
+})
+,
+"Prater": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 0.921569, 0.313726, 0.313726, 1 ),"rect":Rect2( -180, -340, 420, 280 ),"visible":true,"rooms":{
+"Arcade": {
+"cells": {
+Vector2( 4, -6 ): 0,
+Vector2( 5, -6 ): 0
+},
+"name": "Room"
+},
+"BallBall": {
+"cells": {
+Vector2( -1, -6 ): 0
+},
+"name": "Room"
+},
+"Bistro Box": {
+"cells": {
+Vector2( 0, -6 ): 0,
+Vector2( 1, -6 ): 0
+},
+"name": "Room"
+},
+"BluePlanet": {
+"cells": {
+Vector2( -3, -6 ): 0
+},
+"name": "Room"
+},
+"Blumenrad": {
+"cells": {
+Vector2( 8, -7 ): 0,
+Vector2( 8, -6 ): 0,
+Vector2( 9, -7 ): 0,
+Vector2( 9, -6 ): 0
+},
+"name": "Room"
+},
+"Blumenrad Plaza": {
+"cells": {
+Vector2( 6, -6 ): 0,
+Vector2( 7, -6 ): 0
+},
+"name": "Room"
+},
+"Eingang": {
+"cells": {
+Vector2( -7, -7 ): 0,
+Vector2( -6, -7 ): 0
+},
+"name": "Room"
+},
+"Funball": {
+"cells": {
+Vector2( -2, -6 ): 0
+},
+"name": "Room"
+},
+"Riesenrad Plaza": {
+"cells": {
+Vector2( 2, -6 ): 0,
+Vector2( 3, -6 ): 0
+},
+"name": "Room"
+},
+"Sombreo": {
+"cells": {
+Vector2( -5, -7 ): 0,
+Vector2( -5, -6 ): 0,
+Vector2( -4, -7 ): 0,
+Vector2( -4, -6 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+Vector2( -7, -6.5 ): 0,
+Vector2( -5, -6.5 ): 0,
+Vector2( -3, -5.5 ): 0,
+Vector2( -2, -5.5 ): 0,
+Vector2( -1, -5.5 ): 0,
+Vector2( 0, -5.5 ): 0,
+Vector2( 2, -5.5 ): 0,
+Vector2( 4, -5.5 ): 0,
+Vector2( 6, -5.5 ): 0,
+Vector2( 8, -5.5 ): 0,
+Vector2( 10, -6.5 ): 0
+},"icons":{
+},"texts":[ {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( -5.05417, -7.72083, 75, 24 ),
+"text": "Sombreo"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 1.97917, -6.72083, 76, 24 ),
+"text": "Riesenrad"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 7.80416, -7.76458, 75, 24 ),
+"text": "Blumenrad"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 4.10416, -6.66458, 75, 24 ),
+"text": "Arcade"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( -0.0958359, -6.70208, 58.25, 13.625 ),
+"text": "BistroBox"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( -2.03334, -7.13958, 25.5, 22.25 ),
+"text": "Funball"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( -2.93334, -6.65208, 21.75, 13.625 ),
+"text": "BP"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( -7.89584, -7.75208, 75, 24 ),
+"text": "Schweizerhaus"
+} ],"shapes":[  ],"images":{
+})
+,
+"Satzberg": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 1, 0.964706, 0.0784314, 1 ),"rect":Rect2( 540, -680, 500, 200 ),"visible":true,"rooms":{
+"Eingang": {
+"cells": {
+Vector2( 28, -25 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+},"icons":{
+},"texts":[  ],"shapes":[  ],"images":{
+})
+,
+"Sewers": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( -180, -420 ),"color":Color( 0.568627, 0.807843, 1, 1 ),"rect":Rect2( 20, -160, 600, 180 ),"visible":true,"rooms":{
+"Air Vents": {
+"cells": {
+Vector2( 9, -5 ): 0,
+Vector2( 9, -4 ): 0,
+Vector2( 9, -3 ): 0,
+Vector2( 10, -5 ): 0,
+Vector2( 10, -4 ): 0,
+Vector2( 10, -3 ): 0
+},
+"name": "Room"
+},
+"Arielle": {
+"cells": {
+Vector2( 4, -3 ): 0,
+Vector2( 5, -3 ): 0
+},
+"name": "Room"
+},
+"Pandy": {
+"cells": {
+Vector2( 15, -3 ): 0,
+Vector2( 16, -3 ): 0
+},
+"name": "Room"
+},
+"Pits": {
+"cells": {
+Vector2( 7, -3 ): 0,
+Vector2( 8, -3 ): 0
+},
+"name": "Room"
+},
+"Sewer Entrance": {
+"cells": {
+Vector2( 6, -5 ): 0,
+Vector2( 6, -4 ): 0,
+Vector2( 6, -3 ): 0
+},
+"name": "Room"
+},
+"Slide": {
+"cells": {
+Vector2( 13, -5 ): 0,
+Vector2( 13, -4 ): 0,
+Vector2( 13, -3 ): 0,
+Vector2( 14, -5 ): 0,
+Vector2( 14, -4 ): 0,
+Vector2( 14, -3 ): 0
+},
+"name": "Room"
+},
+"Up n Down": {
+"cells": {
+Vector2( 11, -5 ): 0,
+Vector2( 12, -5 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+Vector2( 6, -2.5 ): 0,
+Vector2( 6.5, -5 ): 0,
+Vector2( 7, -2.5 ): 0,
+Vector2( 9, -2.5 ): 0,
+Vector2( 11, -4.5 ): 0,
+Vector2( 12.5, -5 ): 0,
+Vector2( 13.5, -2 ): 0,
+Vector2( 15, -2.5 ): 0,
+Vector2( 17, -2.5 ): 0
+},"icons":{
+},"texts":[ {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 4.05, -1.93125, 34.75, 13.625 ),
+"text": "Arielle"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 8.9875, -5.75625, 75, 24 ),
+"text": "AirVents"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 10.9, -3.93125, 75, 24 ),
+"text": "UPnDown"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 13.25, -5.70625, 75, 24 ),
+"text": "Slide"
+}, {
+"color": Color( 1, 1, 1, 1 ),
+"fold": false,
+"fsize": 7,
+"rect": Rect2( 15.125, -1.96875, 75, 24 ),
+"text": "Pandy"
+} ],"shapes":[  ],"images":{
+})
+,
+"Spain": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 240, -520 ),"color":Color( 1, 0.698039, 0.227451, 1 ),"rect":Rect2( 280, 300, 400, 140 ),"visible":true,"rooms":{
+"Beach1": {
+"cells": {
+Vector2( 15, 20 ): 0,
+Vector2( 16, 20 ): 0
+},
+"name": "Room"
+},
+"Beach2": {
+"cells": {
+Vector2( 17, 20 ): 0,
+Vector2( 18, 20 ): 0
+},
+"name": "Room"
+},
+"Beach3": {
+"cells": {
+Vector2( 29, 20 ): 0,
+Vector2( 30, 20 ): 0
+},
+"name": "Room"
+},
+"Bus Stop": {
+"cells": {
+Vector2( 32, 20 ): 0
+},
+"name": "Room"
+},
+"PekePark Eingang": {
+"cells": {
+Vector2( 19, 20 ): 0
+},
+"name": "Room"
+},
+"Steg": {
+"cells": {
+Vector2( 31, 20 ): 0
+},
+"name": "Room"
+},
+"TrisTras": {
+"cells": {
+Vector2( 23, 17 ): 0,
+Vector2( 23, 18 ): 0,
+Vector2( 23, 19 ): 0,
+Vector2( 23, 20 ): 0,
+Vector2( 24, 17 ): 0,
+Vector2( 24, 18 ): 0,
+Vector2( 24, 19 ): 0,
+Vector2( 24, 20 ): 0,
+Vector2( 25, 17 ): 0,
+Vector2( 25, 18 ): 0,
+Vector2( 25, 19 ): 0,
+Vector2( 25, 20 ): 0,
+Vector2( 26, 17 ): 0,
+Vector2( 26, 18 ): 0,
+Vector2( 26, 19 ): 0,
+Vector2( 26, 20 ): 0,
+Vector2( 27, 17 ): 0,
+Vector2( 27, 18 ): 0,
+Vector2( 27, 19 ): 0,
+Vector2( 27, 20 ): 0,
+Vector2( 28, 17 ): 0,
+Vector2( 28, 18 ): 0,
+Vector2( 28, 19 ): 0,
+Vector2( 28, 20 ): 0
+},
+"name": "Room"
+},
+"Zoco": {
+"cells": {
+Vector2( 20, 19 ): 0,
+Vector2( 20, 20 ): 0,
+Vector2( 21, 19 ): 0,
+Vector2( 21, 20 ): 0,
+Vector2( 22, 19 ): 0,
+Vector2( 22, 20 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+Vector2( 17, 20.5 ): 0,
+Vector2( 19, 20.5 ): 0,
+Vector2( 20, 20.5 ): 0,
+Vector2( 23, 19.5 ): 0,
+Vector2( 23, 20.5 ): 0,
+Vector2( 29, 20.5 ): 0,
+Vector2( 31, 20.5 ): 0,
+Vector2( 32, 20.5 ): 0
+},"icons":{
+},"texts":[  ],"shapes":[  ],"images":{
+})
+,
+"Tutorial Cave": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 0.407843, 0.529412, 1, 1 ),"rect":Rect2( 0, 40, 220, 300 ),"visible":true,"rooms":{
+"IWGH Cave": {
+"cells": {
+Vector2( 3, 5 ): 0,
+Vector2( 3, 6 ): 0,
+Vector2( 3, 7 ): 0,
+Vector2( 3, 8 ): 0,
+Vector2( 3, 9 ): 0,
+Vector2( 3, 10 ): 0,
+Vector2( 3, 11 ): 0,
+Vector2( 3, 12 ): 0,
+Vector2( 4, 5 ): 0,
+Vector2( 4, 6 ): 0,
+Vector2( 4, 7 ): 0,
+Vector2( 4, 8 ): 0,
+Vector2( 4, 9 ): 0,
+Vector2( 4, 10 ): 0,
+Vector2( 4, 11 ): 0,
+Vector2( 4, 12 ): 0,
+Vector2( 5, 5 ): 0,
+Vector2( 5, 6 ): 0,
+Vector2( 5, 7 ): 0,
+Vector2( 5, 8 ): 0,
+Vector2( 5, 9 ): 0,
+Vector2( 5, 10 ): 0,
+Vector2( 5, 11 ): 0,
+Vector2( 5, 12 ): 0,
+Vector2( 6, 5 ): 0,
+Vector2( 6, 6 ): 0,
+Vector2( 6, 7 ): 0,
+Vector2( 6, 8 ): 0,
+Vector2( 6, 9 ): 0,
+Vector2( 6, 10 ): 0,
+Vector2( 6, 11 ): 0,
+Vector2( 6, 12 ): 0,
+Vector2( 7, 5 ): 0,
+Vector2( 7, 6 ): 0,
+Vector2( 7, 7 ): 0,
+Vector2( 7, 8 ): 0,
+Vector2( 7, 9 ): 0,
+Vector2( 7, 10 ): 0,
+Vector2( 7, 11 ): 0,
+Vector2( 7, 12 ): 0,
+Vector2( 8, 5 ): 0,
+Vector2( 8, 6 ): 0,
+Vector2( 8, 7 ): 0,
+Vector2( 8, 8 ): 0,
+Vector2( 8, 9 ): 0,
+Vector2( 8, 10 ): 0,
+Vector2( 8, 11 ): 0,
+Vector2( 8, 12 ): 0,
+Vector2( 9, 5 ): 0,
+Vector2( 9, 6 ): 0,
+Vector2( 9, 7 ): 0,
+Vector2( 9, 8 ): 0,
+Vector2( 9, 9 ): 0,
+Vector2( 9, 10 ): 0,
+Vector2( 9, 11 ): 0,
+Vector2( 9, 12 ): 0,
+Vector2( 10, 5 ): 0,
+Vector2( 10, 6 ): 0,
+Vector2( 10, 7 ): 0,
+Vector2( 10, 8 ): 0,
+Vector2( 10, 9 ): 0,
+Vector2( 10, 10 ): 0,
+Vector2( 10, 11 ): 0,
+Vector2( 10, 12 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+},"icons":{
+},"texts":[  ],"shapes":[  ],"images":{
+})
+
+}
+res_icon = {
+}
+palette = PoolColorArray(  )
+area_list = [ "DraschePark", "Tutorial Cave", "Spain", "City", "Sewers", "BLBHQ", "Satzberg", "Prater" ]
+icon_list = [  ]

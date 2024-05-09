@@ -13,8 +13,7 @@
   <code>camera.roomLeft = rSewerPits
 camera.leftLane = 2
 
-camera.roomRight = rSewerUpDown
-camera.leftLane = 0</code>
+camera.roomRight = rSewerUpDown</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

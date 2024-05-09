@@ -69,7 +69,7 @@ instance_destroy()
 
 
 //Change
-else if obj7735.grounded = 0
+else if obj7735.grounded = false
 {
 if !instance_exists(lump)
 {

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>3</vsnap>
-  <hsnap>3</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -12,7 +12,7 @@
   <showcolour>-1</showcolour>
   <code>camera.roomRight = rDcaveexit
 camera.roomLeft = rDtree</code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -42,7 +42,7 @@ camera.roomLeft = rDtree</code>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="camera" xview="0" yview="0" wview="800" hview="608" xport="0" yport="0" wport="800" hport="608" hborder="400" vborder="500" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -52,11 +52,13 @@ camera.roomLeft = rDtree</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objBlock" x="0" y="512" name="inst_3BEB3B85" locked="0" code="" scaleX="25.8064517974854" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="0" y="512" name="inst_3BEB3B85" locked="0" code="" scaleX="50" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj7735" x="512" y="416" name="inst_4E01C6E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="-3" y="512" name="inst_98638651" locked="0" code="visible = false&#xA;" scaleX="26" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="512" name="inst_98638651" locked="0" code="visible = false&#xA;" scaleX="50" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="128" y="468" name="inst_08D16AAA" locked="0" code="visible = false&#xA;" scaleX="3.03225803375244" scaleY="1.40625" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="30" y="438" name="inst_CCC68BEF" locked="0" code="visible = false&#xA;" scaleX="3.77419352531433" scaleY="1.45161294937134" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="32" y="352" name="inst_0092F475" locked="0" code="" scaleX="3.96774196624756" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="96" y="288" name="inst_694566F2" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

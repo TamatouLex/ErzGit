@@ -31,7 +31,16 @@ wentLeft = false //Bei Left Screen Transitions warpt er an richtige Stelle bei R
 
 landstun = 0
 aircount = 0
-grounded = 0
+
+grounded = false
+groundcount = 0
+
+noSlopeCounter = 0 //Timer wie lange er nicht auf einer Slope ist. Notwendig um zu versichern dass er nicht auf der Slope blöd ist
+
+//Platform Check
+movingPlat = 0
+slope = 0
+
 fall = 0
 hitstun = 0
 iframes = 0
@@ -64,13 +73,15 @@ body=instance_create(x,y,krun)
 
 frozen = false; //sets if the player can move or not
 
-jump = 8.5 * global.grav; //set how fast the player jumps
-jump2 = 7 * global.grav; //sets how fast the player double jumps
-gravity = 0.4 * global.grav; //player gravity
+jump = 10 * global.grav; //set how fast the player jumps
+jump2 = 10 * global.grav; //sets how fast the player double jumps
+baseGravity = 0.5 * global.grav;
+//gravity = 0.6 * global.grav; //player gravity
 
+momentum = 0 //Player bekommt Momentum wenn er von moving Stuff abspringt oder aus einer Slope
 djump = 1; //allow the player to double jump as soon as he spawns
 maxSpeed = 6;   //max horizontal speed
-maxVspeed = 9;  //max vertical speed
+maxVspeed = 15;  //max vertical speed
 image_speed = 0.2; //initial speed of animation
 onPlatform = false; //sets if player is currently standing on a platform
 
@@ -372,7 +383,7 @@ legs.visible = true
 
 if hitstun = 0
 {
-gravity = 0.4 * global.grav; //player gravity
+gravity = baseGravity * global.grav; //player gravity
 }
 
 //Er dreht sich in die richtige richtung
@@ -386,28 +397,38 @@ if keyboard_check(vk_right)
 image_xscale = 1
 }
 
+
+movingPlat = instance_place(x,y+1,objMovingPlatform)
+
 //Wenn man den Boden berührt
 if place_meeting(x,y,objBlock)
 or place_meeting(x,y+1,objBlockInvis)
 or place_meeting(x,y+1,objSlopeDownLeft)
 or place_meeting(x,y+1,objSlopeDownRight)
+or (instance_exists(movingPlat) &amp;&amp; y+40 &lt; movingPlat.y)
 {
 groundcount += 1
-if groundcount = 2
-{
-grounded = 1
-}
 if instance_exists(cameraflag)
 {
 cameraflag.y = y
 }
+
+
+if groundcount = 2
+{
+grounded = true
+aircount = 0
 }
+}
+
 else
 {
-grounded = 0
+grounded = false
 groundcount = 0
 aircount += 1
 }
+
+
 
 //Jump Button Pressed
 if keyboard_check_pressed(vk_shift)
@@ -630,7 +651,60 @@ if (onVineL || onVineR)
     }
 }
 
-//slopes
+
+
+
+
+//SLOPES--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+slopeR = instance_place(x,y-3,objSlopeDownRight)
+slopeL = instance_place(x,y-3,objSlopeDownLeft)
+
+            if place_meeting(x,y+1,objSlopeDownLeft)
+            {
+            momentum += 0.7
+            noSlopeCounter = 0
+            }
+            
+            else if place_meeting(x,y+1,objSlopeDownRight)
+            {
+            momentum -= 0.7
+            noSlopeCounter = 0
+            }
+            
+            //BUMP AGAINST RIGHT WALL
+            else if (place_meeting(x+3,y,objBlock) &amp;&amp; (momentum &gt; 6))
+            {
+            hitstun = 1
+            iframes = 50
+            hspeed = -3.5
+            momentum = 0
+            vspeed = -5.5
+            }
+            
+            //BUMP AGAINST LEFT WALL
+            else if (place_meeting(x-3,y,objBlock) &amp;&amp; (momentum &lt; -6))
+            {
+            hitstun = 1
+            iframes = 50
+            hspeed = 3.5
+            momentum = 0
+            vspeed = -5.5
+            }
+            
+            else if (
+            (scrButtonCheck(global.leftButton) &amp;&amp; momentum &gt; 0)
+            || (scrButtonCheck(global.rightButton) &amp;&amp; momentum &lt; 0))
+            {
+            momentum *= 0.9
+            }
+            
+            else if grounded = true
+            {
+            momentum *= 0.9
+            }
+            
+            hspeed = hspeed+momentum
+
 
 if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
 {
@@ -644,9 +718,9 @@ if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
     //falling onto a slope
     if (place_meeting(x+hspeed,y+vspeed+gravity,objSlope) &amp;&amp; (vspeed+gravity)*global.grav &gt; 0 &amp;&amp; notOnBlock)
     {
-        var xLast = x;
+        var xLast = x
         var yLast = y;
-        var hLast = hspeed;
+        var hLast = hspeed
         var vLast = vspeed;
         
         vspeed += gravity;
@@ -685,7 +759,7 @@ if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
         var onSlope = (place_meeting(x,y+(global.grav),objSlope));    //treat normal blocks the same as slopes if we're standing on a slope
         
         slopeCheck = true;
-        hTest = hspeed;
+        hTest = hspeed
         
         while (slopeCheck)
         {
@@ -699,6 +773,8 @@ if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
             //check if we actually need to move down
             if (place_meeting(x+hTest,y-ySlope+(global.grav),objSlope) || (onSlope &amp;&amp; place_meeting(x+hTest,y-ySlope+(global.grav),objBlock)))
             {
+            
+            
                 if (ySlope != 0 &amp;&amp; !place_meeting(x+hTest,y-ySlope,objBlock))
                 {
                     y -= ySlope;
@@ -852,7 +928,8 @@ vspeed = -5.5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.grav == 1)   //normal
+            <string>/*
+if (global.grav == 1)   //normal
 {
     if (y-vspeed/2 &lt;= other.y)
     {
@@ -860,12 +937,40 @@ vspeed = -5.5
         {
             y = other.y-48; //Test für 7735
             vspeed = other.vspeed;
+            
+            onPlatform = true;
+            djump = 1;
         }
         
-        onPlatform = true;
-        djump = 1;
     }
 }
+*/
+
+
+
+
+//Real test ohne schnickschnack
+
+    if (y+40 &lt;= other.y)
+    {
+        if (other.vspeed &gt;= 0)
+        {
+            y = other.y-48; //Test für 7735
+            vspeed = other.vspeed;
+            
+            onPlatform = true;
+            djump = 1;
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+/*
 else    //flipped
 {
     if (y-vspeed/2 &gt;= other.y+other.sprite_height-1)
@@ -986,6 +1091,9 @@ draw_text(20,50,x)
           <argument>
             <kind>1</kind>
             <string>///draw the player
+draw_text(x,y+20,"Momentum: " +string(momentum))
+draw_text(x,y+50,"No Slope: " +string(noSlopeCounter))
+
 
 var drawX = x;
 var drawY = y;
@@ -999,7 +1107,7 @@ draw_sprite_ext(sprite_index,image_index,drawX,drawY,image_xscale*xScale,image_y
 if (global.debugShowHitbox)
     draw_sprite_ext(mask_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha*0.8);
     
-    
+    /*
     draw_text(x,y,hitstun)
     
     draw_text(x,y+20,"Room Height: " + string(room_height))

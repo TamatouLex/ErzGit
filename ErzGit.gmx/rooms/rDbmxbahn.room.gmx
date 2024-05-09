@@ -52,36 +52,25 @@ camera.roomRight = rDwald</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objBlockInvis" x="48" y="576" name="inst_128138BE" locked="0" code="" scaleX="92.9032287597656" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="48" y="576" name="inst_128138BE" locked="0" code="" scaleX="99.6128997802734" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="192" name="inst_5815576A" locked="0" code="" scaleX="19" scaleY="13" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="1248" y="544" name="inst_60285598" locked="0" code="" scaleX="3" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="608" y="192" name="inst_4553A74C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="640" y="224" name="inst_99875323" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="672" y="256" name="inst_35570C44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="704" y="288" name="inst_6658B14B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="736" y="320" name="inst_8A1B9E18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="768" y="352" name="inst_573A3005" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="800" y="384" name="inst_3A36E324" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="832" y="416" name="inst_FB7FE7CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="864" y="448" name="inst_FBE6B35D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="896" y="480" name="inst_3785A802" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="928" y="512" name="inst_539A70E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="960" y="544" name="inst_B676668C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="1760" y="544" name="inst_07F3A490" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="1344" y="512" name="inst_33BE6424" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="1472" y="512" name="inst_70F7DAD3" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="1568" y="544" name="inst_C281C743" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="2080" y="544" name="inst_5A3103C2" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="1984" y="512" name="inst_6E4EDD1F" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="1856" y="512" name="inst_8959312D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="2368" y="544" name="inst_CE0324D3" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="2464" y="512" name="inst_54AD2AF6" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="2592" y="512" name="inst_F9EEC68F" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownLeft" x="2688" y="544" name="inst_4CF47BB0" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="2560" y="512" name="inst_0D2DA82B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="1952" y="512" name="inst_39B8529B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="1440" y="512" name="inst_81C7BFE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="608" y="192" name="inst_4553A74C" locked="0" code="slippery = true&#xA;momentum = 3&#xA;" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="928" y="320" name="inst_99875323" locked="0" code="slippery = true&#xA;momentum = 3" scaleX="5" scaleY="2.06451606750488" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownRight" x="1760" y="512" name="inst_33BE6424" locked="0" code="slippery = true&#xA;momentum = -1&#xA;" scaleX="5.16129016876221" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="1952" y="512" name="inst_70F7DAD3" locked="0" code="slippery = true&#xA;momentum = 1&#xA;" scaleX="5.16129016876221" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="2400" y="512" name="inst_6E4EDD1F" locked="0" code="slippery = true&#xA;momentum = 1&#xA;" scaleX="5.16129016876221" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownRight" x="2208" y="512" name="inst_8959312D" locked="0" code="slippery = true&#xA;momentum = -1&#xA;" scaleX="5.16129016876221" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownRight" x="2656" y="512" name="inst_54AD2AF6" locked="0" code="slippery = true&#xA;momentum = -1&#xA;" scaleX="5.16129016876221" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="2848" y="512" name="inst_4CF47BB0" locked="0" code="slippery = true&#xA;momentum = 1&#xA;" scaleX="5.16129016876221" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="2816" y="512" name="inst_0D2DA82B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="2368" y="512" name="inst_39B8529B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="1920" y="512" name="inst_81C7BFE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="dialogtrigger" x="256" y="96" name="inst_73A1EC20" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="768" y="256" name="inst_C5554CA3" locked="0" code="slippery = true&#xA;momentum = 3&#xA;" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="1088" y="384" name="inst_C2004A3A" locked="0" code="slippery = true&#xA;momentum = 3&#xA;" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="1248" y="448" name="inst_D11AC8A9" locked="0" code="slippery = true&#xA;momentum = 3&#xA;" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objSlopeDownLeft" x="1408" y="512" name="inst_5DA9E9D6" locked="0" code="slippery = true&#xA;momentum = 3&#xA;" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="0" y="-32" name="inst_CDFF6B74" locked="0" code="" scaleX="35" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

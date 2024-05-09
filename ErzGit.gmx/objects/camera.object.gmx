@@ -127,11 +127,16 @@ y += 8
             <kind>1</kind>
             <string>///Debug Keys
 
+//TELEPORT 0
+if keyboard_check_pressed(ord('N'))
+{
+room = rBLBNorthWest
+}
 
 //TELEPORT 1
 if keyboard_check_pressed(ord('B'))
 {
-room = rSewerAirVents
+room = rCreumannGangster
 }
 
 //TELEPORT 2

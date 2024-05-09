@@ -1,6 +1,12 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://core/MapData.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/legend55.png-f0d8c743c46db47b2c827511a1c271a6.stex"
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/legend40.png-ec24c179f458a61009e30788b7a373d6.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -49,6 +55,10 @@ Vector2( 14, -14 ): 0
 }
 },"doors":{
 },"icons":{
+Vector2( 8.5, -13.5 ): "ToMap",
+Vector2( 12.5, -13.5 ): "ToMap",
+Vector2( 16.5, -13.5 ): "ToMap",
+Vector2( 20.5, -13.5 ): "ToMap"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -91,6 +101,13 @@ Vector2( -1, -6 ): 0
 },
 "name": "Room"
 },
+"Sternzeichen": {
+"cells": {
+Vector2( 12, -8 ): 0,
+Vector2( 13, -8 ): 0
+},
+"name": "Room"
+},
 "Telephones": {
 "cells": {
 Vector2( 2, -5 ): 0
@@ -128,6 +145,40 @@ Vector2( 3, -5 ): 0,
 Vector2( 3, -4 ): 0
 },
 "name": "Room"
+},
+"UBahnEntrance": {
+"cells": {
+Vector2( 17, -6 ): 0
+},
+"name": "Room"
+},
+"UBahnWM": {
+"cells": {
+Vector2( 17, -5 ): 0,
+Vector2( 18, -5 ): 0
+},
+"name": "Room"
+},
+"WienMitteEntrance": {
+"cells": {
+Vector2( 12, -6 ): 0,
+Vector2( 13, -6 ): 0
+},
+"name": "Room"
+},
+"WienMitteMall": {
+"cells": {
+Vector2( 14, -8 ): 0,
+Vector2( 14, -7 ): 0,
+Vector2( 14, -6 ): 0,
+Vector2( 15, -8 ): 0,
+Vector2( 15, -7 ): 0,
+Vector2( 15, -6 ): 0,
+Vector2( 16, -8 ): 0,
+Vector2( 16, -7 ): 0,
+Vector2( 16, -6 ): 0
+},
+"name": "Room"
 }
 },"doors":{
 Vector2( 0, -5.5 ): 0,
@@ -135,8 +186,14 @@ Vector2( 2, -4.5 ): 0,
 Vector2( 3, -4.5 ): 0,
 Vector2( 3, -3.5 ): 0,
 Vector2( 4, -4.5 ): 0,
-Vector2( 6, -5.5 ): 0
+Vector2( 6, -5.5 ): 0,
+Vector2( 12.5, -5 ): 0,
+Vector2( 14, -7.5 ): 0,
+Vector2( 14, -5.5 ): 0,
+Vector2( 17, -5.5 ): 0,
+Vector2( 17.5, -5 ): 0
 },"icons":{
+Vector2( -1.5, -5.5 ): "ToMap"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -271,6 +328,7 @@ Vector2( 26.5, 5 ): 0,
 Vector2( 27.5, 8 ): 0,
 Vector2( 29, 7.5 ): 0
 },"icons":{
+Vector2( 30.5, 7.5 ): "ToMap"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -395,6 +453,9 @@ Vector2( 6, -5.5 ): 0,
 Vector2( 8, -5.5 ): 0,
 Vector2( 10, -6.5 ): 0
 },"icons":{
+Vector2( -6.5, -6.5 ): "ToMap",
+Vector2( 3.5, -5.5 ): "ToMap",
+Vector2( 4.5, -5.5 ): "7777Dungeon"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -455,6 +516,7 @@ Vector2( 28, -25 ): 0
 }
 },"doors":{
 },"icons":{
+Vector2( 28.5, -24.5 ): "ToMap"
 },"texts":[  ],"shapes":[  ],"images":{
 })
 ,
@@ -470,6 +532,17 @@ Vector2( 10, -3 ): 0
 },
 "name": "Room"
 },
+"AirVents2": {
+"cells": {
+Vector2( 15, -5 ): 0,
+Vector2( 15, -4 ): 0,
+Vector2( 15, -3 ): 0,
+Vector2( 16, -5 ): 0,
+Vector2( 16, -4 ): 0,
+Vector2( 16, -3 ): 0
+},
+"name": "Room"
+},
 "Arielle": {
 "cells": {
 Vector2( 4, -3 ): 0,
@@ -477,10 +550,26 @@ Vector2( 5, -3 ): 0
 },
 "name": "Room"
 },
-"Pandy": {
+"DJumpAirVents": {
 "cells": {
-Vector2( 15, -3 ): 0,
-Vector2( 16, -3 ): 0
+Vector2( 19, -5 ): 0,
+Vector2( 19, -4 ): 0,
+Vector2( 19, -3 ): 0
+},
+"name": "Room"
+},
+"DoubleJumpChallenge": {
+"cells": {
+Vector2( 17, -2 ): 0,
+Vector2( 18, -2 ): 0,
+Vector2( 19, -2 ): 0
+},
+"name": "Room"
+},
+"Pandy1": {
+"cells": {
+Vector2( 15, -2 ): 0,
+Vector2( 16, -2 ): 0
 },
 "name": "Room"
 },
@@ -510,6 +599,23 @@ Vector2( 14, -3 ): 0
 },
 "name": "Room"
 },
+"Slide Leap of Faith": {
+"cells": {
+Vector2( 20, -5 ): 0,
+Vector2( 21, -5 ): 0,
+Vector2( 22, -5 ): 0,
+Vector2( 23, -5 ): 0,
+Vector2( 24, -5 ): 0
+},
+"name": "Room"
+},
+"SlideToPandy": {
+"cells": {
+Vector2( 13, -2 ): 0,
+Vector2( 14, -2 ): 0
+},
+"name": "Room"
+},
 "Up n Down": {
 "cells": {
 Vector2( 11, -5 ): 0,
@@ -525,9 +631,14 @@ Vector2( 9, -2.5 ): 0,
 Vector2( 11, -4.5 ): 0,
 Vector2( 12.5, -5 ): 0,
 Vector2( 13.5, -2 ): 0,
+Vector2( 15, -4.5 ): 0,
 Vector2( 15, -2.5 ): 0,
-Vector2( 17, -2.5 ): 0
+Vector2( 15, -1.5 ): 0,
+Vector2( 19.5, -2 ): 0,
+Vector2( 20, -4.5 ): 0,
+Vector2( 24.5, -5 ): 0
 },"icons":{
+Vector2( 6.5, -3.5 ): "7777Dungeon"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -651,6 +762,25 @@ Vector2( 29, 20.5 ): 0,
 Vector2( 31, 20.5 ): 0,
 Vector2( 32, 20.5 ): 0
 },"icons":{
+Vector2( 15.5, 20.5 ): "ToMap",
+Vector2( 29.5, 20.5 ): "7777Dungeon",
+Vector2( 32.5, 20.5 ): "ToMap"
+},"texts":[  ],"shapes":[  ],"images":{
+})
+,
+"TNT Rush": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 1, 0, 0, 1 ),"rect":Rect2( 241.5, -320, 300, 300 ),"visible":true,"rooms":{
+"TNT Rush": {
+"cells": {
+Vector2( 17, -22 ): 0,
+Vector2( 18, -22 ): 0,
+Vector2( 19, -22 ): 0,
+Vector2( 20, -22 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+},"icons":{
+Vector2( 20.5, -21.5 ): "ToMap"
 },"texts":[  ],"shapes":[  ],"images":{
 })
 ,
@@ -728,10 +858,91 @@ Vector2( 10, 12 ): 0
 },"icons":{
 },"texts":[  ],"shapes":[  ],"images":{
 })
+,
+"Underground": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 20, -80 ),"color":Color( 0.482353, 0.243137, 0.0509804, 1 ),"rect":Rect2( 680, -460, 220, 320 ),"visible":true,"rooms":{
+"CenterOfTheEarth": {
+"cells": {
+Vector2( 42, -10 ): 0,
+Vector2( 42, -9 ): 0
+},
+"name": "Room"
+},
+"Freefall": {
+"cells": {
+Vector2( 38, -17 ): 0,
+Vector2( 38, -16 ): 0,
+Vector2( 38, -15 ): 0,
+Vector2( 38, -14 ): 0
+},
+"name": "Room"
+},
+"Hole in the Ground": {
+"cells": {
+Vector2( 35, -22 ): 0
+},
+"name": "Room"
+},
+"LavaLand": {
+"cells": {
+Vector2( 35, -17 ): 0,
+Vector2( 36, -17 ): 0,
+Vector2( 37, -17 ): 0
+},
+"name": "Room"
+},
+"Motherload": {
+"cells": {
+Vector2( 35, -18 ): 0
+},
+"name": "Room"
+},
+"SpongebobUnderworld": {
+"cells": {
+Vector2( 38, -13 ): 0,
+Vector2( 38, -12 ): 0,
+Vector2( 38, -11 ): 0,
+Vector2( 39, -13 ): 0,
+Vector2( 39, -12 ): 0,
+Vector2( 39, -11 ): 0,
+Vector2( 40, -13 ): 0,
+Vector2( 40, -12 ): 0,
+Vector2( 40, -11 ): 0,
+Vector2( 41, -13 ): 0,
+Vector2( 41, -12 ): 0,
+Vector2( 41, -11 ): 0,
+Vector2( 42, -13 ): 0,
+Vector2( 42, -12 ): 0,
+Vector2( 42, -11 ): 0
+},
+"name": "Room"
+},
+"WookieHole": {
+"cells": {
+Vector2( 35, -21 ): 0,
+Vector2( 35, -20 ): 0,
+Vector2( 35, -19 ): 0
+},
+"name": "Room"
+}
+},"doors":{
+Vector2( 35.5, -21 ): 0,
+Vector2( 35.5, -18 ): 0,
+Vector2( 35.5, -17 ): 0,
+Vector2( 38, -16.5 ): 0,
+Vector2( 38.5, -13 ): 0,
+Vector2( 42.5, -10 ): 0
+},"icons":{
+Vector2( 12.5, 8.5 ): "7777Dungeon",
+Vector2( 35.5, -21.5 ): "ToMap",
+Vector2( 42.5, -12.5 ): "7777Dungeon"
+},"texts":[  ],"shapes":[  ],"images":{
+})
 
 }
 res_icon = {
+"7777Dungeon": SubResource( 2 ),
+"ToMap": SubResource( 1 )
 }
 palette = PoolColorArray(  )
-area_list = [ "DraschePark", "Tutorial Cave", "Spain", "City", "Sewers", "BLBHQ", "Satzberg", "Prater" ]
-icon_list = [  ]
+area_list = [ "DraschePark", "Tutorial Cave", "Spain", "City", "Sewers", "BLBHQ", "Satzberg", "Prater", "TNT Rush", "Underground" ]
+icon_list = [ "7777Dungeon", "ToMap" ]

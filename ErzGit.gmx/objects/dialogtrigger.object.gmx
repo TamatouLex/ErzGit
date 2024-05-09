@@ -100,7 +100,7 @@ if room = rDbang
 instance_create(x,y,conBangFirst)
 }
 //Second Bang Encounter
-if room = rBLBNorth
+if room = rBLBNorthWest
 {
 instance_create(x,y,conBangSecond)
 }

@@ -23,8 +23,10 @@
       <sound>sound\musGuyRock</sound>
       <sound>sound\musMegaman</sound>
       <sound>sound\musIlona</sound>
+      <sound>sound\musDrasche</sound>
       <sound>sound\musMiku</sound>
     </sounds>
+    <sound>sound\musSewers</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="world">
@@ -599,6 +601,7 @@
       <room>rooms\rSampleRoom</room>
       <room>rooms\rTest</room>
     </rooms>
+    <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>
     <room>rooms\rnewherotest</room>
     <rooms name="Draschepark">
@@ -618,7 +621,6 @@
     <room>rooms\rMap</room>
     <room>rooms\rInventory</room>
     <room>rooms\rTemplate</room>
-    <room>rooms\rbgtest</room>
     <rooms name="BLBHQ">
       <room>rooms\rBLBSouthWest</room>
       <room>rooms\rBLBSouthEast</room>

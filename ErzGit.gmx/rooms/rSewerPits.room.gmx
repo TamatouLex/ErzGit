@@ -58,15 +58,15 @@ camera.rightLane = -2</code>
     <instance objName="objBlockInvis" x="0" y="544" name="inst_E20FDF18" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="64" y="544" name="inst_7F5695C6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="128" y="576" name="inst_783A8D00" locked="0" code="" scaleX="46" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="0" name="inst_C7931260" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="-32" name="inst_C7931260" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="32" y="0" name="inst_38D6FDF5" locked="0" code="" scaleX="49" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1568" y="0" name="inst_71288202" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="128" y="512" name="inst_8232B69F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="192" y="448" name="inst_CB2B58E8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="256" y="384" name="inst_43CCFBAD" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="320" y="320" name="inst_301CDD39" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="576" y="320" name="inst_68FC27AB" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="896" y="320" name="inst_E09523EC" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1568" y="-32" name="inst_71288202" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="128" y="544" name="inst_8232B69F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="128" y="480" name="inst_CB2B58E8" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="224" y="416" name="inst_43CCFBAD" locked="0" code="" scaleX="3.09677410125732" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="320" y="352" name="inst_301CDD39" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="608" y="384" name="inst_68FC27AB" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="896" y="352" name="inst_E09523EC" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1216" y="320" name="inst_662EB782" locked="0" code="" scaleX="12.3870964050293" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1568" y="384" name="inst_31BDDB88" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
   </instances>

@@ -17,8 +17,24 @@ switch (room)                       //determines which song to play
     case rCherryBoss:
         roomSong = musMegaman;
         break;
+
         
+        //DRASCHEPARK
+    case rDcaveexit:
+    case rDtree:
+    case rDbabybarentrance:
+    case rDtreetops:
+    case rDtreetops2:
+    case rDdrascheentrance:
+    case rDbmxbahn:
+    case rDwald:
+    case rDbang:
+    case rDraschestairs:
+//    roomSong = musDrasche;
+    roomSong = musDrasche;
+       break;
         
+        //PRATER
     case rPEntrance:
     case rPSombreo:
     case rPDinoHouse:
@@ -33,7 +49,16 @@ switch (room)                       //determines which song to play
     roomSong = musIlona;
     break;
     
-    
+    //SEWERS
+    case rSewerEntrance:
+    case rSewerPond:
+    case rSewerPits:
+    case rSewerAirVents:
+    case rSewerUpDown:
+    case rSewerSlide:
+    case rSewerPandy:
+    roomSong = musSewers
+    break;
     
     case rMiku:
         roomSong = -2;              //don't change the music in any way (the Miku object plays it)

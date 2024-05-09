@@ -11,6 +11,7 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>camera.roomLeft = rPBlumenrad
+camera.leftLane = 0
 camera.roomRight = rPSombreo</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

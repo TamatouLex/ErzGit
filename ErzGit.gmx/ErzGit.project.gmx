@@ -170,6 +170,7 @@
         <sprite>sprites\spr_arielleIdle</sprite>
       </sprites>
       <sprite>sprites\spr_conpaddy</sprite>
+      <sprite>sprites\spr_pandy</sprite>
     </sprites>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_newevent</sprite>
@@ -579,6 +580,7 @@
       <object>objects\HQTower</object>
     </objects>
     <objects name="NPCs">
+      <object>objects\pandy</object>
       <object>objects\arielleIdle</object>
       <object>objects\bangjet</object>
     </objects>
@@ -674,7 +676,10 @@
       <room>rooms\rSewerAirVents</room>
       <room>rooms\rSewerUpDown</room>
       <room>rooms\rSewerSlide</room>
+      <room>rooms\rSewerAirVents2</room>
+      <room>rooms\rSewerLowerSlide</room>
       <room>rooms\rSewerPandy</room>
+      <room>rooms\rSewerDoubleJumps</room>
     </rooms>
     <rooms name="Satzberg">
       <room>rooms\rSaEntrance</room>

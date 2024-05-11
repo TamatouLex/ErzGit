@@ -54,9 +54,12 @@ switch (room)                       //determines which song to play
     case rSewerPond:
     case rSewerPits:
     case rSewerAirVents:
+    case rSewerAirVents2:
     case rSewerUpDown:
     case rSewerSlide:
+    case rSewerLowerSlide:
     case rSewerPandy:
+    case rSewerDoubleJumps:
     roomSong = musSewers
     break;
     

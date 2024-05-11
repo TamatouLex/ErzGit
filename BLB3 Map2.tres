@@ -2,11 +2,11 @@
 
 [ext_resource path="res://core/MapData.gd" type="Script" id=1]
 
-[sub_resource type="StreamTexture" id=1]
-load_path = "res://.import/legend55.png-f0d8c743c46db47b2c827511a1c271a6.stex"
-
 [sub_resource type="StreamTexture" id=2]
 load_path = "res://.import/legend40.png-ec24c179f458a61009e30788b7a373d6.stex"
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/legend55.png-f0d8c743c46db47b2c827511a1c271a6.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -580,6 +580,12 @@ Vector2( 8, -3 ): 0
 },
 "name": "Room"
 },
+"RoomBehindWaterfall": {
+"cells": {
+Vector2( 12, -2 ): 0
+},
+"name": "Room"
+},
 "Sewer Entrance": {
 "cells": {
 Vector2( 6, -5 ): 0,
@@ -630,6 +636,7 @@ Vector2( 7, -2.5 ): 0,
 Vector2( 9, -2.5 ): 0,
 Vector2( 11, -4.5 ): 0,
 Vector2( 12.5, -5 ): 0,
+Vector2( 13, -1.5 ): 0,
 Vector2( 13.5, -2 ): 0,
 Vector2( 15, -4.5 ): 0,
 Vector2( 15, -2.5 ): 0,

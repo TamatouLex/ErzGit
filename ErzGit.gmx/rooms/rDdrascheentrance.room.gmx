@@ -67,6 +67,7 @@
     <instance objName="objSlopeDownRight" x="2240" y="480" name="inst_EAE15396" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownRight" x="2176" y="512" name="inst_9073EC4F" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownRight" x="2112" y="544" name="inst_D882E8CB" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="2816" y="0" name="inst_AC906A70" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -32,6 +32,8 @@ wentLeft = false //Bei Left Screen Transitions warpt er an richtige Stelle bei R
 landstun = 0
 aircount = 0
 
+isClimbing = false //Soll integriert werden
+
 grounded = false
 groundcount = 0
 

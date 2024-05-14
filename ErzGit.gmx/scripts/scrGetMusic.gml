@@ -18,6 +18,10 @@ switch (room)                       //determines which song to play
         roomSong = musMegaman;
         break;
 
+        //MAP
+        case rMap:
+        roomSong = musMap
+        break;
         
         //DRASCHEPARK
     case rDcaveexit:

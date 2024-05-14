@@ -28,6 +28,7 @@
             <string>pause = 0
 go = 1
 
+zoom_factor = 1
 
 wentUp = false
 wentLeft = false
@@ -86,22 +87,13 @@ if instance_exists(obj7735)
 {
 x = obj7735.x
 }
+
 else
 {
 x = cameraflag.x
 }
 
-if y &gt; cameraflag.y+5
-{
-y -= 5
-}
-
-
-
-if y &lt; cameraflag.y-5
-{
-y += 8
-}
+y = lerp(y,cameraflag.y,0.1)
 
 }
 
@@ -130,19 +122,36 @@ y += 8
 //TELEPORT 0
 if keyboard_check_pressed(ord('N'))
 {
-room = rBLBNorthWest
+room = rSewerDoubleJumps
 }
 
 //TELEPORT 1
 if keyboard_check_pressed(ord('B'))
 {
-room = rCreumannGangster
+room = rSewerPandy
 }
 
 //TELEPORT 2
 if keyboard_check_pressed(ord('V'))
 {
-room = rSewerSlide
+room = rSewerLeapOfFaith
+}
+
+
+view_xview = x-view_wview/2
+view_yview = y-view_hview/2
+
+view_hview = 608 * zoom_factor
+view_wview = 800 * zoom_factor
+
+if keyboard_check_pressed(vk_add)
+{
+zoom_factor += 1
+}
+
+if keyboard_check_pressed(vk_subtract)
+{
+zoom_factor -= 1
 }
 
 
@@ -226,31 +235,12 @@ if instance_exists(obj7735)
 x = obj7735.x
 y = obj7735.y
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self()
 
-
+else if instance_exists(obj7735climb)
+{
+x = obj7735climb.x
+y = obj7735climb.y
+}
 </string>
           </argument>
         </arguments>

@@ -13,8 +13,8 @@
   <code>camera.roomLeft = rSewerPandy
 camera.leftLane = -0
 
-camera.roomRight = rSewerDoubleJumpVents
-camera.rightLane = -0</code>
+camera.roomUp = rSewerDoubleJumpVents
+camera.upLane = -1</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -57,9 +57,19 @@ camera.rightLane = -0</code>
   <instances>
     <instance objName="objBlockInvis" x="0" y="288" name="inst_E20FDF18" locked="0" code="" scaleX="2" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="128" y="544" name="inst_783A8D00" locked="0" code="" scaleX="46" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="64" y="448" name="inst_C7931260" locked="0" code="" scaleX="3.09677410125732" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="0" name="inst_38D6FDF5" locked="0" code="" scaleX="49" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="64" y="384" name="inst_C7931260" locked="0" code="" scaleX="3.09677410125732" scaleY="5.16129016876221" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="0" name="inst_38D6FDF5" locked="0" code="" scaleX="40" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="544" name="inst_71288202" locked="0" code="" scaleX="4.12903213500977" scaleY="2.06451606750488" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1568" y="0" name="inst_575CE67C" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1504" y="0" name="inst_7F0635ED" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1280" y="0" name="inst_5BD65E0E" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="256" y="320" name="inst_C0BB73A3" locked="0" code="" scaleX="4.12903213500977" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="224" y="288" name="inst_CAF21DB4" locked="0" code="" scaleX="5" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="768" y="288" name="inst_907D9110" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1152" y="32" name="inst_8752AC84" locked="0" code="" scaleX="3" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1280" y="352" name="inst_79E242EC" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ladder" x="1376" y="-96" name="inst_B3B77218" locked="0" code="" scaleX="1" scaleY="7.11111116409302" colour="4294967295" rotation="0"/>
+    <instance objName="windLeft" x="512" y="448" name="inst_778FD24D" locked="0" code="" scaleX="33" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

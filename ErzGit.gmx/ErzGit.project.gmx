@@ -25,8 +25,9 @@
       <sound>sound\musIlona</sound>
       <sound>sound\musDrasche</sound>
       <sound>sound\musMiku</sound>
+      <sound>sound\musSewers</sound>
+      <sound>sound\musMap</sound>
     </sounds>
-    <sound>sound\musSewers</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="world">
@@ -545,6 +546,8 @@
     <object>objects\worldchanger</object>
     <objects name="LevelGimmicks">
       <object>objects\windUp</object>
+      <object>objects\windRight</object>
+      <object>objects\windLeft</object>
       <object>objects\windDown</object>
     </objects>
     <object>objects\debuginfo</object>
@@ -680,6 +683,8 @@
       <room>rooms\rSewerLowerSlide</room>
       <room>rooms\rSewerPandy</room>
       <room>rooms\rSewerDoubleJumps</room>
+      <room>rooms\rSewerDoubleJumpVents</room>
+      <room>rooms\rSewerLeapOfFaith</room>
     </rooms>
     <rooms name="Satzberg">
       <room>rooms\rSaEntrance</room>

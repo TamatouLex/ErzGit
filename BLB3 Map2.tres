@@ -2,11 +2,11 @@
 
 [ext_resource path="res://core/MapData.gd" type="Script" id=1]
 
-[sub_resource type="StreamTexture" id=2]
-load_path = "res://.import/legend40.png-ec24c179f458a61009e30788b7a373d6.stex"
-
 [sub_resource type="StreamTexture" id=1]
 load_path = "res://.import/legend55.png-f0d8c743c46db47b2c827511a1c271a6.stex"
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/legend40.png-ec24c179f458a61009e30788b7a373d6.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -608,10 +608,15 @@ Vector2( 14, -3 ): 0
 "Slide Leap of Faith": {
 "cells": {
 Vector2( 20, -5 ): 0,
+Vector2( 20, -4 ): 0,
 Vector2( 21, -5 ): 0,
+Vector2( 21, -4 ): 0,
 Vector2( 22, -5 ): 0,
+Vector2( 22, -4 ): 0,
 Vector2( 23, -5 ): 0,
-Vector2( 24, -5 ): 0
+Vector2( 23, -4 ): 0,
+Vector2( 24, -5 ): 0,
+Vector2( 24, -4 ): 0
 },
 "name": "Room"
 },
@@ -643,7 +648,8 @@ Vector2( 15, -2.5 ): 0,
 Vector2( 15, -1.5 ): 0,
 Vector2( 19.5, -2 ): 0,
 Vector2( 20, -4.5 ): 0,
-Vector2( 24.5, -5 ): 0
+Vector2( 24.5, -5 ): 0,
+Vector2( 25, -3.5 ): 0
 },"icons":{
 Vector2( 6.5, -3.5 ): "7777Dungeon"
 },"texts":[ {

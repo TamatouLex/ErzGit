@@ -24,6 +24,9 @@ camera.wentLeft = true
 //Room Down
 else if y > room_height
 {
+x = x - (800*camera.downLane) //Lane Correction
+camera.downLane = 0
+camera.upLane = 0
 room_goto(camera.roomDown);
 camera.wentDown = true
 }
@@ -31,6 +34,10 @@ camera.wentDown = true
 //Room Up
 else if y < 0
 {
-room_goto(camera.roomUp)
+x = x - (800*camera.upLane) //Lane Correction
+camera.upLane = 0
+camera.downLane = 0
+room_goto(camera.roomUp);
 camera.wentUp = true
 }
+

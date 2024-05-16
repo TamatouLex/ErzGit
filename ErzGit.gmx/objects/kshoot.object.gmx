@@ -121,6 +121,16 @@ if instance_exists(lrun)
 {
 image_xscale = lrun.image_xscale
 }
+
+//Climbing 
+if obj7735.isClimbing = true
+{
+visible = false
+}
+else
+{
+visible = true
+}
 }
 </string>
           </argument>

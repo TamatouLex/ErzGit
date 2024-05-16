@@ -32,6 +32,7 @@ wentLeft = false //Bei Left Screen Transitions warpt er an richtige Stelle bei R
 landstun = 0
 aircount = 0
 
+nearLadder = noone
 isClimbing = false //Soll integriert werden
 
 grounded = false
@@ -384,6 +385,7 @@ legs.visible = true
 }
 
 if hitstun = 0
+&amp;&amp; isClimbing = false
 {
 gravity = baseGravity * global.grav; //player gravity
 }
@@ -447,32 +449,70 @@ else
 fall = 0
 }
 
+//LADDER RELATED-------------------------------------------------------------
 //Ladder Oben
-nearladder = instance_nearest(x,y,ladder)
-if place_meeting(x,y+60,nearladder)
+nearLadder = instance_nearest(x,y,ladder)
+if place_meeting(x,y+60,nearLadder)
 {
 //Leiter von Oben
-if y &lt; nearladder.y
+if y &lt; nearLadder.y
 {
 if keyboard_check(vk_down)
 {
-instance_change(obj7735climb,true)
+isClimbing = true
 }
 }
 
 //Leiter von Unten
-if y &gt; nearladder.y
+if y &gt; nearLadder.y
 {
 if keyboard_check(vk_up)
 {
-instance_change(obj7735climb,true)
+isClimbing = true
+}
 }
 }
 
+if isClimbing = true
+{
+
+//Spawn the Climb Sprite
+if !instance_exists(climb)
+{
+cl=instance_create(x,y,climb)
+}
+cl.x = x
+cl.y = y
+
+x = lerp(x,nearLadder.x+nearLadder.sprite_width/2,0.3)
+
+//Ladder Controls
+if scrButtonCheck(global.upButton)
+{
+y -= 5
+}
+else if scrButtonCheck(global.downButton)
+{
+y += 5
+}
+gravity = 0
+hspeed = 0
+vspeed = 0
+
+if scrButtonCheck(global.jumpButton)
+{
+isClimbing = false
+}
+}
+else// if instance_exists(climb)
+{
+instance_destroy(climb)
 }
 
 
-//Killt new Hero
+
+
+//Killt new Hero---------------------------------------------------------------
 if instance_exists(objPlayer)
 {
 instance_destroy(objPlayer)
@@ -496,7 +536,8 @@ hspeed = 0
 //Bewegung?! Nur wenn er nicht im Hitstun ist!
 
 if hitstun &lt;= 0
-and landstun &gt; 10
+&amp;&amp; landstun &gt; 10
+&amp;&amp; isClimbing = false
 {
 //check left/right button presses
 var L = (scrButtonCheck(global.leftButton) || (global.directionalTapFix &amp;&amp; scrButtonCheckPressed(global.leftButton)));

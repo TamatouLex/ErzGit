@@ -83,6 +83,16 @@ a=instance_create(x,y,lall)
 a.image_xscale = image_xscale
 instance_destroy()
 }
+
+//Climbing 
+if obj7735.isClimbing = true
+{
+visible = false
+}
+else
+{
+visible = true
+}
 }
 
 if keyboard_check(vk_left)

@@ -116,6 +116,15 @@ a.image_xscale = image_xscale
 instance_destroy()
 }
 
+//Climbing 
+if obj7735.isClimbing = true
+{
+visible = false
+}
+else
+{
+visible = true
+}
 }
 
 

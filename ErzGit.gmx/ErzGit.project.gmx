@@ -229,6 +229,10 @@
     <sprite>sprites\spr_3DFloor</sprite>
     <sprite>sprites\spr_3DFloor2</sprite>
     <sprite>sprites\spr_3DFloorWood</sprite>
+    <sprites name="TNTRun">
+      <sprite>sprites\spr_TNTRunButton</sprite>
+      <sprite>sprites\spr_TNT</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -587,6 +591,8 @@
       <object>objects\arielleIdle</object>
       <object>objects\bangjet</object>
     </objects>
+    <object>objects\TNT</object>
+    <object>objects\TRButtonHold</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -690,6 +696,7 @@
       <room>rooms\rSaEntrance</room>
     </rooms>
     <room>rooms\r3DTest</room>
+    <room>rooms\rTNTRun</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

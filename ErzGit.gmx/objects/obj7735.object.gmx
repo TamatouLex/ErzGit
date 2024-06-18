@@ -1088,6 +1088,37 @@ if (!place_free(x+hspeed,y+vspeed)) {hspeed = 0;}
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Snap to Lader at Screen Transition
+if isClimbing = true
+{
+nearLadder = instance_nearest(x,y,ladder)
+if instance_exists(nearLadder)
+{
+x = nearLadder.x + nearLadder.sprite_width/2
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>

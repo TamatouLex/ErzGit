@@ -134,7 +134,7 @@ room = rSewerPandy
 //TELEPORT 2
 if keyboard_check_pressed(ord('V'))
 {
-room = rSewerLeapOfFaith
+room = rTNTRun
 }
 
 
@@ -201,7 +201,7 @@ wentLeft = false
 //WENT UP--------------------------------------------------------
 if (wentUp = true)
 {
-obj7735climb.y = room_height
+obj7735.y = room_height
 wentUp = false
 }
 
@@ -234,12 +234,6 @@ if instance_exists(obj7735)
 {
 x = obj7735.x
 y = obj7735.y
-}
-
-else if instance_exists(obj7735climb)
-{
-x = obj7735climb.x
-y = obj7735climb.y
 }
 </string>
           </argument>

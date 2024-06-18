@@ -14,7 +14,7 @@
 camera.leftLane = -0
 
 camera.roomUp = rSewerDoubleJumpVents
-camera.upLane = -1</code>
+camera.upLane = 1</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

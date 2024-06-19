@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://core/MapData.gd" type="Script" id=1]
 
@@ -7,6 +7,9 @@ load_path = "res://.import/legend55.png-f0d8c743c46db47b2c827511a1c271a6.stex"
 
 [sub_resource type="StreamTexture" id=2]
 load_path = "res://.import/legend40.png-ec24c179f458a61009e30788b7a373d6.stex"
+
+[sub_resource type="StreamTexture" id=3]
+load_path = "res://.import/legend49.png-23aec38aa4510925b61b366aba9afe26.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -58,7 +61,8 @@ Vector2( 14, -14 ): 0
 Vector2( 8.5, -13.5 ): "ToMap",
 Vector2( 12.5, -13.5 ): "ToMap",
 Vector2( 16.5, -13.5 ): "ToMap",
-Vector2( 20.5, -13.5 ): "ToMap"
+Vector2( 20.5, -13.5 ): "ToMap",
+Vector2( 21.5, -13.5 ): "CheckPoint"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -87,6 +91,18 @@ Vector2( 20.5, -13.5 ): "ToMap"
 })
 ,
 "City": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( -180, -420 ),"color":Color( 0.698039, 0.368627, 1, 1 ),"rect":Rect2( -60, -160, 560, 140 ),"visible":true,"rooms":{
+"": {
+"cells": {
+},
+"name": "Room"
+},
+"HiddenArea": {
+"cells": {
+Vector2( 24, -6 ): 0,
+Vector2( 25, -6 ): 0
+},
+"name": "Room"
+},
 "Kanaldeckel Allee": {
 "cells": {
 Vector2( 6, -6 ): 0,
@@ -113,6 +129,13 @@ Vector2( 13, -8 ): 0
 Vector2( 2, -5 ): 0
 },
 "name": "Room1"
+},
+"ToTNTRace": {
+"cells": {
+Vector2( 26, -6 ): 0,
+Vector2( 27, -6 ): 0
+},
+"name": "Room"
 },
 "U1 Entrance": {
 "cells": {
@@ -191,9 +214,15 @@ Vector2( 12.5, -5 ): 0,
 Vector2( 14, -7.5 ): 0,
 Vector2( 14, -5.5 ): 0,
 Vector2( 17, -5.5 ): 0,
-Vector2( 17.5, -5 ): 0
+Vector2( 17.5, -5 ): 0,
+Vector2( 26, -5.5 ): 0
 },"icons":{
-Vector2( -1.5, -5.5 ): "ToMap"
+Vector2( -1.5, -5.5 ): "ToMap",
+Vector2( -0.5, -5.5 ): "CheckPoint",
+Vector2( 6.5, -2.5 ): "CheckPoint",
+Vector2( 15.5, -5.5 ): "CheckPoint",
+Vector2( 17.5, -1.5 ): "CheckPoint",
+Vector2( 27.5, -5.5 ): "ToMap"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
 "fold": false,
@@ -328,6 +357,7 @@ Vector2( 26.5, 5 ): 0,
 Vector2( 27.5, 8 ): 0,
 Vector2( 29, 7.5 ): 0
 },"icons":{
+Vector2( 25.5, 5.5 ): "CheckPoint",
 Vector2( 30.5, 7.5 ): "ToMap"
 },"texts":[ {
 "color": Color( 1, 1, 1, 1 ),
@@ -454,6 +484,8 @@ Vector2( 8, -5.5 ): 0,
 Vector2( 10, -6.5 ): 0
 },"icons":{
 Vector2( -6.5, -6.5 ): "ToMap",
+Vector2( -5.5, -6.5 ): "CheckPoint",
+Vector2( 2.5, -5.5 ): "CheckPoint",
 Vector2( 3.5, -5.5 ): "ToMap",
 Vector2( 4.5, -5.5 ): "7777Dungeon"
 },"texts":[ {
@@ -633,6 +665,14 @@ Vector2( 11, -5 ): 0,
 Vector2( 12, -5 ): 0
 },
 "name": "Room"
+},
+"Waal Room": {
+"cells": {
+Vector2( 25, -4 ): 0,
+Vector2( 26, -5 ): 0,
+Vector2( 26, -4 ): 0
+},
+"name": "Room"
 }
 },"doors":{
 Vector2( 6, -2.5 ): 0,
@@ -649,7 +689,8 @@ Vector2( 15, -1.5 ): 0,
 Vector2( 19.5, -2 ): 0,
 Vector2( 20, -4.5 ): 0,
 Vector2( 24.5, -5 ): 0,
-Vector2( 25, -3.5 ): 0
+Vector2( 25, -3.5 ): 0,
+Vector2( 26.5, -5 ): 0
 },"icons":{
 Vector2( 6.5, -3.5 ): "7777Dungeon"
 },"texts":[ {
@@ -776,12 +817,14 @@ Vector2( 31, 20.5 ): 0,
 Vector2( 32, 20.5 ): 0
 },"icons":{
 Vector2( 15.5, 20.5 ): "ToMap",
+Vector2( 16.5, 20.5 ): "CheckPoint",
+Vector2( 25.5, 20.5 ): "CheckPoint",
 Vector2( 29.5, 20.5 ): "7777Dungeon",
 Vector2( 32.5, 20.5 ): "ToMap"
 },"texts":[  ],"shapes":[  ],"images":{
 })
 ,
-"TNT Rush": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 1, 0, 0, 1 ),"rect":Rect2( 241.5, -320, 300, 300 ),"visible":true,"rooms":{
+"TNT Rush": Object(Reference,"script":Resource( "res://core/AreaData.gd" ),"offset":Vector2( 0, 0 ),"color":Color( 1, 0, 0, 1 ),"rect":Rect2( 320, -480, 140, 100 ),"visible":true,"rooms":{
 "TNT Rush": {
 "cells": {
 Vector2( 17, -22 ): 0,
@@ -954,8 +997,9 @@ Vector2( 42.5, -12.5 ): "7777Dungeon"
 }
 res_icon = {
 "7777Dungeon": SubResource( 2 ),
+"CheckPoint": SubResource( 3 ),
 "ToMap": SubResource( 1 )
 }
 palette = PoolColorArray(  )
 area_list = [ "DraschePark", "Tutorial Cave", "Spain", "City", "Sewers", "BLBHQ", "Satzberg", "Prater", "TNT Rush", "Underground" ]
-icon_list = [ "7777Dungeon", "ToMap" ]
+icon_list = [ "7777Dungeon", "ToMap", "CheckPoint" ]

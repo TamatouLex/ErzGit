@@ -229,9 +229,22 @@
     <sprite>sprites\spr_3DFloor</sprite>
     <sprite>sprites\spr_3DFloor2</sprite>
     <sprite>sprites\spr_3DFloorWood</sprite>
-    <sprites name="TNTRun">
-      <sprite>sprites\spr_TNTRunButton</sprite>
-      <sprite>sprites\spr_TNT</sprite>
+    <sprites name="Gimmicks">
+      <sprites name="TNTRun">
+        <sprite>sprites\spr_TNTRunButton</sprite>
+        <sprite>sprites\spr_TNT</sprite>
+      </sprites>
+      <sprite>sprites\spr_pistonV</sprite>
+      <sprite>sprites\spr_pistonH</sprite>
+      <sprite>sprites\spr_TNTBarricade</sprite>
+      <sprite>sprites\spr_TNTstart</sprite>
+      <sprite>sprites\spr_TNTstop</sprite>
+      <sprite>sprites\spr_TNTBurner</sprite>
+      <sprite>sprites\spr_upArrow</sprite>
+      <sprite>sprites\spr_downArrow</sprite>
+      <sprite>sprites\spr_leftArrow</sprite>
+      <sprite>sprites\spr_rightArrow</sprite>
+      <sprite>sprites\spr_TNTconfirm</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -553,6 +566,22 @@
       <object>objects\windRight</object>
       <object>objects\windLeft</object>
       <object>objects\windDown</object>
+      <object>objects\TRButtonHold</object>
+      <object>objects\TNTBarricade</object>
+      <object>objects\TNTCursor</object>
+      <object>objects\TNTScreenTarget</object>
+      <object>objects\TNTBurner</object>
+      <object>objects\TNT</object>
+      <object>objects\pistonV</object>
+      <object>objects\pistonH</object>
+      <object>objects\TNTgo</object>
+      <object>objects\TNTstop</object>
+      <object>objects\upArrow</object>
+      <object>objects\downArrow</object>
+      <object>objects\leftArrow</object>
+      <object>objects\TNTconfirm</object>
+      <object>objects\rightArrow</object>
+      <object>objects\conveyorBelt</object>
     </objects>
     <object>objects\debuginfo</object>
     <objects name="Map">
@@ -591,8 +620,6 @@
       <object>objects\arielleIdle</object>
       <object>objects\bangjet</object>
     </objects>
-    <object>objects\TNT</object>
-    <object>objects\TRButtonHold</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">

@@ -29,6 +29,9 @@
 
 wentLeft = false //Bei Left Screen Transitions warpt er an richtige Stelle bei Room Start
 
+isPushing = false //Ob er gerade etwas pusht/pullt
+pushObject = false
+
 landstun = 0
 aircount = 0
 
@@ -299,7 +302,10 @@ else
 visible = false
 }
 
-if keyboard_check_pressed(ord('Y'))
+
+
+
+if (scrButtonCheckPressed(global.shootButton))
 {
 if instance_number(stone) &lt; 2
 {
@@ -638,14 +644,24 @@ if (abs(vspeed) &gt; maxVspeed) {vspeed = sign(vspeed)*maxVspeed;} //check if mo
 
 if (!frozen)    //check if frozen before doing anything
 {
+/*
     if (scrButtonCheckPressed(global.shootButton))
+    {
         scrPlayerShoot();
-    if (scrButtonCheckPressed(global.jumpButton))
-        scr7735Jump();
+    }
+  */
+      if (scrButtonCheckPressed(global.jumpButton))
+    {
+           scr7735Jump();
+    }
     if (scrButtonCheckReleased(global.jumpButton))
-        scrPlayerVJump();
+    {
+            scrPlayerVJump();
+    }
     if (scrButtonCheckPressed(global.suicideButton))
+        {
         scrKillPlayer();
+        }
 }
 
 if (global.adAlign &amp;&amp; place_meeting(x,y+(global.grav),objBlock) &amp;&amp; !frozen)  // A/D align

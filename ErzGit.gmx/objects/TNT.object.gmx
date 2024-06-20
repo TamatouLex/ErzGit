@@ -35,7 +35,7 @@ band = 0 //Das Conveyor Belt auf dem er sich befindet
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -85,6 +85,35 @@ hspeed = 0
 }
 
 
+karre = instance_place(x-1,y,objMovingPlatform)
+
+//In Schubkarre
+if place_meeting(x,y+1,karre)
+{
+x = karre.x+32
+y = karre.y-64
+gravity = 0
+vspeed = 0
+global.TNTinKarre = true
+}
+
+
+band = instance_place(x,y+1,conveyorBelt)
+
+//Freier Fall!
+if !place_meeting(x,y+1,band)
+&amp;&amp; !place_meeting(x,y+1,pistonV)
+&amp;&amp; !place_meeting(x,y+1,objMovingPlatform)
+&amp;&amp; !place_meeting(x,y+1,objBlockInvis)
+{
+hspeed = 0
+gravity = 0.2
+}
+
+else
+{
+gravity = 0
+}
 </string>
           </argument>
         </arguments>

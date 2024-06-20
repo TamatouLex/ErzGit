@@ -152,13 +152,14 @@ camera.upLane = -1</code>
     <instance objName="rightArrow" x="3824" y="560" name="inst_CD05DFAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TNTconfirm" x="3568" y="560" name="inst_73CCDB5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="4000" y="544" name="inst_7800F63C" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="conveyorBelt" x="4000" y="96" name="inst_05DFB3DE" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="conveyorBelt" x="4000" y="96" name="inst_05DFB3DE" locked="0" code="dir = 3&#xA;" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="4576" y="0" name="inst_C0C23F71" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="4416" y="128" name="inst_CBC34B65" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="3968" y="128" name="inst_493F9DD7" locked="0" code="" scaleX="2" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="4768" y="0" name="inst_FA02278C" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="4000" y="-32" name="inst_CF76A844" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="worldchanger" x="4704" y="512" name="inst_E6E74969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="worldchanger" x="4704" y="512" name="inst_E6E74969" locked="0" code="pos = 701&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="schubkarre" x="4160" y="512" name="inst_F4527BC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

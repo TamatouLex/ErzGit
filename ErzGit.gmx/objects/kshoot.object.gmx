@@ -62,7 +62,7 @@ else
 stonebuffer = 0
 }
 
-if keyboard_check_pressed(ord('Y'))
+if (scrButtonCheckPressed(global.shootButton))
 {
 if global.curweapon = 0
 {
@@ -77,12 +77,19 @@ else if global.curweapon = 1
 image_index = 0
 count = 0
 }
+}
 
+//Dreht sich in die Richtung des
+if instance_exists(obj7735)
+&amp;&amp; obj7735.isPushing = true
+{
+image_xscale = obj7735.pushObject.image_xscale
 }
 
 
 count += 1
 
+//SHOOT ANIMATION
 if count = 4
 {
 image_index = 1
@@ -96,7 +103,7 @@ image_index = 2
 if instance_exists(obj7735)
 {
 //Change
-if count = 14
+if count &gt;= 14 &amp;&amp; obj7735.isPushing = false
 {
 //Nicht in der Luft
 if obj7735.grounded = 0
@@ -118,6 +125,7 @@ instance_destroy()
 }
 
 if instance_exists(lrun)
+&amp;&amp; obj7735.isPushing = false
 {
 image_xscale = lrun.image_xscale
 }

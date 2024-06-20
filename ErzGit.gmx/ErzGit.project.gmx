@@ -201,11 +201,13 @@
       <sprite>sprites\spr_mapDrasche</sprite>
       <sprite>sprites\spr_mapSpain</sprite>
       <sprite>sprites\spr_mapPrater</sprite>
+      <sprite>sprites\spr_TNTRush</sprite>
       <sprite>sprites\spr_mapReumann</sprite>
       <sprite>sprites\spr_mapSatzberg</sprite>
       <sprite>sprites\spr_mapBLBHQ</sprite>
       <sprite>sprites\spr_mapArrow</sprite>
       <sprite>sprites\spr_map7735Icon</sprite>
+      <sprite>sprites\spr_mapTNTIcon</sprite>
     </sprites>
     <sprite>sprites\spr_BGPlant</sprite>
     <sprite>sprites\spr_clownbotwalk</sprite>
@@ -245,6 +247,7 @@
       <sprite>sprites\spr_leftArrow</sprite>
       <sprite>sprites\spr_rightArrow</sprite>
       <sprite>sprites\spr_TNTconfirm</sprite>
+      <sprite>sprites\spr_schubkarre</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -581,6 +584,7 @@
       <object>objects\leftArrow</object>
       <object>objects\TNTconfirm</object>
       <object>objects\rightArrow</object>
+      <object>objects\schubkarre</object>
       <object>objects\conveyorBelt</object>
     </objects>
     <object>objects\debuginfo</object>
@@ -588,6 +592,7 @@
       <object>objects\mapDrasche</object>
       <object>objects\mapPrater</object>
       <object>objects\mapSpain</object>
+      <object>objects\mapTNTRush</object>
       <object>objects\mapReumann</object>
       <object>objects\mapSatzberg</object>
       <object>objects\mapBLBHQ</object>

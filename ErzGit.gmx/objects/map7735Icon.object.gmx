@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj7735)
+            <string>image_speed = 0.2
+
+if instance_exists(obj7735)
 {
 obj7735.visible = false
 }
@@ -169,6 +171,17 @@ b=instance_create(999,999,mapArrow)
 
 a.x = mapReumann.x-50
 a.y = mapReumann.y+80
+a.image_angle = 135-90 
+}
+
+//TNTRush-----------------------------------------------------------------
+if pos = 701 //TNTRush Ausgang
+{
+a=instance_create(x,y,mapArrow)
+b=instance_create(999,999,mapArrow)
+
+a.x = mapTNTRush.x-50
+a.y = mapTNTRush.y+80
 a.image_angle = 135-90 
 }
 
@@ -475,6 +488,48 @@ if keyboard_check_pressed(vk_shift)
 instance_create(400,300,obj7735)
 room = rBLBNorthEast
 }
+}
+
+
+//TNT RUSH AREA-------------------------------------------------------------------------------
+if pos = 701  //Ausgang zu BLB HQ NorthEast
+{
+x = mapTNTRush.x-20
+y = mapTNTRush.y+30
+arrowA = true
+if keyboard_check_pressed(vk_shift)
+{
+instance_create(400,300,obj7735)
+room = rBLBNorthEast
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+
+if global.TNTonMap = true
+{
+draw_sprite(spr_mapTNTIcon,image_index,x+50,y)
 }
 </string>
           </argument>

@@ -62,7 +62,7 @@ stonebuffer = 0
 }
 
 
-if keyboard_check_pressed(ord('Y'))
+if (scrButtonCheckPressed(global.shootButton))
 {
 if global.curweapon = 0
 {

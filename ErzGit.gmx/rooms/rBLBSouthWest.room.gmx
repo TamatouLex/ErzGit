@@ -53,7 +53,7 @@ camera.roomLeft = rBLBNorthWest</code>
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="592" name="inst_D71B50D7" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="worldchanger" x="192" y="544" name="inst_BEA7DD59" locked="0" code="pos = 403" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="worldchanger" x="192" y="416" name="inst_BEA7DD59" locked="0" code="pos = 403" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testHQL" x="800" y="224" name="inst_EB12A3AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testHQR" x="800" y="224" name="inst_B6F13913" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bushmaster" x="800" y="416" name="inst_159C951E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

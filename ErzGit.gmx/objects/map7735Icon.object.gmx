@@ -182,7 +182,7 @@ b=instance_create(999,999,mapArrow)
 
 a.x = mapTNTRush.x-50
 a.y = mapTNTRush.y+80
-a.image_angle = 135-90 
+a.image_angle = 90
 }
 
 
@@ -472,7 +472,7 @@ y = mapSatzberg.y+30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-instance_create(400,300,obj7735)
+instance_create(400,544,obj7735)
 room = rBLBNorthWest
 }
 }
@@ -485,7 +485,7 @@ y = mapReumann.y+30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-instance_create(400,300,obj7735)
+instance_create(400,544,obj7735)
 room = rBLBNorthEast
 }
 }
@@ -499,8 +499,8 @@ y = mapTNTRush.y+30
 arrowA = true
 if keyboard_check_pressed(vk_shift)
 {
-instance_create(400,300,obj7735)
-room = rBLBNorthEast
+instance_create(300,544,obj7735)
+room = rBLBNorthWest
 }
 }
 </string>

@@ -132,6 +132,9 @@
       <sprite>sprites\spr_knife</sprite>
     </sprites>
     <sprites name="Enemies">
+      <sprite>sprites\spr_clownbotwalk</sprite>
+      <sprite>sprites\spr_clownbotjump</sprite>
+      <sprite>sprites\spr_explosion</sprite>
       <sprite>sprites\spr_lizard</sprite>
       <sprite>sprites\spr_lizardturn</sprite>
       <sprite>sprites\spr_plant</sprite>
@@ -210,15 +213,14 @@
       <sprite>sprites\spr_mapTNTIcon</sprite>
     </sprites>
     <sprite>sprites\spr_BGPlant</sprite>
-    <sprite>sprites\spr_clownbotwalk</sprite>
-    <sprite>sprites\spr_clownbotjump</sprite>
-    <sprite>sprites\spr_explosion</sprite>
-    <sprite>sprites\spr_testHQL</sprite>
-    <sprite>sprites\spr_testHQR</sprite>
-    <sprite>sprites\spr_HQWall</sprite>
-    <sprite>sprites\spr_HQtower</sprite>
-    <sprite>sprites\spr_bushes</sprite>
-    <sprite>sprites\spr_testskew</sprite>
+    <sprites name="BLBHQ">
+      <sprite>sprites\spr_testHQLBig</sprite>
+      <sprite>sprites\spr_testHQRBig</sprite>
+      <sprite>sprites\spr_testHQEingang</sprite>
+      <sprite>sprites\spr_HQtower</sprite>
+      <sprite>sprites\spr_bushes</sprite>
+      <sprite>sprites\spr_testskew</sprite>
+    </sprites>
     <sprite>sprites\spr_redpixel</sprite>
     <sprites name="BlockoutSprites">
       <sprite>sprites\spr_blockoutRed</sprite>

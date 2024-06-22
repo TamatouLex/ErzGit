@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>type = 0
+automatic = false
 </string>
           </argument>
         </arguments>
@@ -75,32 +76,22 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if type = 0 //Muss man selber Aktivieren
+            <string>if automatic = true
+|| (automatic = false &amp;&amp; keyboard_check_pressed(vk_up))
 {
-
-if keyboard_check_pressed(vk_up)
-{
-if room = rtestroom2
-{
-instance_create(x,y,convo1)
-sprite_index = spr_conpaddy
-}
+//Paddy
 if room = rDbmxbahn
 {
 instance_create(x,y,conpaddy)
 }
-}
-}
 
-if type = 1 //Aktiviert sich automatisch
-{
 //First Bang Encounter
-if room = rDbang
+if room = rDbang &amp;&amp; global.EmeetBangAtHQ = 0
 {
 instance_create(x,y,conBangFirst)
 }
 //Second Bang Encounter
-if room = rBLBNorthWest
+if room = rBLBNorthEast
 {
 instance_create(x,y,conBangSecond)
 }
@@ -113,8 +104,6 @@ if room = rSewerPandy
 {
 instance_create(x,y,conPandy)
 }
-
-
 }
 </string>
           </argument>

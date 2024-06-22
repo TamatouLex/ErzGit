@@ -128,7 +128,7 @@ room = rSewerDoubleJumps
 //TELEPORT 1
 if keyboard_check_pressed(ord('B'))
 {
-room = rSewerPandy
+room = rBLBNorthEast
 }
 
 //TELEPORT 2

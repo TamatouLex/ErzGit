@@ -220,7 +220,7 @@ instance_destroy(objarial)
 delay = 100
 evnt=instance_create(x,y,newevent)
 evnt.event = 2
-global.sevent[2] = 1
+global.EexplodeDoor = 1
 
 }
 print = true

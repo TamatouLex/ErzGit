@@ -115,7 +115,7 @@ if global.sevent1 = 0
 {
 evnt=instance_create(x,y,newevent)
 evnt.event = 1
-global.sevent1 = 1
+global.EmeetBangAtHQ = 1
 go = 11
 }
 else go = 12

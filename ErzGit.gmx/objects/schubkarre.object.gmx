@@ -3,8 +3,8 @@
   <spriteName>spr_schubkarre</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
-  <persistent>0</persistent>
+  <depth>-7</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -33,10 +33,7 @@ count = 0 //Kleiner Buffer
 offset = 32
 
 
-platform = instance_create(x+20,y,objMovingPlatform)
-platform.depth = -5
-platform.image_xscale = 3
-platform.visible = false
+
 </string>
           </argument>
         </arguments>
@@ -88,7 +85,7 @@ x = lerp(x,obj7735.x+offset,0.8)
 }
 
 //Nun kann er sich bewegen
-if count &gt;= 5
+if count &gt;= 5 &amp;&amp; instance_exists(obj7735)
 {
 x = obj7735.x+offset
 }
@@ -98,6 +95,8 @@ x = obj7735.x+offset
 if ((scrButtonCheckPressed(global.shootButton))
 || (scrButtonCheckPressed(global.jumpButton)))
 &amp;&amp; count &gt; 5
+&amp;&amp; instance_exists(obj7735)
+    
 {
 obj7735.isPushing = false
 isGrabbed = false
@@ -108,6 +107,46 @@ count = 0
 
 //Platform
 platform.x = x
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>platform = instance_create(x+20,y,objMovingPlatform)
+platform.depth = -5
+platform.image_xscale = 3
+platform.visible = false
+
+
+if room = rBLBNorthWest
+{
+x = 320
+y = 562
+}
+
+
+if room = rBLBNorthEast
+{
+x = 60
+y = 562
+}
 </string>
           </argument>
         </arguments>

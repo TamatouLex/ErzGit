@@ -22,11 +22,41 @@ global.hour = 0
 //Events:
 global.eventsfound = 0
 global.eventscleared = 0
+
+global.EkillTheBLB = 0
+global.EmeetBangAtHQ = 0
+global.ElearnDoubleJump = 0
+global.EfindTNT = 0
+global.EexplodeDoor = 0
+global.EsneakThroughGarden = 0
+global.Erecue7777 = 0
+global.EfitIntoGaps = 0
+global.EkillAaron = 0
+global.EkillKevin = 0
+global.EkillMudkipz = 0
+global.EkillNeko = 0
+
+
+
+//Progression Stuff
+global.TNTinKarre = false
+global.TNTonMap = false
+
+/*
+//Side
+for (i=0;i<99;i++)
+{
+global.sbevent[i] = 0
+}
+*/
+
+/*
 //Main
 for (i=0;i<99;i++)
 {
 global.sevent[i] = 1
 }
+
 
 global.sevent1 = 0
 global.sevent2 = 0
@@ -41,13 +71,7 @@ global.sevent10 = 0
 global.sevent11 = 0
 global.sevent12 = 0
 global.sevent13 = 0
-//Side
-for (i=0;i<99;i++)
-{
-global.sbevent[i] = 0
-}
-
-
+*/
 
 //War schon in der Engine:
 global.savenum = 1;

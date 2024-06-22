@@ -53,7 +53,7 @@ no = 0
             <string>//Links
 if no = 1
 {
-x = (testHQL.x-testHQL.image_xscale*128)//-64
+x = (testHQL.x-testHQL.image_xscale*512)//-64
 }
 
 
@@ -67,7 +67,7 @@ x = testHQL.x
 //Rechts
 if no = 3
 {
-x = (testHQR.x+testHQR.image_xscale*128)//+64
+x = (testHQR.x+testHQR.image_xscale*512)//+64
 }
 
 //Hinten
@@ -77,10 +77,12 @@ if no = 4
 x = testHQL.x + ((view_xview+400)-(room_width/2))/2
 depth = 900*999
 image_xscale = 1
-image_yscale = 1.5
+image_yscale = 2
 image_blend = make_colour_rgb(150,150,150)
 }
 
+
+/*
 //Links (Horizontale
 if no = 5
 {

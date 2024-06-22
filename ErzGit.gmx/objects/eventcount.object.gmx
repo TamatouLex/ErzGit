@@ -31,7 +31,7 @@ go = 0
 scroll = 0
 unlocked = 0
 cleared = 0
-/*
+
 //Main Quest
 if global.sevent[1] &gt; 0
 {
@@ -69,9 +69,9 @@ if global.sbevent[1] &gt; 0
 a=instance_create(x,y,bevent1)
 a.no = 1
 }
-*/
 
 
+/*
 //Main Quests
 for(i=0;i&lt;99;i++)
 {

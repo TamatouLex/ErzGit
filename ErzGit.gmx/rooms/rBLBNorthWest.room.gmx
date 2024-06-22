@@ -3,15 +3,15 @@
   <caption></caption>
   <width>3200</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>851968</colour>
   <showcolour>-1</showcolour>
-  <code>camera.roomRight = rBLBSouthWest
-camera.roomLeft = rBLBNorthEast</code>
+  <code>camera.roomRight = rBLBNorthEast
+camera.roomLeft = rBLBSouthWest</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -53,15 +53,13 @@ camera.roomLeft = rBLBNorthEast</code>
   </views>
   <instances>
     <instance objName="objBlockInvis" x="0" y="592" name="inst_D71B50D7" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="worldchanger" x="288" y="528" name="inst_BEA7DD59" locked="0" code="pos = 401" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="worldchanger" x="288" y="416" name="inst_BEA7DD59" locked="0" code="pos = 401" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testHQL" x="800" y="224" name="inst_EB12A3AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testHQR" x="800" y="224" name="inst_B6F13913" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bushmaster" x="800" y="416" name="inst_159C951E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testskew" x="448" y="448" name="inst_BFF49491" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="1440" y="592" name="inst_4EF6F65C" locked="0" code="depth = -5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="dialogtrigger" x="1312" y="256" name="inst_FDCAF241" locked="0" code="type = 1&#xA;" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="dialogtrigger" x="1440" y="256" name="inst_D0AE0448" locked="0" code="type = 1&#xA;" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="bangjet" x="1392" y="448" name="inst_358AC8B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="272" y="448" name="inst_CC44B8C7" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="128" y="560" name="inst_4A2863AA" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

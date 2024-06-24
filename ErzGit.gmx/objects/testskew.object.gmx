@@ -98,13 +98,13 @@ if keyboard_check_pressed(vk_f6)
 skew += 200
 shift += 200
 }
-
+/*
 if keyboard_check_pressed(vk_f5)
 {
 skew -= 200
 shift -= 200
 }
-
+*/
 if keyboard_check(vk_left)
 {
 skew += skewinc
@@ -178,13 +178,13 @@ skew = -50.4
             <kind>1</kind>
             <string>//Mittellinie
 //draw_line_colour(400,0,400,700,c_red,c_red)
-
+/*
 draw_text(200,100,"Skew: " +string(skew))
 draw_text(200,200,"Shift: " +string(shift))
 draw_text(200,300,"Shift Increase: " +string(shiftinc))
 draw_text(200,400,"Skew Increase: " +string(skewinc))
 
-
+*/
 
 depth = -1
 

@@ -85,12 +85,13 @@ if keyboard_check_pressed(vk_f8)
 length -= 0.5
 }
 
+/*
 //Paralax
 if keyboard_check_pressed(vk_f5)
 {
 paralax += 0.5
 }
-
+*/
 if keyboard_check_pressed(vk_f6)
 {
 paralax -= 0.5

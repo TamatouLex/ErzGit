@@ -370,12 +370,12 @@ if (keyboard_check_pressed(vk_f4) &amp;&amp; !global.gamePaused)    //toggle ful
     
     scrSaveConfig();    //save fullscreen setting
 }
-
+/*
 if (keyboard_check_pressed(vk_f5) &amp;&amp; !global.gamePaused)    //reset window size
 {
     scrResetWindowSize();
 }
-
+*/
 if (keyboard_check(vk_control) &amp;&amp; keyboard_check_pressed(ord("M")) &amp;&amp; !global.gamePaused)
 {
     //toggle mute music setting

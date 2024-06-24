@@ -1,6 +1,7 @@
 //WIRD VON OBJ 7735 UND OBJ 7735 CLIMB AUSGEFÜHRT
 
-
+if canLeaveRoom = true
+{
 //Room Right
 if x > room_width
 {
@@ -40,4 +41,25 @@ camera.downLane = 0
 room_goto(camera.roomUp);
 camera.wentUp = true
 }
+}
 
+//KANN RAUM NICHT VERLASSEN
+else
+{
+if x < 15
+{
+grounded = false
+x = 15
+y -= 1
+momentum = 5
+}
+
+else if x > room_width-15
+{
+grounded = false
+x = room_width-15
+y -= 1
+momentum = -5
+}
+
+}

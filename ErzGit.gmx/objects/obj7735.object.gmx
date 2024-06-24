@@ -32,6 +32,8 @@ wentLeft = false //Bei Left Screen Transitions warpt er an richtige Stelle bei R
 isPushing = false //Ob er gerade etwas pusht/pullt
 pushObject = false
 
+canLeaveRoom = true //Wenn false kann er Raum nicht verlassen
+
 landstun = 0
 aircount = 0
 
@@ -644,12 +646,7 @@ if (abs(vspeed) &gt; maxVspeed) {vspeed = sign(vspeed)*maxVspeed;} //check if mo
 
 if (!frozen)    //check if frozen before doing anything
 {
-/*
-    if (scrButtonCheckPressed(global.shootButton))
-    {
-        scrPlayerShoot();
-    }
-  */
+
       if (scrButtonCheckPressed(global.jumpButton))
     {
            scr7735Jump();

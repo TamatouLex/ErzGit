@@ -62,7 +62,9 @@ if isGrabbed = false
 image_blend = make_colour_rgb(255,255,200)
 if place_meeting(x,y,obj7735)
 {
+//Grab it!
 if (scrButtonCheckPressed(global.shootButton))
+&amp;&amp; !instance_exists(conBangTNTEscape)
 {
 obj7735.pushObject = id
 obj7735.isPushing = true
@@ -93,10 +95,10 @@ x = obj7735.x+offset
 
 //Let go
 if ((scrButtonCheckPressed(global.shootButton))
-|| (scrButtonCheckPressed(global.jumpButton)))
+|| (scrButtonCheckPressed(global.jumpButton))
+|| instance_exists(conBangTNTEscape))
 &amp;&amp; count &gt; 5
 &amp;&amp; instance_exists(obj7735)
-    
 {
 obj7735.isPushing = false
 isGrabbed = false
@@ -107,6 +109,17 @@ count = 0
 
 //Platform
 platform.x = x
+
+
+
+//TNT Cutscene
+if room = rBLBNorthEast
+&amp;&amp; x &gt; 2800
+&amp;&amp; !instance_exists(conBangTNTEscape)
+{
+instance_create(x,y,conBangTNTEscape)
+}
+
 </string>
           </argument>
         </arguments>
@@ -144,6 +157,8 @@ y = 562
 
 if room = rBLBNorthEast
 {
+obj7735.canLeaveRoom = false
+instance_create(x,y,conBangTNT)
 x = 60
 y = 562
 }

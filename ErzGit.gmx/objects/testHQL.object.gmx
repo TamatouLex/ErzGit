@@ -86,7 +86,8 @@ image_xscale = 10
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Turn
+            <string>/*
+//Turn
 if keyboard_check_pressed(vk_pagedown)
 {
 turn += 100
@@ -118,7 +119,7 @@ if keyboard_check_pressed(vk_f6)
 {
 paralax -= 0.5
 }
-
+*/
 
 //Drehung
 image_xscale = (length - (((view_xview+400)-(room_width/2)))/turn) / 4
@@ -160,7 +161,7 @@ image_yscale = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 draw_text_colour(100,100,"paralax:" +string( paralax),c_white,c_white,c_white,c_white,1)
 draw_text_colour(100,200,"turn: " + string(turn),c_white,c_white,c_white,c_white,1)
 draw_text_colour(100,300,"length" + string(length),c_white,c_white,c_white,c_white,1)

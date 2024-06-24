@@ -63,6 +63,24 @@ count = 0
 
 if bigCount &lt;= 0
 {
+//Flash
+bling=instance_create(x,y,flash)
+bling.flashSpeed = 0.01
+//Shake
+shakey=instance_create(x,y,screenShake)
+shakey.shakeX = 60
+shakey.shakeY = 60
+
+if instance_exists(bangjet)
+{
+bangjet.TNTEscape = false
+}
+
+instance_destroy(schubkarre)
+instance_destroy(conBangTNTEscape)
+instance_destroy(objarial)
+instance_destroy(dialogbox)
+
 instance_destroy()
 }
 

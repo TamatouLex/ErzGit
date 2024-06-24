@@ -224,6 +224,7 @@
     <sprite>sprites\spr_redpixel</sprite>
     <sprites name="BlockoutSprites">
       <sprite>sprites\spr_blockoutRed</sprite>
+      <sprite>sprites\spr_blockoutWhite</sprite>
       <sprite>sprites\spr_blockoutYellow</sprite>
       <sprite>sprites\spr_blockoutGreen</sprite>
       <sprite>sprites\spr_blockoutBlue</sprite>
@@ -237,6 +238,7 @@
       <sprites name="TNTRun">
         <sprite>sprites\spr_TNTRunButton</sprite>
         <sprite>sprites\spr_TNT</sprite>
+        <sprite>sprites\spr_here</sprite>
       </sprites>
       <sprite>sprites\spr_pistonV</sprite>
       <sprite>sprites\spr_pistonH</sprite>
@@ -487,11 +489,21 @@
     <object>objects\debugtext</object>
     <object>objects\camera</object>
     <object>objects\cameraflag</object>
+    <objects name="Effects">
+      <object>objects\flash</object>
+      <object>objects\screenShake</object>
+    </objects>
     <objects name="Dialoge">
       <object>objects\convo1</object>
       <object>objects\conpaddy</object>
-      <object>objects\conBangFirst</object>
-      <object>objects\conBangSecond</object>
+      <objects name="Bang">
+        <object>objects\conBangFirst</object>
+        <object>objects\conBangSecond</object>
+        <object>objects\conBangTNT</object>
+        <object>objects\conBangTNTEscape</object>
+        <object>objects\conBangPostTNT</object>
+        <object>objects\conBangFlogRein</object>
+      </objects>
       <object>objects\conArielleSewer</object>
       <object>objects\conPandy</object>
       <object>objects\dialogbox</object>
@@ -571,23 +583,26 @@
       <object>objects\windRight</object>
       <object>objects\windLeft</object>
       <object>objects\windDown</object>
-      <object>objects\TRButtonHold</object>
-      <object>objects\TNTBarricade</object>
-      <object>objects\TNTCursor</object>
-      <object>objects\TNTScreenTarget</object>
-      <object>objects\TNTBurner</object>
-      <object>objects\TNT</object>
-      <object>objects\pistonV</object>
-      <object>objects\pistonH</object>
-      <object>objects\TNTgo</object>
-      <object>objects\TNTstop</object>
-      <object>objects\upArrow</object>
-      <object>objects\downArrow</object>
-      <object>objects\leftArrow</object>
-      <object>objects\TNTconfirm</object>
-      <object>objects\rightArrow</object>
-      <object>objects\schubkarre</object>
-      <object>objects\conveyorBelt</object>
+      <objects name="TNTRush">
+        <object>objects\TNT</object>
+        <object>objects\TRButtonHold</object>
+        <object>objects\TNTCursor</object>
+        <object>objects\TNTBarricade</object>
+        <object>objects\TNTBurner</object>
+        <object>objects\pistonV</object>
+        <object>objects\pistonH</object>
+        <object>objects\TNTScreenTarget</object>
+        <object>objects\TNTgo</object>
+        <object>objects\TNTstop</object>
+        <object>objects\downArrow</object>
+        <object>objects\leftArrow</object>
+        <object>objects\rightArrow</object>
+        <object>objects\upArrow</object>
+        <object>objects\TNTconfirm</object>
+        <object>objects\schubkarre</object>
+        <object>objects\conveyorBelt</object>
+        <object>objects\here</object>
+      </objects>
     </objects>
     <object>objects\debuginfo</object>
     <objects name="Map">

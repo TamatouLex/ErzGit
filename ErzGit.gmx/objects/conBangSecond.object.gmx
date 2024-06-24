@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bossdia = false
+            <string>instance_deactivate_object(obj7735)
+
+bossdia = false
 print = true
 delay = 0 //Sperrt Input f+r gewisse Zeit
 go = 0
@@ -502,7 +504,7 @@ if go = 500
 instance_destroy(dialogtrigger)
 instance_destroy()
 instance_destroy(dialogbox)
-bangjet.go = true
+instance_activate_object(obj7735)
 }
 </string>
           </argument>

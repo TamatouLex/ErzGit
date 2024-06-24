@@ -118,7 +118,7 @@ else
 dissec = global.sec
 }
 
-
+/*
 
 draw_text(100,50,"Time: "+string(dishour)+":"+string(disminute)+":"+string(dissec))
 </string>

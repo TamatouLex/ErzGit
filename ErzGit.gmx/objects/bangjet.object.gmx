@@ -33,6 +33,15 @@ instance_destroy()
 
 go = false
 image_speed = 0.1
+
+
+targetY = ystart+4 //In welcher Höhe er fliegen soll
+
+maxHspeed = 5
+
+//Cutscene Events
+TNTEscape = false
+goTo7735 = false
 </string>
           </argument>
         </arguments>
@@ -59,8 +68,140 @@ image_speed = 0.1
 {
 gravity = 0.1
 gravity_direction = 90
-vspeed = 2
-go = false
+}
+
+else
+{
+//Auf und ab Schweben
+if y &gt; targetY
+{
+vspeed -= 0.3
+}
+
+else if y &lt; targetY
+{
+vspeed += 0.3
+}
+
+//LIMITS
+if vspeed &gt; 3
+{
+vspeed = 3
+}
+else if vspeed &lt; -3
+{
+vspeed = -3
+}
+}
+
+
+//HSPEED LIMITS
+if hspeed &gt; maxHspeed
+{
+hspeed = maxHspeed
+}
+else if hspeed &lt; -maxHspeed
+{
+hspeed = -maxHspeed
+}
+
+
+
+
+
+//BLB Door Sprengen Scene
+if room = rBLBNorthEast
+&amp;&amp; instance_exists(schubkarre)
+&amp;&amp; instance_exists(obj7735)
+{
+
+if TNTEscape = false
+&amp;&amp; goTo7735 = false
+{
+if x &gt; obj7735.x+200
+{
+hspeed -= 0.5
+}
+
+if x &lt; obj7735.x+200
+{
+hspeed += 0.5
+}
+}
+
+//Flieht vor TNT
+else if TNTEscape = true
+{
+if x &gt; 500
+{
+hspeed -= 0.5
+}
+
+if x &lt; 500
+{
+hspeed += 0.5
+}
+}
+
+}
+
+//Bang post explosion Cutscene
+if room = rBLBNorthEast
+&amp;&amp; instance_exists(obj7735)
+&amp;&amp; goTo7735 = true //Wird aktiviert im Destroy vom Screenflash
+{
+if x &gt; obj7735.x+10
+{
+hspeed -= 0.5
+}
+
+if x &lt; obj7735.x+10
+{
+hspeed += 0.5
+}
+if distance_to_object(obj7735) &lt; 100
+{
+instance_create(x,y,conBangPostTNT)
+hspeed = 0
+goTo7735 = false
+}
+}
+
+//Bang flog ins HQ rein
+if room = rBLBNorthEast
+&amp;&amp; instance_exists(obj7735)
+&amp;&amp; y &lt; -20
+{
+instance_create(x,y,conBangFlogRein)
+instance_destroy()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//BLB Door Sprengen Scene
+if room = rBLBNorthEast
+&amp;&amp; instance_exists(schubkarre)
+{
+x = 200
 }
 </string>
           </argument>

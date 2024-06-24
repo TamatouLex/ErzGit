@@ -3,7 +3,7 @@
   <caption></caption>
   <width>3200</width>
   <height>608</height>
-  <vsnap>16</vsnap>
+  <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
@@ -58,7 +58,7 @@ camera.roomLeft = rBLBNorthWest</code>
     <instance objName="testHQR" x="992" y="144" name="inst_B6F13913" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bushmaster" x="704" y="512" name="inst_159C951E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="testskew" x="448" y="448" name="inst_BFF49491" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="plant" x="1248" y="576" name="inst_8776ADC0" locked="0" code="image_xscale = -1&#xA;" scaleX="1.81632649898529" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="plant" x="1248" y="576" name="inst_8776ADC0" locked="0" code="image_xscale = -1&#xA;" scaleX="3.48000001907349" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="dialogtrigger" x="2592" y="272" name="inst_1ECF05BC" locked="0" code="//Despawn&#xA;if instance_exists(schubkarre)&#xA;{&#xA;instance_destroy()&#xA;}&#xA;&#xA;&#xA;if global.EexplodeDoor = 0&#xA;{&#xA;automatic = true&#xA;}&#xA;else&#xA;{&#xA;automatic = false&#xA;}&#xA;" scaleX="4" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="bangjet" x="2656" y="384" name="inst_E28F0DCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="224" y="432" name="inst_591D1848" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>

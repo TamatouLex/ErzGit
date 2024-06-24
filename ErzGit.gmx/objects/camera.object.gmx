@@ -39,6 +39,10 @@ rightLane = 0//Auf welcher Screen höhe der Ausgang ist
 leftLane = 0
 upLane = 0
 downLane = 0
+
+//Screen Shake
+shakeX = 0
+shakeY = 0
 </string>
           </argument>
         </arguments>
@@ -85,7 +89,7 @@ if instance_exists(cameraflag)
 {
 if instance_exists(obj7735)
 {
-x = obj7735.x
+x = obj7735.x + shakeX
 }
 
 else
@@ -93,7 +97,7 @@ else
 x = cameraflag.x
 }
 
-y = lerp(y,cameraflag.y,0.1)
+y = lerp(y,cameraflag.y + shakeY,0.1)
 
 }
 
@@ -166,6 +170,13 @@ else
 {
 global.lua = 0
 }
+}
+
+
+//Screen Shake
+if keyboard_check_pressed(vk_f5)
+{
+instance_create(x,y,screenShake)
 }
 </string>
           </argument>

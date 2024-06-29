@@ -126,7 +126,8 @@ y = lerp(y,cameraflag.y + shakeY,0.1)
 //TELEPORT 0
 if keyboard_check_pressed(ord('N'))
 {
-room = rSewerDoubleJumps
+room = rBLBHof
+obj7735.x = 3000
 }
 
 //TELEPORT 1

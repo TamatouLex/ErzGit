@@ -34,6 +34,9 @@ pushObject = false
 
 canLeaveRoom = true //Wenn false kann er Raum nicht verlassen
 
+dance = false //Wenn true geht er in random Tanz Animation
+danceCount = 0 //Dance duration
+
 landstun = 0
 aircount = 0
 
@@ -918,6 +921,41 @@ if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
     //set xprevious/yprevious coordinates for future solid collisions
     xprevious = x;
     yprevious = y;
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Dance
+if dance = true
+{
+vspeed = 0
+hspeed = 0
+gravity = 0
+
+danceCount += 1
+
+if danceCount &gt;= 50
+{
+dance = false
+danceCount = 0
 }
 }
 </string>

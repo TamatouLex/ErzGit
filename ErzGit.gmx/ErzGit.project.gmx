@@ -252,6 +252,7 @@
       <sprite>sprites\spr_rightArrow</sprite>
       <sprite>sprites\spr_TNTconfirm</sprite>
       <sprite>sprites\spr_schubkarre</sprite>
+      <sprite>sprites\spr_spotlight</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -642,6 +643,9 @@
       <object>objects\arielleIdle</object>
       <object>objects\bangjet</object>
     </objects>
+    <object>objects\upTrigger</object>
+    <object>objects\spotlight</object>
+    <object>objects\spotlightManager</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -686,6 +690,9 @@
       <room>rooms\rBLBSouthEast</room>
       <room>rooms\rBLBNorthWest</room>
       <room>rooms\rBLBNorthEast</room>
+      <room>rooms\rBLBHof</room>
+      <room>rooms\rBLBHof2</room>
+      <room>rooms\rBLBHof3</room>
     </rooms>
     <rooms name="Unused">
       <room>rooms\rBLBNorth</room>

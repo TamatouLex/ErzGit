@@ -36,6 +36,7 @@ light[i] = noone
 }
 
 
+lightAmount = 0
 </string>
           </argument>
         </arguments>
@@ -75,6 +76,7 @@ if instance_exists(obj7735)
 &amp;&amp; light[whichLight].y &gt; obj7735.y - yOffset
 &amp;&amp; light[whichLight].active = false
 {
+lightAmount += 1 //Zählt wieviele Lichter gleichzeitig Leuchten
 light[whichLight].active = true //Es leuchtet!!
 }
 
@@ -84,6 +86,9 @@ else
 count = 99
 }
 }
+
+
+
 </string>
           </argument>
         </arguments>

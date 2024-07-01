@@ -83,8 +83,13 @@ count += 1
 //Licht erlöscht
 if count = maxCount
 {
+//Sicherheitsdings damit er nicht stuck sein kann im tanz
+if instance_exists(obj7735)
+{
+obj7735.dance = false
+}
 spotlight.active = false
-count = 0
+spotlight.count = 0
 spotlightManager.count = 0
 spotlightManager.lightAmount = 0
 }

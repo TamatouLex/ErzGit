@@ -42,6 +42,16 @@ maxHspeed = 5
 //Cutscene Events
 TNTEscape = false
 goTo7735 = false
+
+//BLBHof Lights
+if room = rBLBHof3
+{
+targetLight = noone
+for (i = 0;i&lt;16;i+=1)
+{
+light[i] = noone
+}
+}
 </string>
           </argument>
         </arguments>
@@ -64,7 +74,8 @@ goTo7735 = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if go = true
+            <string>//Fliegt weg
+if go = true
 {
 gravity = 0.1
 gravity_direction = 90
@@ -107,6 +118,27 @@ hspeed = -maxHspeed
 
 
 
+//BLBHof 3! DUAL LIGHTS
+if room = rBLBHof3
+{
+//Iteriert in jeder Frame durch alle Lights
+for(i=0;i&lt;spotlightManager.maxLights;i+= 1)
+{
+//Wenn eines davon active ist wird es zu seinem Target
+if instance_exists(light[i])
+{
+//Wenn das Light Aktiv ist will er hin!
+if light[i].active = true
+{
+targetLight = light[i] 
+speed = 4
+direction = point_direction(x,y,targetLight.x,targetLight.y)
+}
+}
+}
+
+image_angle = direction + 270
+}
 
 
 //BLB Door Sprengen Scene

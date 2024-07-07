@@ -84,7 +84,7 @@ body=instance_create(x,y,krun)
 
 frozen = false; //sets if the player can move or not
 
-jump = 10 * global.grav; //set how fast the player jumps
+jump = 11 * global.grav; //set how fast the player jumps
 jump2 = 10 * global.grav; //sets how fast the player double jumps
 baseGravity = 0.5 * global.grav;
 //gravity = 0.6 * global.grav; //player gravity

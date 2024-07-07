@@ -180,22 +180,30 @@
     <sprite>sprites\spr_newevent</sprite>
     <sprite>sprites\spr_clearevent</sprite>
     <sprites name="7735Chara">
-      <sprite>sprites\spr_lrun</sprite>
-      <sprite>sprites\spr_lidle</sprite>
-      <sprite>sprites\spr_krun</sprite>
-      <sprite>sprites\spr_kump</sprite>
-      <sprite>sprites\spr_kidle</sprite>
-      <sprite>sprites\spr_lump</sprite>
-      <sprite>sprites\spr_kall</sprite>
-      <sprite>sprites\spr_lall</sprite>
+      <sprites name="UpperBody">
+        <sprite>sprites\spr_shoot</sprite>
+        <sprite>sprites\spr_kidle</sprite>
+        <sprite>sprites\spr_krun</sprite>
+        <sprite>sprites\spr_kump</sprite>
+        <sprite>sprites\spr_kall</sprite>
+      </sprites>
+      <sprites name="Legs">
+        <sprite>sprites\spr_lump</sprite>
+        <sprite>sprites\spr_lrun</sprite>
+        <sprite>sprites\spr_lidle</sprite>
+        <sprite>sprites\spr_lall</sprite>
+      </sprites>
       <sprite>sprites\spr_land</sprite>
       <sprite>sprites\spr_climb</sprite>
-      <sprite>sprites\spr_shoot</sprite>
-      <sprite>sprites\spr_eyesneut</sprite>
-      <sprite>sprites\spr_eyesmoody</sprite>
-      <sprite>sprites\spr_mundneut</sprite>
-      <sprite>sprites\spr_mundsad</sprite>
-      <sprite>sprites\spr_mundhap</sprite>
+      <sprites name="Eyes">
+        <sprite>sprites\spr_eyesneut</sprite>
+        <sprite>sprites\spr_eyesmoody</sprite>
+      </sprites>
+      <sprites name="Mouth">
+        <sprite>sprites\spr_mundsad</sprite>
+        <sprite>sprites\spr_mundneut</sprite>
+        <sprite>sprites\spr_mundhap</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_debug</sprite>
     <sprite>sprites\spr_worldchanger</sprite>
@@ -232,6 +240,7 @@
       <sprite>sprites\spr_blockoutPurple</sprite>
     </sprites>
     <sprite>sprites\spr_3DFloor</sprite>
+    <sprites name="Bosses"/>
     <sprite>sprites\spr_3DFloor2</sprite>
     <sprite>sprites\spr_3DFloorWood</sprite>
     <sprites name="Gimmicks">
@@ -618,6 +627,13 @@
       <object>objects\mapArrow</object>
     </objects>
     <object>objects\BGPlantMaster</object>
+    <objects name="Bosses">
+      <objects name="7736">
+        <object>objects\clone7736</object>
+        <object>objects\cloneShot</object>
+        <object>objects\cloneBigShot</object>
+      </objects>
+    </objects>
     <object>objects\BGPlant</object>
     <object>objects\explosion</object>
     <objects name="BlockOut">
@@ -693,6 +709,7 @@
       <room>rooms\rBLBHof</room>
       <room>rooms\rBLBHof2</room>
       <room>rooms\rBLBHof3</room>
+      <room>rooms\rBLBHofClone</room>
     </rooms>
     <rooms name="Unused">
       <room>rooms\rBLBNorth</room>

@@ -30,6 +30,9 @@ act = 0
 ini = 0
 count = 0
 bounce = true;  //set the platform to bounce against walls
+
+
+isCarry = false
 </string>
           </argument>
         </arguments>
@@ -93,6 +96,16 @@ if (speed != 0 || yspeed != 0)  //make sure the platform is moving before doing 
         vspeed = yspeed;
         yspeed = 0;
     }
+}
+
+
+if isCarry = true
+{
+count += 1
+if count = 20
+{
+instance_destroy()
+}
 }
 </string>
           </argument>

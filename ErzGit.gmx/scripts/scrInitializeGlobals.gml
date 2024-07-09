@@ -19,6 +19,9 @@ global.sec = 0
 global.minute = 0
 global.hour = 0
 
+//Abilities
+global.canDoubleJump = false
+
 //Events:
 global.eventsfound = 0
 global.eventscleared = 0

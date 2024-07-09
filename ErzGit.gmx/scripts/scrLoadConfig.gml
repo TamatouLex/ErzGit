@@ -24,6 +24,7 @@ global.upButton[0] = ini_read_real("Controls","Up",vk_up);
 global.downButton[0] = ini_read_real("Controls","Down",vk_down);
 global.jumpButton[0] = ini_read_real("Controls","Jump",vk_shift);
 global.shootButton[0] = ini_read_real("Controls","Shoot",ord("Y"));
+global.carryButton[0] = ini_read_real("Controls","Carry",ord("X"));
 global.restartButton[0] = ini_read_real("Controls","Restart",ord("R"));
 global.skipButton[0] = ini_read_real("Controls","Skip",ord("S"));
 global.suicideButton[0] = ini_read_real("Controls","Suicide",ord("Q"));

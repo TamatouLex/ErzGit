@@ -145,6 +145,7 @@ if (!settingKey)
             global.downButton[0] = vk_down;
             global.jumpButton[0] = vk_shift;
             global.shootButton[0] = ord("Y");
+            global.carryButton[0] = ord("X");
             global.restartButton[0] = ord("R");
             global.skipButton[0] = ord("S");
             global.suicideButton[0] = ord("Q");

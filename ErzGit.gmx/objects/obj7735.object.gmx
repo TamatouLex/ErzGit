@@ -48,6 +48,9 @@ groundcount = 0
 
 noSlopeCounter = 0 //Timer wie lange er nicht auf einer Slope ist. Notwendig um zu versichern dass er nicht auf der Slope blöd ist
 
+//Ability Related
+canCarry = true
+
 //Platform Check
 movingPlat = 0
 slope = 0
@@ -287,7 +290,8 @@ if (global.playerAnimationFix)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Outside Room
+            <string>///Basic
+//Outside Room
 scr_changeRoom()
 
 
@@ -310,46 +314,7 @@ visible = false
 
 
 
-if (scrButtonCheckPressed(global.shootButton))
-{
-if instance_number(stone) &lt; 2
-{
-//Stone!
-if global.curweapon = 0
-{
-if image_xscale &gt;= 0
-{
-s=instance_create(x-30,y-20,stone)
-s.hspeed = 12
-s.vspeed = -2
-}
-else if image_xscale &lt; 0
-{
-s=instance_create(x+30,y-20,stone)
-s.hspeed = -12
-s.vspeed = -2
-}
-}
-}
 
-//Knife!!
-if global.curweapon = 1
-{
-if image_xscale &gt;= 0
-{
-s=instance_create(x-30,y-20,knife)
-s.image_xscale = 2
-s.hspeed = 20
-}
-else if image_xscale &lt; 0
-{
-s=instance_create(x+30,y-20,knife)
-s.image_xscale = -2
-s.hspeed = -20
-}
-}
-
-}
 
 //IFrames
 iframes -= 1
@@ -800,7 +765,7 @@ if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
         
         if (!place_free(x,y+(global.grav)) &amp;&amp; place_free(x,y))  //snapped onto the slope properly
         {
-            djump = 1;
+            djump = 0//1;
             notOnBlock = false;
         }
         else    //did not snap onto the slope, return to previous position
@@ -958,6 +923,105 @@ dance = false
 danceCount = 0
 }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///SHOOTING
+if (scrButtonCheckPressed(global.shootButton))
+{
+if instance_number(stone) &lt; 2
+{
+//Stone!
+if global.curweapon = 0
+{
+if image_xscale &gt;= 0
+{
+s=instance_create(x-30,y-20,stone)
+s.hspeed = 12
+s.vspeed = -2
+}
+else if image_xscale &lt; 0
+{
+s=instance_create(x+30,y-20,stone)
+s.hspeed = -12
+s.vspeed = -2
+}
+}
+}
+
+//Knife!!
+if global.curweapon = 1
+{
+if image_xscale &gt;= 0
+{
+s=instance_create(x-30,y-20,knife)
+s.image_xscale = 2
+s.hspeed = 20
+}
+else if image_xscale &lt; 0
+{
+s=instance_create(x+30,y-20,knife)
+s.image_xscale = -2
+s.hspeed = -20
+}
+}
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Carry
+if canCarry = true
+&amp;&amp; (scrButtonCheckPressed(global.carryButton))
+{
+vspeed = 0
+carry = instance_create(x-48,y+50,objMovingPlatform)
+carry.isCarry = true
+carry.image_xscale = 3
+canCarry = false
+}
+
+
+//Carry Replenish
+if place_meeting(x,y+1,objBlockInvis)
+{
+canCarry = true
+}
+
 </string>
           </argument>
         </arguments>

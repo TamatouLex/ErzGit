@@ -175,6 +175,8 @@
       </sprites>
       <sprite>sprites\spr_conpaddy</sprite>
       <sprite>sprites\spr_pandy</sprite>
+      <sprite>sprites\spr_SMB2Whale</sprite>
+      <sprite>sprites\spr_SMB2WhaleTail</sprite>
     </sprites>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_newevent</sprite>
@@ -240,7 +242,6 @@
       <sprite>sprites\spr_blockoutPurple</sprite>
     </sprites>
     <sprite>sprites\spr_3DFloor</sprite>
-    <sprites name="Bosses"/>
     <sprite>sprites\spr_3DFloor2</sprite>
     <sprite>sprites\spr_3DFloorWood</sprite>
     <sprites name="Gimmicks">
@@ -262,6 +263,7 @@
       <sprite>sprites\spr_TNTconfirm</sprite>
       <sprite>sprites\spr_schubkarre</sprite>
       <sprite>sprites\spr_spotlight</sprite>
+      <sprite>sprites\spr_target</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -658,6 +660,8 @@
       <object>objects\pandy</object>
       <object>objects\arielleIdle</object>
       <object>objects\bangjet</object>
+      <object>objects\SMB2Whale</object>
+      <object>objects\SMB2WhaleTail</object>
     </objects>
     <object>objects\upTrigger</object>
     <object>objects\spotlight</object>
@@ -750,6 +754,7 @@
       <room>rooms\rCU1c</room>
       <room>rooms\rCU1Ausgang</room>
       <room>rooms\rCreumannGangster</room>
+      <room>rooms\rCEnde</room>
     </rooms>
     <rooms name="Sewer">
       <room>rooms\rSewerEntrance</room>
@@ -764,6 +769,7 @@
       <room>rooms\rSewerDoubleJumps</room>
       <room>rooms\rSewerDoubleJumpVents</room>
       <room>rooms\rSewerLeapOfFaith</room>
+      <room>rooms\rSewerWhale</room>
     </rooms>
     <rooms name="Satzberg">
       <room>rooms\rSaEntrance</room>

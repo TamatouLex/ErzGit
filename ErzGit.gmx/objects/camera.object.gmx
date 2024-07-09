@@ -133,7 +133,7 @@ obj7735.x = 3000
 //TELEPORT 1
 if keyboard_check_pressed(ord('B'))
 {
-room = rBLBNorthEast
+room = rSewerWhale
 }
 
 //TELEPORT 2

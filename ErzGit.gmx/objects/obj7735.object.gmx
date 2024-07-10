@@ -46,6 +46,9 @@ isClimbing = false //Soll integriert werden
 grounded = false
 groundcount = 0
 
+rightBlock = false
+leftBlock = false
+
 noSlopeCounter = 0 //Timer wie lange er nicht auf einer Slope ist. Notwendig um zu versichern dass er nicht auf der Slope blöd ist
 
 //Ability Related
@@ -524,8 +527,10 @@ var h = 0;
 if (!frozen)    //don't move if frozen
 {
     if (R)
+    &amp;&amp; rightBlock = false //Ob er auch nach Rechts darf
         h = 1;
     else if (L)
+    &amp;&amp; leftBlock = false //Ob er auch nach Links darf
         h = -1;
 }
 

@@ -31,7 +31,14 @@ count = 0 //Kleiner Buffer
 
 
 offset = 32
+yOffset = 14
 
+isLoaded = false //Ob was drinné ist
+
+platformYOffset = -5
+
+
+hitWall = false //Ob er vorne an die Wand stößt
 
 
 </string>
@@ -81,15 +88,20 @@ if isGrabbed = true
 count += 1
 image_blend = make_colour_rgb(255,200,255)
 
+
+//Cart lerped zu player (potentially umgekehrt machen)
 if count &lt; 5
+&amp;&amp; hitWall = false
 {
 x = lerp(x,obj7735.x+offset,0.8)
 }
 
 //Nun kann er sich bewegen
-if count &gt;= 5 &amp;&amp; instance_exists(obj7735)
+if count &gt;= 5 
+&amp;&amp; instance_exists(obj7735)
 {
-x = obj7735.x+offset
+x = obj7735.x + offset
+y = obj7735.y + yOffset
 }
 
 
@@ -101,6 +113,9 @@ if ((scrButtonCheckPressed(global.shootButton))
 &amp;&amp; instance_exists(obj7735)
 {
 obj7735.isPushing = false
+//Löst potentielle blockierungen
+obj7735.rightBlock = false
+obj7735.leftBlock = false
 isGrabbed = false
 count = 0
 }
@@ -109,6 +124,12 @@ count = 0
 
 //Platform
 platform.x = x
+platform.y = y+platformYOffset
+
+//WallRay
+ray.x = x+85
+ray.y = y
+
 
 
 
@@ -120,6 +141,35 @@ if room = rBLBNorthEast
 instance_create(x,y,conBangTNTEscape)
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Lift Interaction
+lift = instance_place(x,y+5,objMovingPlatform)
+
+if place_meeting(x,y+5,lift)
+&amp;&amp; lift.isWeightLift = true
+{
+sound_play(sndBlockChange)
+lift.vspeed = 1
+}
 </string>
           </argument>
         </arguments>
@@ -142,11 +192,18 @@ instance_create(x,y,conBangTNTEscape)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>platform = instance_create(x+20,y,objMovingPlatform)
+            <string>//Spawn Platform
+platform = instance_create(x+20,y+platformYOffset,objMovingPlatform)
 platform.depth = -5
 platform.image_xscale = 3
-platform.visible = false
+platform.visible = true//false
 
+//Spawn Wall Detector
+ray = instance_create(x+100,y,schubkarreWallRay)
+{
+ray.image_yscale = 0.5
+ray.cart = id
+}
 
 if room = rBLBNorthWest
 {

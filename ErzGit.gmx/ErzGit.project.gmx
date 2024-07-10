@@ -612,6 +612,7 @@
         <object>objects\upArrow</object>
         <object>objects\TNTconfirm</object>
         <object>objects\schubkarre</object>
+        <object>objects\schubkarreWallRay</object>
         <object>objects\conveyorBelt</object>
         <object>objects\here</object>
       </objects>
@@ -775,7 +776,15 @@
       <room>rooms\rSaEntrance</room>
     </rooms>
     <room>rooms\r3DTest</room>
-    <room>rooms\rTNTRun</room>
+    <rooms name="Mine">
+      <room>rooms\rMineCarts</room>
+      <room>rooms\rMineCartWeight</room>
+      <room>rooms\rMineCartRide</room>
+      <room>rooms\rMineTNT</room>
+      <room>rooms\rMineCartTNT</room>
+      <room>rooms\rMineStation</room>
+      <room>rooms\rTNTRun</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

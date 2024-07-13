@@ -611,8 +611,11 @@
         <object>objects\rightArrow</object>
         <object>objects\upArrow</object>
         <object>objects\TNTconfirm</object>
-        <object>objects\schubkarre</object>
-        <object>objects\schubkarreWallRay</object>
+        <objects name="MineCart">
+          <object>objects\schubkarre</object>
+          <object>objects\schubkarreWallRay</object>
+          <object>objects\schubkarreGrabTrigger</object>
+        </objects>
         <object>objects\conveyorBelt</object>
         <object>objects\here</object>
       </objects>

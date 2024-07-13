@@ -33,6 +33,8 @@ count = 0 //Kleiner Buffer
 offset = 32
 yOffset = 14
 
+grabOffsetX = -50
+
 isLoaded = false //Ob was drinné ist
 
 platformYOffset = -5
@@ -67,6 +69,8 @@ hitWall = false //Ob er vorne an die Wand stößt
 if isGrabbed = false
 {
 image_blend = make_colour_rgb(255,255,200)
+with(grabbi)
+{
 if place_meeting(x,y,obj7735)
 {
 //Grab it!
@@ -75,10 +79,14 @@ if (scrButtonCheckPressed(global.shootButton))
 {
 obj7735.pushObject = id
 obj7735.isPushing = true
-isGrabbed = true
+host.isGrabbed = true
 }
 
 }
+} //With Grabbi End
+
+
+
 }
 
 
@@ -130,6 +138,9 @@ platform.y = y+platformYOffset
 ray.x = x+85
 ray.y = y
 
+//Grabbi
+grabbi.x = x+grabOffsetX
+grabbi.y = y
 
 
 
@@ -197,6 +208,10 @@ platform = instance_create(x+20,y+platformYOffset,objMovingPlatform)
 platform.depth = -5
 platform.image_xscale = 3
 platform.visible = true//false
+
+//Spawn Grab Trigger
+grabbi = instance_create(x+grabOffsetX,y,schubkarreGrabTrigger)
+grabbi.host = id
 
 //Spawn Wall Detector
 ray = instance_create(x+100,y,schubkarreWallRay)

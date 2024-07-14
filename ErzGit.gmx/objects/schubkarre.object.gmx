@@ -33,7 +33,7 @@ count = 0 //Kleiner Buffer
 offset = 32
 yOffset = 14
 
-grabOffsetX = -50
+grabOffsetX = -60
 
 isLoaded = false //Ob was drinné ist
 
@@ -136,7 +136,7 @@ platform.y = y+platformYOffset
 
 //WallRay
 ray.x = x+85
-ray.y = y
+ray.y = y+15
 
 //Grabbi
 grabbi.x = x+grabOffsetX
@@ -214,7 +214,7 @@ grabbi = instance_create(x+grabOffsetX,y,schubkarreGrabTrigger)
 grabbi.host = id
 
 //Spawn Wall Detector
-ray = instance_create(x+100,y,schubkarreWallRay)
+ray = instance_create(x+100,y+25,schubkarreWallRay)
 {
 ray.image_yscale = 0.5
 ray.cart = id

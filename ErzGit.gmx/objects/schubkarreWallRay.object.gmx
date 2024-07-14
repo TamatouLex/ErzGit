@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(cart)
+            <string>//Blockiert beim Schieben
+if instance_exists(cart)
 &amp;&amp; cart.isGrabbed = true
 {
 if place_meeting(x,y,objBlockInvis)
@@ -63,6 +64,19 @@ if place_meeting(x-10,y,objBlockInvis)
 obj7735.momentum -= 1
 }
 }
+
+//Blockiert wenn es alleine ist
+else if instance_exists(cart)
+&amp;&amp; cart.isGrabbed = false
+{
+//Eject wenn zu tief drinnen
+if place_meeting(x-8,y,objBlockInvis)
+{
+cart.x -= 2
+}
+
+}
+
 
 else
 {

@@ -69,6 +69,16 @@ switch (room)                       //determines which song to play
     roomSong = musSewers
     break;
     
+    //MINE
+    case rMineCarts:
+    case rMineCartWeight:
+    case rMineCartRide:
+    case rMineTNT:
+    case rMineCartTNT:
+    case rMineStation:
+    roomSong = musMine
+    break;
+    
     case rMiku:
         roomSong = -2;              //don't change the music in any way (the Miku object plays it)
         break;

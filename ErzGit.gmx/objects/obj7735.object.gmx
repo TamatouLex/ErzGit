@@ -29,6 +29,7 @@
 
 wentLeft = false //Bei Left Screen Transitions warpt er an richtige Stelle bei Room Start
 
+isOnSlope = false //Ob er gerade auf einer Slope ist
 isPushing = false //Ob er gerade etwas pusht/pullt
 pushObject = false
 
@@ -293,7 +294,9 @@ if (global.playerAnimationFix)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Basic
+            <string>
+
+///Basic
 //Outside Room
 scr_changeRoom()
 
@@ -688,6 +691,19 @@ if (onVineL || onVineR)
 slopeR = instance_place(x,y-3,objSlopeDownRight)
 slopeL = instance_place(x,y-3,objSlopeDownLeft)
 
+
+
+            if place_meeting(x,y+1,objSlopeDownLeft)
+            || place_meeting(x,y+1,objSlopeDownRight)
+            {
+            isOnSlope = true
+            }
+            
+            else
+            {
+            isOnSlope = false
+            }
+            
             if place_meeting(x,y+1,objSlopeDownLeft)
             {
             momentum += 0.7
@@ -892,6 +908,11 @@ if (instance_exists(objSlope) &amp;&amp; hspeed != 0)
     xprevious = x;
     yprevious = y;
 }
+}
+
+if isOnSlope = true
+{
+//scr_debug()
 }
 </string>
           </argument>

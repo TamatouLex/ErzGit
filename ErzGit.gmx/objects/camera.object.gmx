@@ -43,6 +43,14 @@ downLane = 0
 //Screen Shake
 shakeX = 0
 shakeY = 0
+
+//Defaults
+camera.roomRight = rtestroom2
+camera.roomLeft = rtestroom2
+camera.roomUp = rtestroom2
+camera.roomDown = rtestroom2
+
+
 </string>
           </argument>
         </arguments>
@@ -139,6 +147,13 @@ room = rSewerWhale
 if keyboard_check_pressed(ord('3'))
 {
 room = rBLBHof3
+}
+
+//TELEPORT 4
+if keyboard_check_pressed(ord('4'))
+{
+room = rMineCartRide
+obj7735.y = 100
 }
 
 

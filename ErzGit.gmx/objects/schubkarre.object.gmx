@@ -110,6 +110,13 @@ if count &gt;= 5
 {
 x = obj7735.x + offset
 y = obj7735.y + yOffset
+
+
+if obj7735.isOnSlope = true
+{
+y = obj7735.y + yOffset +20
+}
+
 }
 
 
@@ -173,14 +180,73 @@ instance_create(x,y,conBangTNTEscape)
           <argument>
             <kind>1</kind>
             <string>///Lift Interaction
-lift = instance_place(x,y+5,objMovingPlatform)
+lift = instance_place(x,y+2,objMovingPlatform)
 
-if place_meeting(x,y+5,lift)
+if place_meeting(x,y+2,lift)
 &amp;&amp; lift.isWeightLift = true
 {
 sound_play(sndBlockChange)
 lift.vspeed = 1
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Slope Interaction
+
+slopeL = instance_place(x-60,y+6,objSlopeDownLeft)
+
+//if place_meeting(x-60,y+4,objSlopeDownLeft)
+if place_meeting(x-60,y+6,slopeL)
+{
+image_angle = lerp(image_angle,-25,0.3)
+
+//Free Minecart
+if isGrabbed = false
+{
+hspeed += 0.1
+//Drückt ihn runter auf die Slope wenn er sich davon entfernt
+if y &lt; slopeL.y-4
+{
+scr_debug()
+y += 1*(hspeed/2)
+}
+
+}
+
+//SchubMinecart
+else
+{
+obj7735.momentum += 0.1
+}
+
+}
+
+else
+{
+hspeed *= 0.9
+image_angle = lerp(image_angle,0,0.3)
+}
+
+
+platform.hspeed = hspeed
+
 </string>
           </argument>
         </arguments>

@@ -57,9 +57,9 @@ camera.rightLane = 1</code>
   <instances>
     <instance objName="objBlockInvis" x="0" y="160" name="inst_E57DEE8D" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="544" name="inst_FEAABA14" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1184" y="32" name="inst_E30B6247" locked="0" code="" scaleX="1" scaleY="12.3870964050293" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1184" y="0" name="inst_E30B6247" locked="0" code="" scaleX="1" scaleY="12.3870964050293" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="0" name="inst_D67875BB" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="schubkarre" x="256" y="192" name="inst_A68742EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="schubkarre" x="256" y="192" name="inst_A68742EC" locked="0" code="persistent = false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="800" y="0" name="inst_1AECFBE9" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="800" y="544" name="inst_F5A2985F" locked="0" code="" scaleX="13" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownLeft" x="416" y="224" name="inst_707CCBC8" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,7 +74,7 @@ camera.rightLane = 1</code>
     <instance objName="objSlopeDownLeft" x="864" y="448" name="inst_7A277A0E" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownLeft" x="928" y="480" name="inst_691B072A" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownLeft" x="992" y="512" name="inst_EC60BBF2" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1216" y="384" name="inst_AD801444" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1216" y="352" name="inst_AD801444" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1216" y="544" name="inst_1391AD40" locked="0" code="" scaleX="12" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1472" y="512" name="inst_D17327A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

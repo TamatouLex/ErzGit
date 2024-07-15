@@ -209,7 +209,6 @@
     </sprites>
     <sprite>sprites\spr_debug</sprite>
     <sprite>sprites\spr_worldchanger</sprite>
-    <sprite>sprites\spr_debuginfo</sprite>
     <sprites name="Map">
       <sprite>sprites\spr_mapDrasche</sprite>
       <sprite>sprites\spr_mapSpain</sprite>
@@ -222,7 +221,6 @@
       <sprite>sprites\spr_map7735Icon</sprite>
       <sprite>sprites\spr_mapTNTIcon</sprite>
     </sprites>
-    <sprite>sprites\spr_BGPlant</sprite>
     <sprites name="BLBHQ">
       <sprite>sprites\spr_testHQLBig</sprite>
       <sprite>sprites\spr_testHQRBig</sprite>
@@ -231,8 +229,8 @@
       <sprite>sprites\spr_bushes</sprite>
       <sprite>sprites\spr_testskew</sprite>
     </sprites>
-    <sprite>sprites\spr_redpixel</sprite>
     <sprites name="BlockoutSprites">
+      <sprite>sprites\spr_debuginfo</sprite>
       <sprite>sprites\spr_blockoutRed</sprite>
       <sprite>sprites\spr_blockoutWhite</sprite>
       <sprite>sprites\spr_blockoutYellow</sprite>
@@ -240,14 +238,22 @@
       <sprite>sprites\spr_blockoutBlue</sprite>
       <sprite>sprites\spr_blockoutNavy</sprite>
       <sprite>sprites\spr_blockoutPurple</sprite>
+      <sprite>sprites\spr_redpixel</sprite>
     </sprites>
-    <sprite>sprites\spr_3DFloor</sprite>
-    <sprite>sprites\spr_3DFloor2</sprite>
-    <sprite>sprites\spr_3DFloorWood</sprite>
+    <sprites name="Backgrounds">
+      <sprite>sprites\spr_3DFloor</sprite>
+      <sprite>sprites\spr_3DFloor2</sprite>
+      <sprite>sprites\spr_BGPlant</sprite>
+      <sprite>sprites\spr_3DFloorWood</sprite>
+    </sprites>
     <sprites name="Gimmicks">
       <sprites name="TNTRun">
         <sprite>sprites\spr_TNTRunButton</sprite>
         <sprite>sprites\spr_TNT</sprite>
+        <sprite>sprites\spr_bigTNT</sprite>
+        <sprite>sprites\spr_bigExplosion</sprite>
+        <sprite>sprites\spr_crashNumbers</sprite>
+        <sprite>sprites\spr_crashNumbersYellow</sprite>
         <sprite>sprites\spr_here</sprite>
       </sprites>
       <sprite>sprites\spr_pistonV</sprite>
@@ -596,7 +602,10 @@
       <object>objects\windLeft</object>
       <object>objects\windDown</object>
       <objects name="TNTRush">
-        <object>objects\TNT</object>
+        <object>objects\BigTNT99</object>
+        <object>objects\BigTNT</object>
+        <object>objects\TNTCount</object>
+        <object>objects\bigExplosion</object>
         <object>objects\TRButtonHold</object>
         <object>objects\TNTCursor</object>
         <object>objects\TNTBarricade</object>

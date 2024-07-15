@@ -64,9 +64,9 @@ x += 4
 curHeight += 4
 
 //Nimmt TNT mit
-if place_meeting(x-1,y,TNT)
+if place_meeting(x-1,y,BigTNT99)
 {
-TNT.x += 4
+BigTNT99.x += 4
 }
 }
 </string>

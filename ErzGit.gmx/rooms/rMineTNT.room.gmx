@@ -61,11 +61,16 @@ camera.upLane = -1</code>
     <instance objName="objBlockInvis" x="0" y="0" name="inst_D67875BB" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="800" y="0" name="inst_1AECFBE9" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="800" y="1152" name="inst_F5A2985F" locked="0" code="" scaleX="13" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="832" name="inst_B0BBAF0A" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="832" name="inst_B0BBAF0A" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="672" name="inst_91830CBD" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1184" y="544" name="inst_E81D8932" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1184" y="960" name="inst_82C22F7C" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="32" name="inst_08072115" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="BigTNT" x="224" y="1088" name="inst_CA2ADC98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="BigTNT" x="448" y="1088" name="inst_75F4B95B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="BigTNT" x="512" y="1088" name="inst_95D6E0C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="BigTNT" x="576" y="1088" name="inst_E7AEF850" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="BigTNT" x="512" y="1024" name="inst_C6529EB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -60,6 +60,7 @@
     <instance objName="ladder" x="704" y="160" name="inst_12DBD7E9" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="worldchanger" x="64" y="448" name="inst_78548F39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="32" y="480" name="inst_CA447A27" locked="0" code="" scaleX="3.09677410125732" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="BigTNT" x="448" y="480" name="inst_CB4328E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

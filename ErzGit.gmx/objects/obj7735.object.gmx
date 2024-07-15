@@ -391,6 +391,7 @@ if place_meeting(x,y,objBlock)
 or place_meeting(x,y+1,objBlockInvis)
 or place_meeting(x,y+1,objSlopeDownLeft)
 or place_meeting(x,y+1,objSlopeDownRight)
+or place_meeting(x,y+1,BigTNT)
 or (instance_exists(movingPlat) &amp;&amp; y+40 &lt; movingPlat.y)
 {
 groundcount += 1

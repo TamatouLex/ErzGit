@@ -56,21 +56,16 @@ camera.roomDown = rDtree</code>
     <instance objName="objBlockInvis" x="0" y="0" name="inst_7F5695C6" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="320" name="inst_04BBB12F" locked="0" code="" scaleX="6" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1216" y="320" name="inst_96337772" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="448" y="320" name="inst_2D16BC65" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="416" y="320" name="inst_2D16BC65" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="352" name="inst_2F87A8CC" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="16" y="304" name="inst_C795C19D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ladder" x="496" y="320" name="inst_8DECB5B4" locked="0" code="" scaleX="1.26984131336212" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="ladder" x="480" y="320" name="inst_8DECB5B4" locked="0" code="" scaleX="1.01587307453156" scaleY="4.5" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFall" x="704" y="320" name="inst_C9998C93" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFall" x="960" y="320" name="inst_B4376F0C" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lizard" x="1344" y="320" name="inst_02366FBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="544" y="320" name="inst_297274ED" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bAllTiles" x="448" y="320" w="32" h="32" xo="0" yo="32" id="10002705" name="inst_1628862F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bAllTiles" x="480" y="320" w="32" h="32" xo="0" yo="32" id="10002706" name="inst_E82B9A82" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bAllTiles" x="512" y="320" w="32" h="32" xo="0" yo="32" id="10002707" name="inst_4B98A43C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bAllTiles" x="544" y="320" w="32" h="32" xo="0" yo="32" id="10002708" name="inst_9839389F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bAllTiles" x="576" y="320" w="32" h="32" xo="0" yo="32" id="10002709" name="inst_721E3AA1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bAllTiles" x="608" y="320" w="32" h="32" xo="0" yo="32" id="10002710" name="inst_3A46462E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bAllTiles" x="160" y="320" w="32" h="32" xo="0" yo="32" id="10002712" name="inst_5BD65621" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bAllTiles" x="144" y="320" w="32" h="32" xo="0" yo="32" id="10002713" name="inst_C0090854" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bAllTiles" x="128" y="320" w="32" h="32" xo="0" yo="32" id="10002714" name="inst_7304F295" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

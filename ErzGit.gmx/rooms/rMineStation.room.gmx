@@ -10,11 +10,11 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code>camera.roomLeft = rSewerDoubleJumpVents
+  <code>camera.roomLeft = rMineCartTNT
 camera.leftLane = -0
 
-camera.roomUp = rSewerDoubleJumpVents
-camera.upLane = -1</code>
+camera.roomRight = rTNTRun
+camera.rightLane = -0</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

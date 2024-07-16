@@ -57,7 +57,6 @@ camera.roomRight = rDtree</code>
     <instance objName="objBlockInvis" x="128" y="544" name="inst_783A8D00" locked="0" code="" scaleX="46" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="864" y="448" name="inst_04BBB12F" locked="0" code="" scaleX="4" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1504" y="480" name="inst_C52A259A" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objSlopeDownRight" x="1152" y="480" name="inst_396A3857" locked="0" code="" scaleX="11.3548383712769" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="lizard" x="928" y="453" name="inst_CC9FBA4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="plant" x="416" y="543" name="inst_60F23A55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="512" name="inst_BDA39565" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>

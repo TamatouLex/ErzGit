@@ -189,6 +189,7 @@
         <sprite>sprites\spr_krun</sprite>
         <sprite>sprites\spr_kump</sprite>
         <sprite>sprites\spr_kall</sprite>
+        <sprite>sprites\spr_minecart</sprite>
       </sprites>
       <sprites name="Legs">
         <sprite>sprites\spr_lump</sprite>
@@ -392,6 +393,7 @@
       <object>objects\lidle</object>
       <object>objects\kshoot</object>
       <object>objects\krun</object>
+      <object>objects\kMinecart</object>
       <object>objects\lrun</object>
       <object>objects\climb</object>
       <object>objects\kump</object>
@@ -623,6 +625,7 @@
         <object>objects\TNTconfirm</object>
         <objects name="MineCart">
           <object>objects\schubkarre</object>
+          <object>objects\minecartIN</object>
           <object>objects\schubkarreWallRay</object>
           <object>objects\schubkarreGrabTrigger</object>
         </objects>

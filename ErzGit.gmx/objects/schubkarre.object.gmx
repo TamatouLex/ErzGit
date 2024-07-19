@@ -138,8 +138,8 @@ count = 0
 
 
 //Platform
-platform.x = x
-platform.y = y+platformYOffset
+//platform.x = x
+//platform.y = y+platformYOffset
 
 //WallRay
 ray.x = x+85
@@ -149,6 +149,10 @@ ray.y = y+15
 grabbi.x = x+grabOffsetX
 grabbi.y = y
 
+//IN
+in.x = x+15 * image_xscale
+in.y = y-20
+in.image_angle = image_angle
 
 
 //TNT Cutscene
@@ -245,8 +249,36 @@ image_angle = lerp(image_angle,0,0.3)
 }
 
 
-platform.hspeed = hspeed
+//platform.hspeed = hspeed
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player gets IN
+
+if instance_exists(obj7735)
+&amp;&amp; place_meeting(x,y,obj7735)
+&amp;&amp; obj7735.vspeed &gt; 0
+{
+obj7735.inMinecart = true
+}
 </string>
           </argument>
         </arguments>
@@ -270,21 +302,25 @@ platform.hspeed = hspeed
           <argument>
             <kind>1</kind>
             <string>//Spawn Platform
+/*
 platform = instance_create(x+20,y+platformYOffset,objMovingPlatform)
 platform.depth = -5
 platform.image_xscale = 3
 platform.visible = true//false
-
+*/
 //Spawn Grab Trigger
 grabbi = instance_create(x+grabOffsetX,y,schubkarreGrabTrigger)
 grabbi.host = id
 
 //Spawn Wall Detector
 ray = instance_create(x+100,y+25,schubkarreWallRay)
-{
 ray.image_yscale = 0.5
 ray.cart = id
-}
+
+//Spawn IN
+in = instance_create(x,y,minecartIN)
+in.image_xscale = 3
+
 
 if room = rBLBNorthWest
 {

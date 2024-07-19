@@ -43,6 +43,7 @@ aircount = 0
 
 nearLadder = noone
 isClimbing = false //Soll integriert werden
+inMinecart = false //Ob er in einem Minecart sitzt
 
 grounded = false
 groundcount = 0
@@ -1053,6 +1054,39 @@ canCarry = true
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Minecart
+if inMinecart = true
+&amp;&amp; !instance_exists(kMinecart)
+{
+instance_create(x,y,kMinecart)
+instance_destroy(kump)
+instance_destroy(kall)
+instance_destroy(kidle)
+instance_destroy(krun)
+
+instance_destroy(lump)
+instance_destroy(lall)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="objPlayerKiller">
       <action>
@@ -1136,7 +1170,7 @@ if (global.grav == 1)   //normal
 
 //Real test ohne schnickschnack
 
-    if (y+40 &lt;= other.y)
+    if (y+10 &lt;= other.y)
     {
         if (other.vspeed &gt;= 0)
         {

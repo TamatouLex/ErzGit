@@ -44,6 +44,7 @@ aircount = 0
 nearLadder = noone
 isClimbing = false //Soll integriert werden
 inMinecart = false //Ob er in einem Minecart sitzt
+minecartID = noone //ID vom dem Minecart in dem er sich befindet
 
 grounded = false
 groundcount = 0
@@ -163,6 +164,49 @@ with (objBow)
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Minecart
+if inMinecart = true
+&amp;&amp; instance_exists(minecartID)
+{
+if !instance_exists(kMinecart)
+{
+instance_create(x,y,kMinecart)
+instance_destroy(kump)
+instance_destroy(kall)
+instance_destroy(kidle)
+instance_destroy(krun)
+
+instance_destroy(lump)
+instance_destroy(lall)
+}
+x = lerp(x,minecartID.x+64,0.5)
+y = minecartID.y
+hspeed = 0
+momentum = 0
+
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>
 
 //Animation
@@ -218,6 +262,12 @@ if instance_exists(kidle)
 {
 kidle.x = x
 kidle.y = y+15
+}
+
+if instance_exists(kMinecart)
+{
+kMinecart.x = x
+kMinecart.y = y+15
 }
 
 
@@ -522,6 +572,7 @@ hspeed = 0
 if hitstun &lt;= 0
 &amp;&amp; landstun &gt; 10
 &amp;&amp; isClimbing = false
+&amp;&amp; inMinecart = false
 {
 //check left/right button presses
 var L = (scrButtonCheck(global.leftButton) || (global.directionalTapFix &amp;&amp; scrButtonCheckPressed(global.leftButton)));
@@ -1050,39 +1101,6 @@ if place_meeting(x,y+1,objBlockInvis)
 canCarry = true
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Minecart
-if inMinecart = true
-&amp;&amp; !instance_exists(kMinecart)
-{
-instance_create(x,y,kMinecart)
-instance_destroy(kump)
-instance_destroy(kall)
-instance_destroy(kidle)
-instance_destroy(krun)
-
-instance_destroy(lump)
-instance_destroy(lall)
-}
 </string>
           </argument>
         </arguments>

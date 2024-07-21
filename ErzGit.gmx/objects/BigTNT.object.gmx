@@ -29,7 +29,7 @@
 bigCount = 3
 image_speed = 0
 image_index = 0
-
+number = noone
 
 
 active = false
@@ -59,8 +59,7 @@ band = 0 //Das Conveyor Belt auf dem er sich befindet
           <argument>
             <kind>1</kind>
             <string>//AKTIVIEREN DURCH DRAUFSPRINGEN
-if place_meeting(x,y-3,obj7735)
-&amp;&amp; obj7735.vspeed &gt; 0
+if place_meeting(x,y-1,obj7735)
 &amp;&amp; active = false
 {
 active = true
@@ -87,7 +86,7 @@ count = 0
 //EXPLOSION
 if bigCount &lt;= 0
 {
-explod=instance_create(x+32,y+64,bigExplosion)
+explod=instance_create(x+32,y+64,TNTExplosion)
 explod.image_xscale = 2
 explod.image_yscale = 2
 
@@ -116,6 +115,7 @@ if !place_meeting(x,y+1,band)
 &amp;&amp; !place_meeting(x,y+1,pistonV)
 &amp;&amp; !place_meeting(x,y+1,objMovingPlatform)
 &amp;&amp; !place_meeting(x,y+1,objBlockInvis)
+&amp;&amp; !place_meeting(x,y+1,BigTNT)
 {
 hspeed = 0
 gravity = 0.2
@@ -124,6 +124,31 @@ gravity = 0.2
 else
 {
 gravity = 0
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Explosion by another Explosion
+if place_meeting(x,y,TNTExplosion)
+{
+bigCount = 0
 }
 </string>
           </argument>

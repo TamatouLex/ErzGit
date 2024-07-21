@@ -82,6 +82,7 @@ count = 0
 //Dreht sich in die Richtung des
 if instance_exists(obj7735)
 &amp;&amp; obj7735.isPushing = true
+&amp;&amp; instance_exists(obj7735.pushObject)
 {
 image_xscale = obj7735.pushObject.image_xscale
 }

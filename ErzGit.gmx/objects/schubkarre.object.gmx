@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>isGrabbed = false
+isGrounded = true
 
 count = 0 //Kleiner Buffer
 
@@ -219,12 +220,13 @@ slopeL = instance_place(x-60,y+6,objSlopeDownLeft)
 //if place_meeting(x-60,y+4,objSlopeDownLeft)
 if place_meeting(x-60,y+6,slopeL)
 {
+isGrounded = true
 image_angle = lerp(image_angle,-25,0.3)
 
 //Free Minecart
 if isGrabbed = false
 {
-hspeed += 0.1
+hspeed += 0.2
 //Drückt ihn runter auf die Slope wenn er sich davon entfernt
 if y &lt; slopeL.y-4
 {
@@ -244,7 +246,7 @@ obj7735.momentum += 0.1
 
 else
 {
-hspeed *= 0.9
+hspeed *= 0.99
 image_angle = lerp(image_angle,0,0.3)
 }
 
@@ -274,11 +276,101 @@ image_angle = lerp(image_angle,0,0.3)
             <string>///Player gets IN
 
 if instance_exists(obj7735)
-&amp;&amp; place_meeting(x,y,obj7735)
-&amp;&amp; obj7735.vspeed &gt; 0
+&amp;&amp; obj7735.vspeed &gt; 2
+&amp;&amp; obj7735.inMinecart = false
 {
+with(minecartIN)
+{
+if place_meeting(x,y,obj7735)
+{
+obj7735.hspeed = 0
 obj7735.inMinecart = true
+obj7735.minecartID = id
 }
+}
+}
+
+//Player gets OUT
+if obj7735.inMinecart = true
+&amp;&amp; (scrButtonCheckPressed(global.jumpButton))
+&amp;&amp; (scrButtonCheck(global.upButton))
+{
+obj7735.vspeed = -10
+obj7735.inMinecart = false
+instance_create(obj7735.x,obj7735.y,kump)
+instance_create(obj7735.x,obj7735.y,lump)
+instance_destroy(kMinecart)
+}
+
+//JUMP WITH MINECART
+if obj7735.inMinecart = true
+&amp;&amp; (scrButtonCheckPressed(global.jumpButton))
+&amp;&amp; isGrounded = true
+{
+vspeed = -10
+isGrounded = false
+y -= 3
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Gravity &amp; Grounded
+blocc = instance_place(x,y+2,objBlockInvis)
+if place_meeting(x,y+2,blocc)
+{
+y = blocc.y-36
+}
+
+
+
+
+if !place_meeting(x,y+2,objBlockInvis)
+&amp;&amp; !place_meeting(x,y+2,objSlopeDownLeft)
+&amp;&amp; !place_meeting(x,y+2,objMovingPlatform)
+{
+isGrounded = false
+gravity = 0.3
+}
+
+else
+{
+isGrounded = true
+gravity = 0
+vspeed = 0
+}
+
+//An der Decke anstoßen
+with(obj7735)
+{
+ceiling = instance_place(x,y-2,objBlockInvis)
+
+if place_meeting(x,y-2,ceiling)
+&amp;&amp; inMinecart = true
+{
+schubkarre.vspeed = 1
+}
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -301,19 +393,13 @@ obj7735.inMinecart = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Spawn Platform
-/*
-platform = instance_create(x+20,y+platformYOffset,objMovingPlatform)
-platform.depth = -5
-platform.image_xscale = 3
-platform.visible = true//false
-*/
+            <string>
 //Spawn Grab Trigger
 grabbi = instance_create(x+grabOffsetX,y,schubkarreGrabTrigger)
 grabbi.host = id
 
 //Spawn Wall Detector
-ray = instance_create(x+100,y+25,schubkarreWallRay)
+ray = instance_create(x+85,y+15,schubkarreWallRay)
 ray.image_yscale = 0.5
 ray.cart = id
 

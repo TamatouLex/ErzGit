@@ -62,7 +62,6 @@ camera.rightLane = 0</code>
     <instance objName="objBlockInvis" x="0" y="0" name="inst_0F1E36F0" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="768" y="224" name="inst_75A4A855" locked="0" code="" scaleX="1" scaleY="28" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="0" y="32" name="inst_36A3C0A8" locked="0" code="" scaleX="1" scaleY="33" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="576" y="1696" name="inst_6C7E9CD5" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder" x="576" y="1696" name="inst_CBBD2B7B" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="512" y="1696" name="inst_5C200CA9" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="704" y="1728" name="inst_95C6A1F7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>

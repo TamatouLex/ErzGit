@@ -689,6 +689,7 @@
     <object>objects\spotlightManager</object>
     <object>objects\zement</object>
     <object>objects\zementDrop</object>
+    <object>objects\zementSpawner</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">

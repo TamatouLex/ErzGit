@@ -275,8 +275,10 @@
     </sprites>
     <sprites name="Zemen">
       <sprite>sprites\spr_zement</sprite>
+      <sprite>sprites\spr_zementDrop2</sprite>
       <sprite>sprites\spr_zementDrop</sprite>
     </sprites>
+    <sprite>sprites\spr_mm10Target</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -690,6 +692,7 @@
     <object>objects\zement</object>
     <object>objects\zementDrop</object>
     <object>objects\zementSpawner</object>
+    <object>objects\mm10Target</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -699,15 +702,9 @@
       <room>rooms\rDifficultySelect</room>
       <room>rooms\rOptions</room>
     </rooms>
-    <rooms name="sample">
-      <room>rooms\rStage01</room>
-      <room>rooms\rCherryBoss</room>
-      <room>rooms\rStage02</room>
-      <room>rooms\rMiku</room>
-      <room>rooms\rStage03</room>
-      <room>rooms\rEnd</room>
-      <room>rooms\rSampleRoom</room>
-      <room>rooms\rTest</room>
+    <rooms name="7737Intro">
+      <room>rooms\rTut1</room>
+      <room>rooms\rTut2</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

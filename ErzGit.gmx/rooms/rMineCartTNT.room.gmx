@@ -55,19 +55,22 @@ camera.rightLane = -0</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objBlockInvis" x="0" y="160" name="inst_E57DEE8D" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="416" name="inst_FEAABA14" locked="0" code="" scaleX="30" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="1184" y="160" name="inst_E30B6247" locked="0" code="" scaleX="1" scaleY="14.4516124725342" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="0" name="inst_D67875BB" locked="0" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="schubkarre" x="224" y="384" name="inst_A68742EC" locked="0" code="persistent = false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ladder" x="32" y="160" name="inst_AED32905" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="288" y="32" name="inst_CB376C39" locked="0" code="" scaleX="18" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="960" y="416" name="inst_91628031" locked="0" code="isWeightLift = true&#xA;liftLowerEnd = 700&#xA;" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="288" y="96" name="inst_A123195A" locked="0" code="" scaleX="18" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="384" y="192" name="inst_BFA866A8" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="768" y="192" name="inst_9794934D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="576" y="192" name="inst_09B3F3E9" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="BigTNT" x="688" y="352" name="inst_F1ABFC6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="160" name="inst_E57DEE8D" locked="0" code="" scaleX="1" scaleY="13.4193544387817" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="1056" y="128" name="inst_E30B6247" locked="0" code="" scaleX="5.15999984741211" scaleY="9.29032230377197" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="-32" name="inst_D67875BB" locked="0" code="" scaleX="9.29032230377197" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="schubkarre" x="160" y="256" name="inst_A68742EC" locked="0" code="persistent = false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ladder" x="32" y="256" name="inst_AED32905" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="288" y="288" name="inst_91628031" locked="0" code="isWeightLift = true&#xA;liftLowerEnd = 700&#xA;" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="288" y="-32" name="inst_A123195A" locked="0" code="" scaleX="18" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="352" y="64" name="inst_BFA866A8" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="672" y="64" name="inst_9794934D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="512" y="64" name="inst_09B3F3E9" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="zementSpawner" x="384" y="96" name="inst_59299CE9" locked="0" code="count = 99&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="zementSpawner" x="544" y="96" name="inst_77A181F8" locked="0" code="count = 66&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="zementSpawner" x="704" y="96" name="inst_048DC349" locked="0" code="count = 33&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="96" y="288" name="inst_3EA2DA89" locked="0" code="" scaleX="6" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="608" name="inst_77359F79" locked="0" code="" scaleX="38" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="864" y="-32" name="inst_7413669B" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

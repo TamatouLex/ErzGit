@@ -71,7 +71,7 @@ camera.roomRight = rMineCartRide</code>
     <instance objName="objBlockInvis" x="352" y="544" name="inst_33B3B3F8" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="992" y="544" name="inst_69AB3AF9" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="1088" y="288" name="inst_F0BDF756" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="debuginfo" x="480" y="64" name="inst_AF53FAE0" locked="0" code="//Hier kommt ein Ding hin was Zement dropt&#xA;/*Du musst den Zement auffangen, kann kannst du den lift betätigen&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="zementSpawner" x="480" y="32" name="inst_6816DC38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

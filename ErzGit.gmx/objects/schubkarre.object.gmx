@@ -43,7 +43,7 @@ platformYOffset = -5
 
 hitWall = false //Ob er vorne an die Wand stößt
 
-
+hasCement = false //Ob Zement drinné is
 </string>
           </argument>
         </arguments>
@@ -66,7 +66,18 @@ hitWall = false //Ob er vorne an die Wand stößt
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Not GRABBED
+            <string>//Hat er zement?
+if hasCement = true
+{
+image_index = 1
+}
+else
+{
+image_index = 0
+}
+
+
+//Not GRABBED
 if isGrabbed = false
 {
 image_blend = make_colour_rgb(255,255,200)
@@ -128,6 +139,8 @@ if ((scrButtonCheckPressed(global.shootButton))
 &amp;&amp; count &gt; 5
 &amp;&amp; instance_exists(obj7735)
 {
+in.hasCement = false
+hasCement = false //Ausschüt animation muss noch geadded werden
 obj7735.isPushing = false
 //Löst potentielle blockierungen
 obj7735.rightBlock = false
@@ -189,6 +202,7 @@ lift = instance_place(x,y+2,objMovingPlatform)
 
 if place_meeting(x,y+2,lift)
 &amp;&amp; lift.isWeightLift = true
+&amp;&amp; hasCement = true
 {
 sound_play(sndBlockChange)
 lift.vspeed = 1
@@ -278,6 +292,7 @@ image_angle = lerp(image_angle,0,0.3)
 if instance_exists(obj7735)
 &amp;&amp; obj7735.vspeed &gt; 2
 &amp;&amp; obj7735.inMinecart = false
+&amp;&amp; hasCement = false
 {
 with(minecartIN)
 {
@@ -406,7 +421,7 @@ ray.cart = id
 //Spawn IN
 in = instance_create(x,y,minecartIN)
 in.image_xscale = 3
-
+in.minecart = id
 
 if room = rBLBNorthWest
 {

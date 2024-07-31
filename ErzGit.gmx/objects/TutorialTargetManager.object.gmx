@@ -68,6 +68,7 @@ if instance_number(mm10Target) = 0
 &amp;&amp; phase = 2
 {
 TutMovingBlock.phase = 1
+TutSpawningBlock.go = true
 instance_destroy()
 }
 

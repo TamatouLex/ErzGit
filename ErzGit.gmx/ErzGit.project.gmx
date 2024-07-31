@@ -283,6 +283,9 @@
       <sprite>sprites\spr_shmupFocus</sprite>
       <sprite>sprites\spr_playerShmup</sprite>
       <sprite>sprites\spr_TutMovingBlock</sprite>
+      <sprite>sprites\spr_TutBlock</sprite>
+      <sprite>sprites\spr_slingshot</sprite>
+      <sprite>sprites\spr_slingshotSanta</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -306,6 +309,16 @@
     <background>background\bg_prater</background>
     <background>background\bg_bricks</background>
     <background>background\bg_reumann</background>
+    <background>background\tileBoiler</background>
+    <background>background\tileTutorial</background>
+    <background>background\tileTurbostart</background>
+    <background>background\tileSewer2</background>
+    <background>background\tileSewer</background>
+    <background>background\tileHomebrew2</background>
+    <background>background\tileHomebrew</background>
+    <background>background\tileEndgame</background>
+    <background>background\tileStage1</background>
+    <background>background\tilePipe</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_plat1</path>
@@ -701,9 +714,11 @@
       <object>objects\playerShmup</object>
       <object>objects\mm10Target</object>
       <object>objects\shmupFocus</object>
+      <object>objects\TutorialTargetManager</object>
+      <object>objects\TutMovingBlock</object>
+      <object>objects\TutSpawningBlock</object>
+      <object>objects\slingshot</object>
     </objects>
-    <object>objects\TutorialTargetManager</object>
-    <object>objects\TutMovingBlock</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -717,6 +732,7 @@
       <room>rooms\rTut1</room>
       <room>rooms\rTut2</room>
       <room>rooms\rShmup</room>
+      <room>rooms\rChristmas</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

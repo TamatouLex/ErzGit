@@ -36,6 +36,11 @@ instance_create(x,y,shmupFocus)
 
 cutscene = false
 moveSpeed = 8
+
+count = 0
+count2 = 0
+
+focus = false
 </string>
           </argument>
         </arguments>
@@ -58,29 +63,7 @@ moveSpeed = 8
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Grenzen
-if x &lt; 5
-{
-x = 5
-}
-
-
-if x &gt; 795
-{
-x = 795
-}
-
-
-if y &gt; 603
-{
-y = 603
-}
-
-if y &lt; 10
-{
-y = 10
-}
-
+            <string>
 //Am Ende geht er in die Mitte
 if cutscene = true
 {
@@ -158,14 +141,14 @@ if focus = false
 count += 1
 if count = 6
 {
-boppy = instance_create(x+4,y-7,bullet)
+boppy = instance_create(x+4,y-7,objBullet)
 boppy.vspeed = 10
 boppy.hspeed = 0
 }
 
 if count = 12
 {
-beppy = instance_create(x-4,y-7,bullet)
+beppy = instance_create(x-4,y-7,objBullet)
 beppy.vspeed = 10
 beppy.hspeed = 0
 count = 0
@@ -179,16 +162,59 @@ count2 += 1
 
 if count2 = 4
 {
-boppy = instance_create(x+4,y-7,bullet)
+boppy = instance_create(x+4,y-7,objBullet)
 boppy.vspeed = 10
 boppy.hspeed = 0
-beppy = instance_create(x-4,y-7,bullet)
+beppy = instance_create(x-4,y-7,objBullet)
 beppy.vspeed = 10
 beppy.hspeed = 0
 count2 = 0
 }
 }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Grenzen
+if x &lt; 42
+{
+x = 42
+}
+
+
+if x &gt; 758
+{
+x = 758
+}
+
+
+if y &gt; 603
+{
+y = 603
+}
+
+if y &lt; 10
+{
+y = 10
+}
+
 </string>
           </argument>
         </arguments>

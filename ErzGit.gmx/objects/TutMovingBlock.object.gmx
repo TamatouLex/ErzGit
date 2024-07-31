@@ -96,8 +96,16 @@ phase = 3
 //Phase 3: Closing in on you
 if phase = 3
 {
+if x &lt; 352
+{
 hspeed = 2
 }
+else
+{
+hspeed = 0
+}
+}
+
 }
 
 
@@ -164,7 +172,14 @@ phase = 3
 //Phase 3: Closing in on you
 if phase = 3
 {
+if x &gt; 448
+{
 hspeed = -2
+}
+else
+{
+hspeed = 0
+}
 }
 }
 
@@ -200,7 +215,8 @@ count += 1
 if count = 2
 {
 iR+=1
-instance_create(x+(64*iR),y,TutMovingBlock)
+instance_create(x+(32*iR),y,TutSpawningBlock)
+instance_create(x-(32*iR),y,TutSpawningBlock)
 count = 0
 }
 }
@@ -236,7 +252,8 @@ count += 1
 if count = 2
 {
 iL+=1
-instance_create(x-(64*iL),y,TutMovingBlock)
+instance_create(x-(32*iL),y,TutSpawningBlock)
+instance_create(x+(32*iL),y,TutSpawningBlock)
 count = 0
 }
 }

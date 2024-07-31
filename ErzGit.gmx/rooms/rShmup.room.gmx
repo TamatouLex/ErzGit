@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -51,22 +51,12 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objBlockInvis" x="0" y="576" name="inst_BA523AD2" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="32" y="0" name="inst_7236C4E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="96" y="512" name="inst_B59FF931" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="0" y="0" name="inst_6EA004A8" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="768" y="0" name="inst_EAA4CAAE" locked="0" code="" scaleX="1" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="768" y="192" name="inst_3AB66F7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="704" y="224" name="inst_6D5E1D44" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="736" y="256" name="inst_4F3290A9" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="672" y="352" name="inst_89C8AF11" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="704" y="384" name="inst_45DA9FF9" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="512" y="416" name="inst_14B46AD1" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="384" y="480" name="inst_25E905D4" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="352" y="480" name="inst_8D92B2EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockInvis" x="288" y="544" name="inst_2C958C25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="800" y="128" name="inst_13C568F0" locked="0" code="roomTo = rTut2&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="736" y="192" name="inst_82C07D8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="0" name="inst_EAA4CAAE" locked="0" code="" scaleX="1" scaleY="7.22580623626709" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="768" y="304" name="inst_6D5E1D44" locked="0" code="" scaleX="1" scaleY="9.80645179748535" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="0" y="224" name="inst_14B46AD1" locked="0" code="" scaleX="1" scaleY="12.3870964050293" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="768" y="0" name="inst_7B83F9D3" locked="0" code="" scaleX="1" scaleY="9.67741966247559" colour="4294967295" rotation="0"/>
+    <instance objName="playerShmup" x="384" y="32" name="inst_8F55983B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -278,7 +278,12 @@
       <sprite>sprites\spr_zementDrop2</sprite>
       <sprite>sprites\spr_zementDrop</sprite>
     </sprites>
-    <sprite>sprites\spr_mm10Target</sprite>
+    <sprites name="7737Intro">
+      <sprite>sprites\spr_mm10Target</sprite>
+      <sprite>sprites\spr_shmupFocus</sprite>
+      <sprite>sprites\spr_playerShmup</sprite>
+      <sprite>sprites\spr_TutMovingBlock</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -692,7 +697,13 @@
     <object>objects\zement</object>
     <object>objects\zementDrop</object>
     <object>objects\zementSpawner</object>
-    <object>objects\mm10Target</object>
+    <objects name="7737Intro">
+      <object>objects\playerShmup</object>
+      <object>objects\mm10Target</object>
+      <object>objects\shmupFocus</object>
+    </objects>
+    <object>objects\TutorialTargetManager</object>
+    <object>objects\TutMovingBlock</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -705,6 +716,7 @@
     <rooms name="7737Intro">
       <room>rooms\rTut1</room>
       <room>rooms\rTut2</room>
+      <room>rooms\rShmup</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

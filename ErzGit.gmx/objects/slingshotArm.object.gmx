@@ -27,9 +27,10 @@
             <kind>1</kind>
             <string>image_xscale = -1
 
-active = true
+active = false
 
-arm = instance_create(x,y,slingshotArm)
+
+
 </string>
           </argument>
         </arguments>
@@ -52,16 +53,7 @@ arm = instance_create(x,y,slingshotArm)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if active = true
-{
-hspeed = -0
-
-if (scrButtonCheckPressed(global.jumpButton))
-{
-arm.image_angle -= 1
-}
-}
-
+            <string>
 
 /*Meine 10 Lieblingsserien
 Smiling Friends

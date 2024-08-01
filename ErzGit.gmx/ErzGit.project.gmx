@@ -286,6 +286,9 @@
       <sprite>sprites\spr_TutBlock</sprite>
       <sprite>sprites\spr_slingshot</sprite>
       <sprite>sprites\spr_slingshotSanta</sprite>
+      <sprite>sprites\spr_slingshotBig</sprite>
+      <sprite>sprites\spr_slingshotSmall</sprite>
+      <sprite>sprites\spr_slingshotArmSmall</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -718,6 +721,8 @@
       <object>objects\TutMovingBlock</object>
       <object>objects\TutSpawningBlock</object>
       <object>objects\slingshot</object>
+      <object>objects\slingshotArm</object>
+      <object>objects\playerLaunched</object>
     </objects>
   </objects>
   <rooms name="rooms">

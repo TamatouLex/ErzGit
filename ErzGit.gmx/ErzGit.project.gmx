@@ -738,6 +738,7 @@
       <room>rooms\rTut2</room>
       <room>rooms\rShmup</room>
       <room>rooms\rChristmas</room>
+      <room>rooms\rLaunchField</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

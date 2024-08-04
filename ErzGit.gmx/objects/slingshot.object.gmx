@@ -25,11 +25,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = -1
+            <string>image_xscale = -0.7
+image_yscale = 0.7
+image_speed = 0
 
-active = true
+active = false
+shot = false
+shotPower = 0 //
 
 arm = instance_create(x,y,slingshotArm)
+arm.image_xscale = image_xscale
+arm.image_yscale = image_yscale
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if active = false
+&amp;&amp; !instance_exists(playerLaunched)
+{
+camera.x = 1200
+}
 </string>
           </argument>
         </arguments>
@@ -52,15 +85,70 @@ arm = instance_create(x,y,slingshotArm)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if active = true
-{
-hspeed = -0
+            <string>arm.x = x
+arm.y = y
 
-if (scrButtonCheckPressed(global.jumpButton))
+if active = true
+&amp;&amp; shot = false
+{
+hspeed = -3
+image_speed = 0.2
+
+
+//Dings spannen
+if (scrButtonCheck(global.jumpButton))
+&amp;&amp; shot = false
 {
 arm.image_angle -= 1
+shotPower += 0.5
 }
 }
+
+//SHOT HAPPENS
+if (scrButtonCheckReleased(global.jumpButton))
+&amp;&amp; shot = false
+&amp;&amp; active = true
+{
+shot = true
+}
+
+
+
+//FAIL: ZUVIEL GESPANNT
+if arm.image_angle &lt; -90
+{
+shot = true
+shotPower = 5
+}
+
+
+
+
+//SHOT!!!
+if shot = true
+{
+//Animation First
+if arm.image_angle &lt; 30
+{
+arm.image_angle += 20
+}
+//Then he spawns the Player
+else
+{
+maxi=instance_create(x-30,y-60,playerLaunched)
+maxi.hspeed = -2-shotPower/1.2
+maxi.vspeed = -2-shotPower/6
+shot = false
+active = false
+hspeed = 0
+}
+}
+
+
+
+
+
+
 
 
 /*Meine 10 Lieblingsserien
@@ -82,6 +170,31 @@ PaRappa Anime
  
  
  
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objPlayer">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>active = true
+instance_destroy(other)
+
 </string>
           </argument>
         </arguments>

@@ -95,10 +95,33 @@ instance_create(x,y,cameraflag)
 
 if instance_exists(cameraflag)
 {
+//Follows 7735
 if instance_exists(obj7735)
 {
 x = obj7735.x + shakeX
 }
+
+//Follows 7737
+else if instance_exists(objPlayer)
+{
+x = objPlayer.x + shakeX
+}
+
+//Follows Slingshot
+else if instance_exists(slingshot)
+&amp;&amp; slingshot.active = true
+{
+x = lerp(x,slingshot.x,0.2)
+}
+
+//Follows 7737Launch
+else if instance_exists(playerLaunched)
+{
+scr_debug()
+x = lerp(x,playerLaunched.x,0.2)
+}
+
+
 
 else
 {

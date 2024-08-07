@@ -117,7 +117,6 @@ x = lerp(x,slingshot.x,0.2)
 //Follows 7737Launch
 else if instance_exists(playerLaunched)
 {
-scr_debug()
 x = lerp(x,playerLaunched.x,0.2)
 }
 
@@ -157,7 +156,7 @@ y = lerp(y,cameraflag.y + shakeY,0.1)
 //TELEPORT 1
 if keyboard_check_pressed(ord('1'))
 {
-room = rMineCarts
+room = rTrolley
 }
 
 //TELEPORT 2

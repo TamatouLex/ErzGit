@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="167" name="datafiles">
+    <datafile>
+      <name>paddy.png</name>
+      <exists>-1</exists>
+      <size>60907</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>paddy.png</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sounds name="sfx">
@@ -289,7 +308,16 @@
       <sprite>sprites\spr_slingshotBig</sprite>
       <sprite>sprites\spr_slingshotSmall</sprite>
       <sprite>sprites\spr_slingshotArmSmall</sprite>
+      <sprites name="Trolley">
+        <sprite>sprites\spr_trolleyFront</sprite>
+        <sprite>sprites\spr_trolleyFloor</sprite>
+        <sprite>sprites\spr_trolleySchiene</sprite>
+      </sprites>
     </sprites>
+    <sprite>sprites\spr_schienen1</sprite>
+    <sprite>sprites\spr_schienen2</sprite>
+    <sprite>sprites\spr_schienen3</sprite>
+    <sprite>sprites\spr_trolleyBG</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -724,6 +752,15 @@
       <object>objects\slingshotArm</object>
       <object>objects\playerLaunched</object>
     </objects>
+    <objects name="Trolley">
+      <object>objects\pillarMaker</object>
+      <object>objects\trolleyFront</object>
+      <object>objects\trolleyFloor</object>
+      <object>objects\trolleySchiene</object>
+      <object>objects\trolleyHorizon</object>
+      <object>objects\trolleyFullHorizon</object>
+    </objects>
+    <object>objects\trackMaster</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -739,6 +776,8 @@
       <room>rooms\rShmup</room>
       <room>rooms\rChristmas</room>
       <room>rooms\rLaunchField</room>
+      <room>rooms\rCutsceneTrapdoor</room>
+      <room>rooms\rTrolley</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

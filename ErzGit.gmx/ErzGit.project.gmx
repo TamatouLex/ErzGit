@@ -318,6 +318,8 @@
     <sprite>sprites\spr_schienen2</sprite>
     <sprite>sprites\spr_schienen3</sprite>
     <sprite>sprites\spr_trolleyBG</sprite>
+    <sprite>sprites\spr_pillar</sprite>
+    <sprite>sprites\spr_stalagmite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>

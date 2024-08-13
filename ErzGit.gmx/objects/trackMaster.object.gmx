@@ -41,17 +41,43 @@ afterErgo = 0
 bgY = 0
 BGSpeed = 0
 
+//Layers
 mode = 0
 TopY = 0
 UpperY = 0
 MidY = 0
-altitude = 0
 
+altitude = 0
 stretch = 1
 
 //Pillar
-pillarY = 0
-pillarAcc = 0
+pillarY[0] = 0
+pillarY[1] = 50
+pillarY[2] = 100
+pillarY[3] = 150
+
+
+pillarAcc[0] = 0
+pillarAcc[1] = 0.0050
+pillarAcc[2] = 0.0100
+pillarAcc[3] = 0.0150
+
+//Pillar Layers
+TopYP[0] = 0
+TopYP[1] = 0
+TopYP[2] = 0
+TopYP[3] = 0
+
+UpperYP[0] = 0
+UpperYP[1] = 0
+UpperYP[2] = 0
+UpperYP[3] = 0
+
+MidYP[0] = 0
+MidYP[1] = 0
+MidYP[2] = 0
+MidYP[3] = 0
+
 </string>
           </argument>
         </arguments>
@@ -74,7 +100,7 @@ pillarAcc = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Tal Fahrt
+            <string>//Tal Fahrt (No Hill)
 if mode = 0
 {
 TopY = lerp(TopY,0,0.05)
@@ -84,46 +110,46 @@ altitude = lerp(altitude,0,0.05)
 trackSpeed = 3
 }
 
-//Gerade aus
+//Gerade aus (Back Hill)
 if mode = 1
 {
 TopY = lerp(TopY,64,0.05)
 UpperY = lerp(UpperY,0,0.05)
 MidY = lerp(MidY,0,0.05)
-altitude = lerp(altitude,64,0.05)
+altitude = lerp(altitude,100,0.05)
 trackSpeed = 2
 }
 
-//Berg auf aus
+//Berg auf aus (Middle Hill)
 if mode = 2
 {
 TopY = lerp(TopY,96,0.05)
 UpperY = lerp(UpperY,96,0.05)
 MidY = lerp(MidY,0,0.05)
-altitude = lerp(altitude,96,0.05)
+altitude = lerp(altitude,200,0.05)
 trackSpeed = 2
 }
 
-//Steil Berg auf
+//Steil Berg auf (Front Hill)
 if mode = 3
 {
 TopY = lerp(TopY,128,0.05)
 UpperY = lerp(UpperY,128,0.05)
 MidY = lerp(MidY,128,0.05)
-altitude = lerp(altitude,128,0.05)
+altitude = lerp(altitude,300,0.05)
 trackSpeed = 1
 }
 
 
 
 
-if mode &gt; 6
+if mode &gt; 3
 {
 mode = 0
 }
 if mode &lt; 0
 {
-mode = 6
+mode = 3
 }
 
 BGSpeed -= parallax/100
@@ -254,16 +280,213 @@ frameCount = 0
             <kind>1</kind>
             <string>///Pillar
 
-pillarY += trackSpeed
-if pillarY &gt; 185
+//FIRST SET-------------------------------------------------------------------------------------------------------------------------------------------
+pillarY[0] += trackSpeed
+if pillarY[0] &gt; 200//185
 {
-pillarY = 0
+pillarY[0] = 0
 }
 
-pillarAcc += trackSpeed*0.0001
-if pillarAcc &gt; 0.0185
+pillarAcc[0] += trackSpeed*0.0001
+if pillarAcc[0] &gt; 0.0200//0.0185
 {
-pillarAcc = 0
+pillarAcc[0] = 0
+}
+
+//Lerp Pillars over the Hill
+
+
+//Hill Back
+if pillarY[0] &gt; 0
+&amp;&amp; mode = 1
+{
+TopYP[0] = lerp(TopYP[0],0,0.1)
+}
+
+else
+{
+TopYP[0] = TopY
+}
+
+//Mid Hill
+if pillarY[0] &gt; 32
+&amp;&amp; mode = 2
+{
+UpperYP[0] = lerp(UpperYP[0],0,0.1)
+}
+
+else
+{
+UpperYP[0] = UpperY
+}
+
+//Hill Vorne
+if pillarY[0] &gt; 64
+&amp;&amp; mode = 3
+{
+MidYP[0] = lerp(MidYP[0],0,0.1)
+}
+
+else
+{
+MidYP[0] = MidY
+}
+
+
+//SECOND SET-------------------------------------------------------------------------------------------------------------------------------------------
+pillarY[1] += trackSpeed
+if pillarY[1] &gt; 200
+{
+pillarY[1] = 0
+}
+
+pillarAcc[1] += trackSpeed*0.0001
+if pillarAcc[1] &gt; 0.0200
+{
+pillarAcc[1] = 0
+}
+
+//Lerp Pillars over the Hill
+
+
+//Hill Back
+if pillarY[1] &gt; 0
+&amp;&amp; mode = 1
+{
+TopYP[1] = lerp(TopYP[1],0,0.1)
+}
+
+else
+{
+TopYP[1] = TopY
+}
+
+//Mid Hill
+if pillarY[1] &gt; 32
+&amp;&amp; mode = 2
+{
+UpperYP[1] = lerp(UpperYP[1],0,0.1)
+}
+
+else
+{
+UpperYP[1] = UpperY
+}
+
+//Hill Vorne
+if pillarY[1] &gt; 64
+&amp;&amp; mode = 3
+{
+MidYP[1] = lerp(MidYP[1],0,0.1)
+}
+
+else
+{
+MidYP[1] = MidY
+}
+
+//THIRD SET-------------------------------------------------------------------------------------------------------------------------------------------
+pillarY[2] += trackSpeed
+if pillarY[2] &gt; 200
+{
+pillarY[2] = 0
+}
+
+pillarAcc[2] += trackSpeed*0.0001
+if pillarAcc[2] &gt; 0.0200
+{
+pillarAcc[2] = 0
+}
+
+//Lerp Pillars over the Hill
+
+
+//Hill Back
+if pillarY[2] &gt; 0
+&amp;&amp; mode = 1
+{
+TopYP[2] = lerp(TopYP[2],0,0.1)
+}
+
+else
+{
+TopYP[2] = TopY
+}
+
+//Mid Hill
+if pillarY[2] &gt; 32
+&amp;&amp; mode = 2
+{
+UpperYP[2] = lerp(UpperYP[2],0,0.1)
+}
+
+else
+{
+UpperYP[2] = UpperY
+}
+
+//Hill Vorne
+if pillarY[2] &gt; 64
+&amp;&amp; mode = 3
+{
+MidYP[2] = lerp(MidYP[2],0,0.1)
+}
+
+else
+{
+MidYP[2] = MidY
+}
+
+//FORTH SET-------------------------------------------------------------------------------------------------------------------------------------------
+pillarY[3] += trackSpeed
+if pillarY[3] &gt; 200
+{
+pillarY[3] = 0
+}
+
+pillarAcc[3] += trackSpeed*0.0001
+if pillarAcc[3] &gt; 0.0200
+{
+pillarAcc[3] = 0
+}
+
+//Lerp Pillars over the Hill
+
+
+//Hill Back
+if pillarY[3] &gt; 0
+&amp;&amp; mode = 1
+{
+TopYP[3] = lerp(TopYP[3],0,0.1)
+}
+
+else
+{
+TopYP[3] = TopY
+}
+
+//Mid Hill
+if pillarY[3] &gt; 32
+&amp;&amp; mode = 2
+{
+UpperYP[3] = lerp(UpperYP[3],0,0.1)
+}
+
+else
+{
+UpperYP[3] = UpperY
+}
+
+//Hill Vorne
+if pillarY[3] &gt; 64
+&amp;&amp; mode = 3
+{
+MidYP[3] = lerp(MidYP[3],0,0.1)
+}
+
+else
+{
+MidYP[3] = MidY
 }
 </string>
           </argument>
@@ -304,10 +527,30 @@ for (var i= -100;i&lt;100;i+= 1)
 draw_sprite_ext(spr_trolleyBG,0,x*(BGSpeed*3)+(i*100),y+bgY,3,3,0,c_white,1)
 }
 
-
+//EBENE 1: WEIT WEG-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //High Horizon
 draw_sprite_ext(spr_blockoutGreen,0,0,y+TopY,50,1,0,c_white,1)
+
+//Pillar Left 1
+var pillarX = x+(parallax/100)*power((pillarY[0]*afterErgo-165),2)
+var size = pillarY[0]*pillarAcc[0]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[0]*(pillarAcc[0]*128)),y+pillarY[0]+TopYP[0],size,size,0,c_white,1)
+
+//Pillar Right 1
+var pillarX = x+(parallax/100)*power((pillarY[1]*afterErgo-165),2)
+var size = pillarY[1]*pillarAcc[1]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[1]*(pillarAcc[1]*128)),y+pillarY[1]+TopYP[1],size,size,0,c_white,1)
+
+//Pillar Left 2
+var pillarX = x+(parallax/100)*power((pillarY[2]*afterErgo-165),2)
+var size = pillarY[2]*pillarAcc[2]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[2]*(pillarAcc[2]*128)),y+pillarY[2]+TopYP[2],size,size,0,c_white,1)
+
+//Pillar Right 2
+var pillarX = x+(parallax/100)*power((pillarY[3]*afterErgo-165),2)
+var size = pillarY[3]*pillarAcc[3]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[3]*(pillarAcc[3]*128)),y+pillarY[3]+TopYP[3],size,size,0,c_white,1)
 
 
 //Top Quarter
@@ -317,8 +560,42 @@ ergo = x+(parallax/100)*power((i*afterErgo-165),2)
 draw_sprite(sprite_index,i,ergo,y+i+TopY)
 }
 
+//EBENE 2: RECHT WEIT WEG-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //Upper Horizon
 draw_sprite_ext(spr_blockoutGreen,0,0,y+32+UpperY,50,1.2,0,c_white,1)
+
+//Pillar Left 1
+if pillarY[0] &gt;= 32
+{
+var pillarX = x+(parallax/100)*power((pillarY[0]*afterErgo-165),2)
+var size = pillarY[0]*pillarAcc[0]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[0]*(pillarAcc[0]*128)),y+pillarY[0]+UpperYP[0],size,size,0,c_white,1)
+}
+
+//Pillar Right 1
+if pillarY[1] &gt;= 32
+{
+var pillarX = x+(parallax/100)*power((pillarY[1]*afterErgo-165),2)
+var size = pillarY[1]*pillarAcc[1]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[1]*(pillarAcc[1]*128)),y+pillarY[1]+UpperYP[1],size,size,0,c_white,1)
+}
+
+//Pillar Left 2
+if pillarY[2] &gt;= 32
+{
+var pillarX = x+(parallax/100)*power((pillarY[2]*afterErgo-165),2)
+var size = pillarY[2]*pillarAcc[2]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[2]*(pillarAcc[2]*128)),y+pillarY[2]+UpperYP[2],size,size,0,c_white,1)
+}
+
+//Pillar Right 2
+if pillarY[3] &gt;= 32
+{
+var pillarX = x+(parallax/100)*power((pillarY[3]*afterErgo-165),2)
+var size = pillarY[3]*pillarAcc[3]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[3]*(pillarAcc[3]*128)),y+pillarY[3]+UpperYP[3],size,size,0,c_white,1)
+}
 
 
 //Upper Quarter
@@ -328,8 +605,43 @@ ergo = x+(parallax/100)*power((i*afterErgo-165),2)
 draw_sprite(sprite_index,i,ergo,y+i+UpperY)
 }
 
+//EBENE 3: RECHT NAH-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //Mid Horizon
 draw_sprite_ext(spr_blockoutGreen,0,0,y+64+MidY,50,1.2,0,c_white,1)
+
+//Pillar Left 1
+if pillarY[0] &gt;= 64
+{
+var pillarX = x+(parallax/100)*power((pillarY[0]*afterErgo-165),2)
+var size = pillarY[0]*pillarAcc[0]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[0]*(pillarAcc[0]*128)),y+pillarY[0]+MidYP[0],size,size,0,c_white,1)
+}
+
+//Pillar Right 1
+if pillarY[1] &gt;= 64
+{
+var pillarX = x+(parallax/100)*power((pillarY[1]*afterErgo-165),2)
+var size = pillarY[1]*pillarAcc[1]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[1]*(pillarAcc[1]*128)),y+pillarY[1]+MidYP[1],size,size,0,c_white,1)
+}
+
+//Pillar Left 2
+if pillarY[2] &gt;= 64
+{
+var pillarX = x+(parallax/100)*power((pillarY[2]*afterErgo-165),2)
+var size = pillarY[2]*pillarAcc[2]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[2]*(pillarAcc[2]*128)),y+pillarY[2]+MidYP[2],size,size,0,c_white,1)
+}
+
+//Pillar Right 2
+if pillarY[3] &gt;= 64
+{
+var pillarX = x+(parallax/100)*power((pillarY[3]*afterErgo-165),2)
+var size = pillarY[3]*pillarAcc[3]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[3]*(pillarAcc[3]*128)),y+pillarY[3]+MidYP[3],size,size,0,c_white,1)
+}
+
 
 //Mid Quarter
 for(i= 64;i&lt;96;i+= 1)
@@ -338,9 +650,43 @@ ergo = x+(parallax/100)*power((i*afterErgo-165),2)
 draw_sprite_ext(sprite_index,i,ergo,y+i+MidY,1,2,0,c_white,1)
 }
 
+//EBENE 4: GANZ NAH-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //Low Horizon
 draw_sprite_ext(spr_blockoutGreen,0,0,y+96,50,5,0,c_white,1)
 
+//Pillar Left 1
+if pillarY[0] &gt;= 96
+{
+var pillarX = x+(parallax/100)*power((pillarY[0]*afterErgo-165),2)
+var size = pillarY[0]*pillarAcc[0]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[0]*(pillarAcc[0]*128)),y+pillarY[0],size,size,0,c_white,1)
+}
+
+//Pillar Right 1
+if pillarY[1] &gt;= 96
+{
+var pillarX = x+(parallax/100)*power((pillarY[1]*afterErgo-165),2)
+var size = pillarY[1]*pillarAcc[1]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[1]*(pillarAcc[1]*128)),y+pillarY[1],size,size,0,c_white,1)
+}
+
+
+//Pillar Left 2
+if pillarY[2] &gt;= 96
+{
+var pillarX = x+(parallax/100)*power((pillarY[2]*afterErgo-165),2)
+var size = pillarY[2]*pillarAcc[2]
+draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY[2]*(pillarAcc[2]*128)),y+pillarY[2],size,size,0,c_white,1)
+}
+
+//Pillar Right 2
+if pillarY[3] &gt;= 96
+{
+var pillarX = x+(parallax/100)*power((pillarY[3]*afterErgo-165),2)
+var size = pillarY[3]*pillarAcc[3]
+draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY[3]*(pillarAcc[3]*128)),y+pillarY[3],size,size,0,c_white,1)
+}
 
 //Lower Half
 for(i= 96;i&lt;165;i+= 1)
@@ -350,6 +696,7 @@ draw_sprite_ext(sprite_index,i,ergo,y+i,1,3,0,c_white,1)
 }
 
 
+/*
 //Pillar Left
 var pillarX = x+(parallax/100)*power((pillarY*afterErgo-165),2)
 var size = pillarY*pillarAcc
@@ -359,6 +706,7 @@ draw_sprite_ext(spr_pillar,0,pillarX-5-(pillarY*(pillarAcc*128)),y+pillarY,size,
 var pillarX = x+(parallax/100)*power((pillarY*afterErgo-165),2)
 var size = pillarY*pillarAcc
 draw_sprite_ext(spr_pillar,0,pillarX+5+(pillarY*(pillarAcc*128)),y+pillarY,size,size,0,c_white,1)
+*/
 
 
 /*KONTINUIERLICHE MAUER. COOL ABER NOT WHAT WE WANT
@@ -386,6 +734,16 @@ draw_text(50,30,"Parallax: "+string(parallax))
 draw_text(50,50,"Multiply: "+string(multiply))
 draw_text(50,70,"Erge: "+string(ergo))
 draw_text(50,90,"AfterErge: "+string(afterErgo))
+
+draw_text(50,110,"TopY: "+string(TopY))
+draw_text(50,130,"TopYP: "+string(TopYP))
+
+draw_text(50,150,"UpperY: "+string(UpperY))
+draw_text(50,170,"UpperYP: "+string(UpperYP))
+
+draw_text(50,190,"MidY: "+string(MidY))
+draw_text(50,210,"MidYP: "+string(MidYP))
+
 
 </string>
           </argument>

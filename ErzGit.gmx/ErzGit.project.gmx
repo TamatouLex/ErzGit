@@ -48,6 +48,9 @@
       <sound>sound\musMine</sound>
       <sound>sound\musMap</sound>
     </sounds>
+    <sound>sound\sd_traffyRoom</sound>
+    <sound>sound\sd_traffyShambles</sound>
+    <sound>sound\sd_magicBone</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="world">
@@ -310,18 +313,26 @@
       <sprite>sprites\spr_slingshotArmSmall</sprite>
       <sprites name="Trolley">
         <sprite>sprites\spr_trolleyFront</sprite>
+        <sprite>sprites\spr_trolleyBG</sprite>
         <sprite>sprites\spr_trolleyFloor</sprite>
         <sprite>sprites\spr_trolleySchiene</sprite>
+        <sprite>sprites\spr_schienen1</sprite>
+        <sprite>sprites\spr_schienen2</sprite>
+        <sprite>sprites\spr_schienen3</sprite>
+        <sprite>sprites\spr_pillar</sprite>
+        <sprite>sprites\spr_stalagmite</sprite>
+      </sprites>
+      <sprites name="Fehlstart">
+        <sprite>sprites\spr_fehlstartBlock</sprite>
+        <sprite>sprites\spr_traffyRoom</sprite>
+        <sprite>sprites\spr_redCar</sprite>
+        <sprite>sprites\spr_mrPeanut</sprite>
+        <sprite>sprites\spr_regenbogenAuto</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_schienen1</sprite>
-    <sprite>sprites\spr_schienen2</sprite>
-    <sprite>sprites\spr_schienen3</sprite>
-    <sprite>sprites\spr_trolleyBG</sprite>
-    <sprite>sprites\spr_pillar</sprite>
-    <sprite>sprites\spr_stalagmite</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\tileAllTiles</background>
     <background>background\bAllTiles</background>
     <background>background\bMegaman</background>
     <background>background\bJumpThrough</background>
@@ -763,6 +774,11 @@
       <object>objects\trolleyFullHorizon</object>
     </objects>
     <object>objects\trackMaster</object>
+    <object>objects\traffyRoom</object>
+    <object>objects\fehlstartBlock</object>
+    <object>objects\fehlstartManager</object>
+    <object>objects\regenbogenAuto</object>
+    <object>objects\mrPeanut</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -780,6 +796,7 @@
       <room>rooms\rLaunchField</room>
       <room>rooms\rCutsceneTrapdoor</room>
       <room>rooms\rTrolley</room>
+      <room>rooms\rFehlstart</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

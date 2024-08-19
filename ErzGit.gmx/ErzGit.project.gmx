@@ -51,6 +51,8 @@
     <sound>sound\sd_traffyRoom</sound>
     <sound>sound\sd_traffyShambles</sound>
     <sound>sound\sd_magicBone</sound>
+    <sound>sound\sd_rauda</sound>
+    <sound>sound\sd_redCar</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="world">
@@ -306,11 +308,25 @@
       <sprite>sprites\spr_playerShmup</sprite>
       <sprite>sprites\spr_TutMovingBlock</sprite>
       <sprite>sprites\spr_TutBlock</sprite>
-      <sprite>sprites\spr_slingshot</sprite>
-      <sprite>sprites\spr_slingshotSanta</sprite>
-      <sprite>sprites\spr_slingshotBig</sprite>
-      <sprite>sprites\spr_slingshotSmall</sprite>
-      <sprite>sprites\spr_slingshotArmSmall</sprite>
+      <sprites name="Christmas">
+        <sprite>sprites\spr_slingshot</sprite>
+        <sprite>sprites\spr_slingshotBig</sprite>
+        <sprite>sprites\spr_slingshotSanta</sprite>
+        <sprite>sprites\spr_slingshotArmSmall</sprite>
+        <sprite>sprites\spr_slingshotSmall</sprite>
+      </sprites>
+      <sprites name="Wyatt">
+        <sprite>sprites\spr_BspikeL</sprite>
+        <sprite>sprites\spr_BspikeR</sprite>
+        <sprite>sprites\spr_BspikeU</sprite>
+        <sprite>sprites\spr_BspikeD</sprite>
+        <sprite>sprites\spr_ironCrate</sprite>
+        <sprite>sprites\spr_geist</sprite>
+        <sprite>sprites\spr_geistDeath</sprite>
+        <sprite>sprites\spr_geistG</sprite>
+        <sprite>sprites\spr_geistGDeath</sprite>
+        <sprite>sprites\spr_geistSpawn</sprite>
+      </sprites>
       <sprites name="Trolley">
         <sprite>sprites\spr_trolleyFront</sprite>
         <sprite>sprites\spr_trolleyBG</sprite>
@@ -325,9 +341,13 @@
       <sprites name="Fehlstart">
         <sprite>sprites\spr_fehlstartBlock</sprite>
         <sprite>sprites\spr_traffyRoom</sprite>
-        <sprite>sprites\spr_redCar</sprite>
-        <sprite>sprites\spr_mrPeanut</sprite>
+        <sprite>sprites\spr_spyDrone</sprite>
         <sprite>sprites\spr_regenbogenAuto</sprite>
+        <sprite>sprites\spr_mrPeanut</sprite>
+        <sprite>sprites\spr_mrMagoo</sprite>
+        <sprite>sprites\spr_redCar</sprite>
+        <sprite>sprites\spr_gate</sprite>
+        <sprite>sprites\spr_spyDroneLight</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -363,9 +383,13 @@
     <background>background\tileEndgame</background>
     <background>background\tileStage1</background>
     <background>background\tilePipe</background>
+    <background>background\tileWyatt</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_plat1</path>
+    <path>paths\outerGhost</path>
+    <path>paths\centerGhost</path>
+    <path>paths\innerGhost</path>
   </paths>
   <scripts name="scripts">
     <scripts name="player">
@@ -774,11 +798,32 @@
       <object>objects\trolleyFullHorizon</object>
     </objects>
     <object>objects\trackMaster</object>
-    <object>objects\traffyRoom</object>
-    <object>objects\fehlstartBlock</object>
-    <object>objects\fehlstartManager</object>
-    <object>objects\regenbogenAuto</object>
-    <object>objects\mrPeanut</object>
+    <objects name="Fehlstart">
+      <object>objects\fehlstartManager</object>
+      <object>objects\fehlstartBlock</object>
+      <object>objects\regenbogenAuto</object>
+      <object>objects\mrPeanut</object>
+      <object>objects\mrMagoo</object>
+      <object>objects\redCar</object>
+      <object>objects\traffyRoom</object>
+      <object>objects\spyDrone</object>
+      <object>objects\spyDroneLight</object>
+    </objects>
+    <objects name="Wyatt">
+      <object>objects\wyattManager</object>
+      <object>objects\BspikeD</object>
+      <object>objects\BspikeU</object>
+      <object>objects\BspikeR</object>
+      <object>objects\BspikeL</object>
+      <object>objects\centerGhostBall</object>
+      <object>objects\innerGhostBall</object>
+      <object>objects\outerGhostBall</object>
+      <object>objects\geist</object>
+      <object>objects\geistDeath</object>
+      <object>objects\geistGDeath</object>
+      <object>objects\ironCrate</object>
+    </objects>
+    <object>objects\gate</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -797,6 +842,7 @@
       <room>rooms\rCutsceneTrapdoor</room>
       <room>rooms\rTrolley</room>
       <room>rooms\rFehlstart</room>
+      <room>rooms\rWyatt</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

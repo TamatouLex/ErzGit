@@ -3,7 +3,7 @@
   <spriteName>spr_traffyRoom</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -54,6 +54,16 @@ image_yscale = 0
 {
 image_xscale += 0.1
 image_yscale += 0.1
+}
+
+
+//Warp to Wyatt Room
+if place_meeting(x,y,objPlayer)
+{
+room = rWyatt
+objPlayer.x = 64
+objPlayer.y = 500
+
 }
 </string>
           </argument>

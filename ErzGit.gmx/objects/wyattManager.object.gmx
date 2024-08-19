@@ -25,16 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Auflistung
-//1. ??
-//2. Regenbogen Auto (nach Links)
-//3 Mr. Peanut (Nach Rechts=
-//4 Mr. Magoo (Nach Links)
-//5 Red Car (Nach Rechts)
+            <string>instance_deactivate_object(centerGhostBall)
+instance_deactivate_object(outerGhostBall)
+instance_deactivate_object(innerGhostBall)
 
+instance_deactivate_object(geist)
 
-go = false
-count = 0
+//Spikes
+instance_deactivate_object(BspikeU)
+instance_deactivate_object(BspikeD)
+instance_deactivate_object(BspikeR)
+instance_deactivate_object(BspikeL)
+
+ghostMode = false
 </string>
           </argument>
         </arguments>
@@ -57,52 +60,27 @@ count = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//INITIATE RUN
-if instance_exists(objPlayer)
+            <string>if instance_exists(objPlayer)
 {
-if objPlayer.y &gt; 160
-&amp;&amp; objPlayer.x &lt; 700
+if objPlayer.y &lt; 420
+&amp;&amp; objPlayer.x &lt; 80
+&amp;&amp; ghostMode = false
 {
-go = true
-regenbogenAuto.hspeed = -3
+instance_activate_object(centerGhostBall)
+instance_activate_object(innerGhostBall)
+instance_activate_object(outerGhostBall)
+
+instance_activate_object(geist)
+
+//Spikes
+instance_activate_object(BspikeU)
+instance_activate_object(BspikeD)
+instance_activate_object(BspikeR)
+instance_activate_object(BspikeL)
+
+ghostMode = true
 }
 }
-
-//COUNT ACTIVE
-if go = true
-{
-count += 1
-}
-
-
-//MAGIC BONE
-if count = 250
-{
-mrPeanut.hspeed = 3
-sound_play(sd_magicBone)
-}
-
-//Mr. MAGOO
-if count = 500
-{
-mrMagoo.hspeed = -3
-sound_play(sd_rauda)
-}
-
-//Red Car
-if count = 750
-{
-redCar.hspeed = 3
-sound_play(sd_redCar)
-}
-
-//Spawn Traffy Room
-if count= 900
-{
-instance_create(752,368,traffyRoom)
-}
-
-
 </string>
           </argument>
         </arguments>

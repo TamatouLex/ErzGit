@@ -308,6 +308,7 @@
       <sprite>sprites\spr_playerShmup</sprite>
       <sprite>sprites\spr_TutMovingBlock</sprite>
       <sprite>sprites\spr_TutBlock</sprite>
+      <sprite>sprites\spr_levelAnzeige</sprite>
       <sprites name="Christmas">
         <sprite>sprites\spr_slingshot</sprite>
         <sprite>sprites\spr_slingshotBig</sprite>
@@ -349,6 +350,10 @@
         <sprite>sprites\spr_gate</sprite>
         <sprite>sprites\spr_spyDroneLight</sprite>
       </sprites>
+      <sprites name="SixTrails">
+        <sprite>sprites\spr_silverWarpPipe</sprite>
+        <sprite>sprites\spr_trailElevator</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -384,6 +389,7 @@
     <background>background\tileStage1</background>
     <background>background\tilePipe</background>
     <background>background\tileWyatt</background>
+    <background>background\tileTrail</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_plat1</path>
@@ -787,43 +793,49 @@
       <object>objects\TutSpawningBlock</object>
       <object>objects\slingshot</object>
       <object>objects\slingshotArm</object>
+      <object>objects\levelAnzeige</object>
+      <objects name="Wyatt">
+        <object>objects\wyattManager</object>
+        <object>objects\BspikeD</object>
+        <object>objects\BspikeU</object>
+        <object>objects\BspikeR</object>
+        <object>objects\BspikeL</object>
+        <object>objects\centerGhostBall</object>
+        <object>objects\innerGhostBall</object>
+        <object>objects\outerGhostBall</object>
+        <object>objects\geist</object>
+        <object>objects\geistDeath</object>
+        <object>objects\geistGDeath</object>
+        <object>objects\ironCrate</object>
+      </objects>
+      <objects name="Fehlstart">
+        <object>objects\fehlstartManager</object>
+        <object>objects\fehlstartBlock</object>
+        <object>objects\regenbogenAuto</object>
+        <object>objects\mrPeanut</object>
+        <object>objects\mrMagoo</object>
+        <object>objects\redCar</object>
+        <object>objects\traffyRoom</object>
+        <object>objects\spyDrone</object>
+        <object>objects\spyDroneLight</object>
+      </objects>
+      <objects name="SixTrails">
+        <object>objects\silverWarpPipe</object>
+      </objects>
+      <object>objects\trailElevator</object>
       <object>objects\playerLaunched</object>
-    </objects>
-    <objects name="Trolley">
-      <object>objects\pillarMaker</object>
-      <object>objects\trolleyFront</object>
-      <object>objects\trolleyFloor</object>
-      <object>objects\trolleySchiene</object>
-      <object>objects\trolleyHorizon</object>
-      <object>objects\trolleyFullHorizon</object>
-    </objects>
-    <object>objects\trackMaster</object>
-    <objects name="Fehlstart">
-      <object>objects\fehlstartManager</object>
-      <object>objects\fehlstartBlock</object>
-      <object>objects\regenbogenAuto</object>
-      <object>objects\mrPeanut</object>
-      <object>objects\mrMagoo</object>
-      <object>objects\redCar</object>
-      <object>objects\traffyRoom</object>
-      <object>objects\spyDrone</object>
-      <object>objects\spyDroneLight</object>
-    </objects>
-    <objects name="Wyatt">
-      <object>objects\wyattManager</object>
-      <object>objects\BspikeD</object>
-      <object>objects\BspikeU</object>
-      <object>objects\BspikeR</object>
-      <object>objects\BspikeL</object>
-      <object>objects\centerGhostBall</object>
-      <object>objects\innerGhostBall</object>
-      <object>objects\outerGhostBall</object>
-      <object>objects\geist</object>
-      <object>objects\geistDeath</object>
-      <object>objects\geistGDeath</object>
-      <object>objects\ironCrate</object>
+      <objects name="Trolley">
+        <object>objects\pillarMaker</object>
+        <object>objects\trackMaster</object>
+        <object>objects\trolleyFront</object>
+        <object>objects\trolleyFloor</object>
+        <object>objects\trolleySchiene</object>
+        <object>objects\trolleyHorizon</object>
+        <object>objects\trolleyFullHorizon</object>
+      </objects>
     </objects>
     <object>objects\gate</object>
+    <object>objects\trapdoorCutsceneManager</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
@@ -843,6 +855,7 @@
       <room>rooms\rTrolley</room>
       <room>rooms\rFehlstart</room>
       <room>rooms\rWyatt</room>
+      <room>rooms\rSixTrails</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

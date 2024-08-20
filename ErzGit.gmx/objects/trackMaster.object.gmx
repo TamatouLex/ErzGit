@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>countToEnd = 0
 
 frameCount = 0
 trackSpeed = 2
@@ -100,7 +100,14 @@ MidYP[3] = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Tal Fahrt (No Hill)
+            <string>countToEnd += 1
+if countToEnd = 500
+{
+room = rFehlstart
+}
+
+
+//Tal Fahrt (No Hill)
 if mode = 0
 {
 TopY = lerp(TopY,0,0.05)

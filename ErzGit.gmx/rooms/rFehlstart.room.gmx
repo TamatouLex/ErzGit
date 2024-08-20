@@ -83,7 +83,7 @@
     <instance objName="fehlstartBlock" x="672" y="128" name="inst_F05F311E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fehlstartBlock" x="704" y="128" name="inst_B450F311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fehlstartBlock" x="720" y="128" name="inst_B973952A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="64" y="64" name="inst_E4D4D14E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="512" y="64" name="inst_E4D4D14E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="32" y="32" name="inst_F01C7029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="camera" x="416" y="64" name="inst_D6326978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fehlstartBlock" x="736" y="192" name="inst_8C56444D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -310,6 +310,7 @@
     <instance objName="mrMagoo" x="864" y="288" name="inst_088B73C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="redCar" x="-96" y="352" name="inst_8A460BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="spyDrone" x="-48" y="48" name="inst_5E9FEB90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayer" x="576" y="80" name="inst_E579D000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

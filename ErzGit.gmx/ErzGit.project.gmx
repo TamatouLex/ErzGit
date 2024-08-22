@@ -353,8 +353,11 @@
       <sprites name="SixTrails">
         <sprite>sprites\spr_silverWarpPipe</sprite>
         <sprite>sprites\spr_trailElevator</sprite>
+        <sprite>sprites\spr_sixTrailsPushBlock</sprite>
+        <sprite>sprites\spr_sixTrailsWall</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sprite230</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileAllTiles</background>
@@ -455,9 +458,12 @@
     <script>scripts\scr_debug.gml</script>
     <script>scripts\scr_paralaxbg.gml</script>
     <script>scripts\scr_changeRoom.gml</script>
+    <script>scripts\scr_lightEngineQuad.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\loltest.shader</shader>
+    <shader type="GLSLES">shaders\shd_light.shader</shader>
+    <shader type="GLSLES">shaders\shd_shadow.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -821,6 +827,8 @@
       </objects>
       <objects name="SixTrails">
         <object>objects\silverWarpPipe</object>
+        <object>objects\sixTrailsPushBlock</object>
+        <object>objects\sixTrailsWall</object>
       </objects>
       <object>objects\trailElevator</object>
       <object>objects\playerLaunched</object>
@@ -836,6 +844,11 @@
     </objects>
     <object>objects\gate</object>
     <object>objects\trapdoorCutsceneManager</object>
+    <objects name="LightingEngine">
+      <object>objects\movingLightFX</object>
+      <object>objects\lightFX</object>
+      <object>objects\lightSetup</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="init">

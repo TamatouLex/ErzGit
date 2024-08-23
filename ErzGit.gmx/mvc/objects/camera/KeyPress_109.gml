@@ -1,2 +1,0 @@
-global.chadhp -= 1
-

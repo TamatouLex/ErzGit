@@ -1,1 +1,0 @@
-//Drehende Statuen

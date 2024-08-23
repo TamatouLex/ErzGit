@@ -33,6 +33,9 @@ vertex_format_begin()
 vertex_format_add_position_3d()
 vf = vertex_format_end()
 vb = vertex_create_buffer()
+
+
+first = 0
 </string>
           </argument>
         </arguments>
@@ -55,7 +58,10 @@ vb = vertex_create_buffer()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if mouse_check_button_pressed(mb_left)
+{
+instance_create(mouse_x,mouse_y,lightFX)
+}
 
 vertex_begin(vb,vf)
 var _vb = vb;
@@ -93,18 +99,31 @@ vertex_end(vb)
 var _u_pos2 = u_pos2
 
 var _vb = vb;
+//draw_clear_alpha(c_black,0)
 with(lightFX)
 {
 
+//Shadow
+//draw_set_blend_mode_ext(bm_one,bm_zero)
+//draw_set_
+//draw_set_blend_mode(bm_subtract)
+shader_set(shd_shadow)
+shader_set_uniform_f(_u_pos2,x,y)
+vertex_submit(_vb,pr_trianglelist,-1)
+lightSetup.first = 0
+
+
+//Light
+draw_set_blend_mode(bm_add)
+//draw_set_blend_mode_ext(bm_zero,bm_one)
 shader_set(shd_light)
 shader_set_uniform_f(_u_pos,x,y)
 draw_rectangle(0,0,800,608,0)
+draw_set_blend_mode(bm_normal)
 
-shader_set(shd_shadow)
-shader_set_uniform_f(_u_pos2,x,y)
-
-vertex_submit(_vb,pr_trianglelist,-1)
 }
+
+
 
 
 shader_reset()

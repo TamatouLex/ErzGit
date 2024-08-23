@@ -1,0 +1,2 @@
+image_angle += dreh
+

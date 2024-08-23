@@ -1,0 +1,3 @@
+other.destroy = true
+
+

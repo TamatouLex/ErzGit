@@ -1,0 +1,394 @@
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrSetPlayerMask\scrSetPlayerMask.gml
+Converted description /// @description sets the player's mask depending on gravity flip mode
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_Set7735Mask\scr_Set7735Mask.gml
+Converted description /// @description sets the player's mask depending on gravity flip mode
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrFlipGrav\scrFlipGrav.gml
+Converted description /// @description flips the current gravity
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrInitializeGlobals\scrInitializeGlobals.gml
+Converted description /// @description initializes all global variables needed for the game
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrSetGlobalOptions\scrSetGlobalOptions.gml
+Converted description /// @description sets configurable global options
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrSaveConfig\scrSaveConfig.gml
+Converted description /// @description saves current config settings
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrLoadConfig\scrLoadConfig.gml
+Converted description /// @description loads config settings, sets default config if it doesn't exist
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrSaveGame\scrSaveGame.gml
+Converted description /// @description scrSaveGame(saveposition)/// @param saveposition
+String not found: ConversionLog_ConvertedString 84 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 89 "Data\save" "Data\\save"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrLoadGame\scrLoadGame.gml
+Converted description /// @description scrLoadGame(loadfile)/// @param loadfile
+String not found: ConversionLog_ConvertedString 16 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 20 "Data\save" "Data\\save"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrSetRoomCaption\scrSetRoomCaption.gml
+Converted description /// @description sets the room caption
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrDrawButtonInfo\scrDrawButtonInfo.gml
+Converted description /// @description scrDrawButtonInfo(optionsText)/// @param optionsText
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrGetKeybind\scrGetKeybind.gml
+Converted description /// @description scrGetKeybind(key)/// @param key
+String not found: ConversionLog_ConvertedString 73 "\" "\\"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrGetControllerBind\scrGetControllerBind.gml
+Converted description /// @description scrGetControllerBind(buttonIndex)/// @param buttonIndex
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrToggleMusic\scrToggleMusic.gml
+Converted description /// @description toggles the music on and off
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrRestartGame\scrRestartGame.gml
+Converted description /// @description restarts the game
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrSetVsync\scrSetVsync.gml
+Converted description /// @description sets vsync mode depending on the current setting
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrResetWindowSize\scrResetWindowSize.gml
+Converted description /// @description resets the window size back to the default
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrGetMusic\scrGetMusic.gml
+Converted description /// @description gets which song is supposed to be playing for the current room and plays it
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrPlayMusic\scrPlayMusic.gml
+Converted description /// @description scrPlayMusic(soundid,loops)/// @param soundid
+/// @param loops
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrStopMusic\scrStopMusic.gml
+Converted description /// @description stops any music currently playing
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrAnyControllerButton\scrAnyControllerButton.gml
+Converted description /// @description scrAnyControllerButton()
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrButtonCheck\scrButtonCheck.gml
+Converted description /// @description scrButtonCheck(buttonArray)/// @param buttonArray
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrButtonCheckPressed\scrButtonCheckPressed.gml
+Converted description /// @description scrButtonCheckPressed(buttonArray)/// @param buttonArray
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrButtonCheckReleased\scrButtonCheckReleased.gml
+Converted description /// @description scrButtonCheckReleased(buttonArray)/// @param buttonArray
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrDrawTextOutline\scrDrawTextOutline.gml
+Converted description /// @description scrDrawTextOutline(x,y,string,textcolor,outlinecolor)/// @param x
+/// @param y
+/// @param string
+/// @param textcolor
+/// @param outlinecolor
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrMakeShapes\scrMakeShapes.gml
+Converted description /// @description scrMakeShapes(x,y,angle,edges,numprojectiles,speed,obj)/// @param x
+/// @param y
+/// @param angle
+/// @param edges
+/// @param numprojectiles
+/// @param speed
+/// @param obj
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scrMakeCircle\scrMakeCircle.gml
+Converted description /// @description scrMakeCircle(x,y,angle,numprojectiles,speed,obj)/// @param x
+/// @param y
+/// @param angle
+/// @param numprojectiles
+/// @param speed
+/// @param obj
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_textarial\scr_textarial.gml
+Converted builtin - line 8: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_textchoice\scr_textchoice.gml
+Converted builtin - line 8: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_textevents\scr_textevents.gml
+Converted builtin - line 8: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_textdesc\scr_textdesc.gml
+Converted builtin - line 8: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_textnewevent\scr_textnewevent.gml
+Converted builtin - line 8: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\scripts\scr_paralaxbg\scr_paralaxbg.gml
+Converted builtin - line 2: background_x[0] = view_xview/1.1 -> __background_set( e__BG.X, 0, view_xview/1.1 )
+Converted builtin - line 3: background_x[1] = view_xview/1.9 -> __background_set( e__BG.X, 1, view_xview/1.9 )
+Converted builtin - line 4: background_x[2] = 200+view_xview/2.2 -> __background_set( e__BG.X, 2, 200+view_xview/2.2 )
+Converted builtin - line 8: background_y[0] = view_yview -> __background_set( e__BG.Y, 0, view_yview )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fDefault30\fDefault30.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fDefault24\fDefault24.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fDefault18\fDefault18.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fDefault12\fDefault12.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fntarial\fntarial.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fntchoice\fntchoice.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fntevents\fntevents.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\fonts\fntnewevent\fntnewevent.gms1.png
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWorld\Alarm_1.gml
+Converted description /// @description return to previous window position/size (after using display_reset)/// @param after using display_reset
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWorld\Alarm_0.gml
+Converted description /// @description pause current music when it's done fading out
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWorld\Other_10.gml
+Converted description /// @description fade current music out
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWorld\Other_4.gml
+Converted description /// @description room checks
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWorld\Other_2.gml
+Converted description /// @description initialize everything
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWorld\Draw_64.gml
+Converted description /// @description draw debug overlay
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objCamera\Other_10.gml
+Converted builtin - line 14: view_xview[0] = floor(xFollow/view_wview[0])*view_wview[0] -> __view_set( e__VW.XView, 0, floor(xFollow/view_wview[0])*view_wview[0] )
+Converted builtin - line 15: view_yview[0] = floor(yFollow/view_hview[0])*view_hview[0] -> __view_set( e__VW.YView, 0, floor(yFollow/view_hview[0])*view_hview[0] )
+Converted description /// @description snap view to the section of the room that the player's in
+Converted builtin - line 14: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 14: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 15: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objDifficultyMenu\Create_0.gml
+String not found: ConversionLog_ConvertedString 20 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 30 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 34 "Data\save" "Data\\save"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objDifficultyMenu\Step_0.gml
+String not found: ConversionLog_ConvertedString 83 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 100 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 144 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 145 "Data\save" "Data\\save"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objPlayer\Draw_0.gml
+Converted description /// @description draw the player
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\obj7735\Step_2.gml
+Converted description /// @description Minecart
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\obj7735\Draw_0.gml
+Converted description /// @description draw the player
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\lump\Step_0.gml
+Converted description /// @description Animation
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\lall\Step_0.gml
+Converted description /// @description Animation
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objBow\Step_2.gml
+Converted description /// @description snap to the player after he moves this frame
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objBow\Step_0.gml
+Converted description /// @description snap to the player before he moves this frame
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objBow\Other_10.gml
+Converted description /// @description stay with the player
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objBlood\Collision_6d5b0e4b-ec88-4901-ada7-1f40b2908a94.gml
+Converted description /// @description do nothing
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objBlood\Collision_ad7b9f3b-9af8-4ccc-abd5-31ce89515db3.gml
+Converted description /// @description snap to the block
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objGameOver\Draw_0.gml
+Converted description /// @description do nothing
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objMovingPlatform\Step_2.gml
+Converted description /// @description Twist Functionality
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objMiku\Other_11.gml
+Converted description /// @description makes triangles
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objMiku\Other_10.gml
+Converted description /// @description makes squares
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objSave\Other_10.gml
+Converted description /// @description save the game
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWarpStart\Collision_b9abba84-568f-486a-8b06-0e88a0c9e5b3.gml
+String not found: ConversionLog_ConvertedString 3 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 15 "Data\save" "Data\\save"
+String not found: ConversionLog_ConvertedString 16 "Data\save" "Data\\save"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWarpNext\Collision_de20bf14-d5c5-48be-8d2f-d817983880ff.gml
+Converted description /// @description go to the next room
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objWarpAutosaveNext\Collision_9f3b8fad-2ee5-4d71-bece-6a619ab12182.gml
+Converted description /// @description go to the next room and autosave
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objGameClear\Collision_db613769-f975-4527-969f-56a5e994cd68.gml
+Converted description /// @description set game to clear and autosave when touched
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\camera\Step_2.gml
+Converted builtin - line 91: view_xview = x-view_wview/2 -> __view_set( e__VW.XView, 0, x-view_wview/2 )
+Converted builtin - line 92: view_yview = y-view_hview/2 -> __view_set( e__VW.YView, 0, y-view_hview/2 )
+Converted builtin - line 95: view_wview = 800 * zoom_factor -> __view_set( e__VW.WView, 0, 800 * zoom_factor )
+Converted builtin - line 94: view_hview = 608 * zoom_factor -> __view_set( e__VW.HView, 0, 608 * zoom_factor )
+String not found: ConversionLog_ConvertedString 63 '1' "1"
+String not found: ConversionLog_ConvertedString 69 '2' "2"
+String not found: ConversionLog_ConvertedString 78 '3' "3"
+String not found: ConversionLog_ConvertedString 84 '4' "4"
+Converted builtin - line 91: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 92: view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\conBangSecond\Draw_64.gml
+String not found: ConversionLog_ConvertedString 182 '1' "1"
+String not found: ConversionLog_ConvertedString 187 '2' "2"
+String not found: ConversionLog_ConvertedString 195 '3' "3"
+String not found: ConversionLog_ConvertedString 201 '4' "4"
+String not found: ConversionLog_ConvertedString 207 '5' "5"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\conArielleSewer\Draw_64.gml
+String not found: ConversionLog_ConvertedString 87 '1' "1"
+String not found: ConversionLog_ConvertedString 92 '2' "2"
+String not found: ConversionLog_ConvertedString 365 '1' "1"
+String not found: ConversionLog_ConvertedString 370 '2' "2"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\conPandy\Draw_64.gml
+String not found: ConversionLog_ConvertedString 153 '1' "1"
+String not found: ConversionLog_ConvertedString 158 '2' "2"
+String not found: ConversionLog_ConvertedString 230 '1' "1"
+String not found: ConversionLog_ConvertedString 235 '2' "2"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objarial\Draw_64.gml
+Converted description /// @description Add letters over time
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objchoicetext\Draw_64.gml
+Converted description /// @description Add letters over time
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objeventstext\Draw_64.gml
+Converted description /// @description Add letters over time
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objdesctext\Draw_64.gml
+Converted description /// @description Add letters over time
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\objneweventtext\Draw_64.gml
+Converted description /// @description Add letters over time
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\BGPlantMaster\Step_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 28: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 35: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\testskew\Draw_0.gml
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\bush\Step_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\testHQR\Step_0.gml
+Converted builtin - line 37: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\testHQL\Step_0.gml
+Converted builtin - line 37: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\HQWall\Step_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\HQTower\Step_0.gml
+Converted builtin - line 25: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\TutMovingBlock\Step_0.gml
+Converted description /// @description Pusher von Links
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\fehlstartManager\Create_0.gml
+Converted description /// @description Auflistung
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\playerLaunched\Step_2.gml
+Converted description /// @description Camera in LaunchField
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\pillarMaker\Step_0.gml
+Converted builtin - line 143: background_hspeed[0] = -0.5 -> __background_set( e__BG.HSpeed, 0, -0.5 )
+Converted builtin - line 148: background_hspeed[0] = 1 -> __background_set( e__BG.HSpeed, 0, 1 )
+Converted builtin - line 153: background_hspeed[0] = 1.5 -> __background_set( e__BG.HSpeed, 0, 1.5 )
+Converted builtin - line 158: background_hspeed[0] = 3 -> __background_set( e__BG.HSpeed, 0, 3 )
+Converted builtin - line 163: background_hspeed[0] = 4.5 -> __background_set( e__BG.HSpeed, 0, 4.5 )
+Converted builtin - line 168: background_hspeed[0] = 8 -> __background_set( e__BG.HSpeed, 0, 8 )
+Converted builtin - line 175: background_hspeed[0] = -0.5 -> __background_set( e__BG.HSpeed, 0, -0.5 )
+Converted builtin - line 180: background_hspeed[0] = -1 -> __background_set( e__BG.HSpeed, 0, -1 )
+Converted builtin - line 185: background_hspeed[0] = -1.5 -> __background_set( e__BG.HSpeed, 0, -1.5 )
+Converted builtin - line 190: background_hspeed[0] = -3 -> __background_set( e__BG.HSpeed, 0, -3 )
+Converted builtin - line 195: background_hspeed[0] = -4.5 -> __background_set( e__BG.HSpeed, 0, -4.5 )
+Converted builtin - line 200: background_hspeed[0] = -8 -> __background_set( e__BG.HSpeed, 0, -8 )
+Converted builtin - line 1: view_visible[1] = false -> __view_set( e__VW.Visible, 1, false )
+Converted builtin - line 2: view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\trackMaster\Step_0.gml
+String not found: ConversionLog_ConvertedString 79 'S' "S"
+String not found: ConversionLog_ConvertedString 84 'W' "W"
+String not found: ConversionLog_ConvertedString 90 'A' "A"
+String not found: ConversionLog_ConvertedString 95 'D' "D"
+
+Converting GML script: C:\Spiele\Tamatou Games\ErzGit\ErzGit\ErzGit.gmx\mvc\objects\trolleyHorizon\Step_0.gml
+Converted description /// @description PlayerControl
+String not found: ConversionLog_ConvertedString 2 'A' "A"
+String not found: ConversionLog_ConvertedString 7 'D' "D"
+String not found: ConversionLog_ConvertedString 12 'W' "W"
+String not found: ConversionLog_ConvertedString 17 'S' "S"
+
+Missing audiogroup for sound: 'sndJump' - setting to default audio group
+Missing audiogroup for sound: 'sndDJump' - setting to default audio group
+Missing audiogroup for sound: 'sndWallJump' - setting to default audio group
+Missing audiogroup for sound: 'sndShoot' - setting to default audio group
+Missing audiogroup for sound: 'sndDeath' - setting to default audio group
+Missing audiogroup for sound: 'sndItem' - setting to default audio group
+Missing audiogroup for sound: 'sndBlockChange' - setting to default audio group
+Missing audiogroup for sound: 'sndBossHit' - setting to default audio group
+Missing audiogroup for sound: 'sndCherry' - setting to default audio group
+Missing audiogroup for sound: 'sndGlass' - setting to default audio group
+Missing audiogroup for sound: 'sndSpikeTrap' - setting to default audio group
+Missing audiogroup for sound: 'musOnDeath' - setting to default audio group
+Missing audiogroup for sound: 'musGuyRock' - setting to default audio group
+Missing audiogroup for sound: 'musMegaman' - setting to default audio group
+Missing audiogroup for sound: 'musIlona' - setting to default audio group
+Missing audiogroup for sound: 'musDrasche' - setting to default audio group
+Missing audiogroup for sound: 'musMiku' - setting to default audio group
+Missing audiogroup for sound: 'musSewers' - setting to default audio group
+Missing audiogroup for sound: 'musMine' - setting to default audio group
+Missing audiogroup for sound: 'musMap' - setting to default audio group
+Missing audiogroup for sound: 'sd_traffyRoom' - setting to default audio group
+Missing audiogroup for sound: 'sd_traffyShambles' - setting to default audio group
+Missing audiogroup for sound: 'sd_magicBone' - setting to default audio group
+Missing audiogroup for sound: 'sd_rauda' - setting to default audio group
+Missing audiogroup for sound: 'sd_redCar' - setting to default audio group
+Imported layer depths for room(s) 'rPDinoHouse' were not adequately spaced. Unless updated this will have undefined results in game.
+Game speed set to 30
+Added compatibility script 'action\action_another_room.gml'
+Added compatibility script 'action\action_kill_object.gml'
+Added compatibility script 'action\action_path.gml'
+Added compatibility script 'background\__background_set.gml'
+Added compatibility script 'background\__background_set_internal.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'sound\sound_play.gml'
+Added compatibility script 'texture\texture_set_interpolation.gml'
+Added compatibility script 'view\__view_get.gml'
+Added compatibility script 'view\__view_set.gml'
+Added compatibility script 'view\__view_set_internal.gml'
+Added compatibility script 'action\__init_action.gml'
+Added compatibility script 'background\__init_background.gml'
+Added compatibility script 'view\__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'background\__background_get_element.gml'
+Added compatibility script 'background\__background_get_internal.gml'
+Added compatibility script 'background\__background_set_element.gml'
+Added compatibility script '__global_object_depths.gml'

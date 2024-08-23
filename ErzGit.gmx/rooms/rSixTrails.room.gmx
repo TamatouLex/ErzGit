@@ -89,10 +89,6 @@
     <instance objName="trailElevator" x="736" y="192" name="inst_CAC2ACC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="736" y="32" name="inst_CAF04EBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="736" y="32" name="inst_ABCAED68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="704" y="160" name="inst_6D8E6444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="736" y="160" name="inst_C0FA950C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="704" y="192" name="inst_0D20AB11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="736" y="192" name="inst_F39C8624" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="672" y="-32" name="inst_C1AEE08B" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="576" name="inst_C2CEBEE0" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="512" name="inst_4306800C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -128,6 +124,7 @@
     <instance objName="objBlock" x="288" y="32" name="inst_6549971B" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="32" name="inst_7B2736D3" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="608" y="32" name="inst_3C83D29F" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="704" y="160" name="inst_DC7009AB" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileTrail" x="64" y="0" w="32" h="32" xo="64" yo="32" id="10007147" name="inst_2ACD5EF9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

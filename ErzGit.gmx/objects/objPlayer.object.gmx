@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>frozen = false; //sets if the player can move or not
 
+lightSize = 0 //Wie groß der Light Umris ist
+lightDir = 1 //ob das Light gerade großer oder kleiner wird
+
 jump = 8.5 * global.grav; //set how fast the player jumps
 jump2 = 7 * global.grav; //sets how fast the player double jumps
 gravity = 0.4 * global.grav; //player gravity
@@ -147,6 +150,45 @@ if (global.playerAnimationFix)
     }
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Light Source
+lightSize += lightDir
+
+if lightSize &gt; 250
+{
+lightDir = lerp(lightDir,-1,0.1)
+}
+if lightSize &lt; 230
+{
+lightDir = lerp(lightDir,1,0.1)
+}
+
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+//draw_ellipse_color(x-size/2-view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview,c_white,c_black,false);
+draw_ellipse_color(x-lightSize/2,y-lightSize/2,x+lightSize/2,y+lightSize/2,c_white,c_black,false);
+
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
 </string>
           </argument>
         </arguments>

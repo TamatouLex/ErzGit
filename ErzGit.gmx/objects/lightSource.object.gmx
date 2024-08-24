@@ -25,23 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>u_pos = shader_get_uniform(shd_light,"u_pos");
-u_pos2 = shader_get_uniform(shd_shadow,"u_pos");
-
-
-vertex_format_begin()
-vertex_format_add_position_3d()
-vf = vertex_format_end()
-vb = vertex_create_buffer()
-
-
-first = 0
+            <string>target = objPlayer//noone
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -58,80 +48,23 @@ first = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-if mouse_check_button_pressed(mb_left)
+            <string>size = 150;
+
+/*
+if instance_exists(target)
 {
-instance_create(mouse_x,mouse_y,lightFX)
+x = target.x
+y = target.y
 }
 */
 
-vertex_begin(vb,vf)
-var _vb = vb;
 
-//Block
-with(objBlock)
-{
-scr_lightEngineQuad(_vb,x,y,x+sprite_width,y+sprite_height)
-scr_lightEngineQuad(_vb,x+sprite_width,y,x,y+sprite_height)
-}
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_color(target.x-size/2-view_xview,target.y-size/2-view_yview,target.x+size/2-view_xview,target.y+size/2-view_yview,c_white,c_black,false);
 
-vertex_end(vb)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>var _u_pos = u_pos
-var _u_pos2 = u_pos2
-
-var _vb = vb;
-//draw_clear_alpha(c_black,0)
-with(lightFX)
-{
-
-//Shadow
-//draw_set_blend_mode_ext(bm_one,bm_zero)
-//draw_set_
-//draw_set_blend_mode(bm_subtract)
-shader_set(shd_shadow)
-shader_set_uniform_f(_u_pos2,x,y)
-vertex_submit(_vb,pr_trianglelist,-1)
-lightSetup.first = 0
-
-
-//Light
-draw_set_blend_mode(bm_add)
-//draw_set_blend_mode_ext(bm_zero,bm_one)
-shader_set(shd_light)
-shader_set_uniform_f(_u_pos,x,y)
-//draw_rectangle(0,0,800,608,0)
-draw_rectangle(0,0,1600,1216,0)
-
-draw_set_blend_mode(bm_normal)
-
-}
-
-
-
-
-shader_reset()
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
 </string>
           </argument>
         </arguments>

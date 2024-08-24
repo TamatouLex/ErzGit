@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,17 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>u_pos = shader_get_uniform(shd_light,"u_pos");
-u_pos2 = shader_get_uniform(shd_shadow,"u_pos");
+            <string>globalvar light;
 
+light = surface_create(1600,1216);
 
-vertex_format_begin()
-vertex_format_add_position_3d()
-vf = vertex_format_end()
-vb = vertex_create_buffer()
-
-
-first = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+surface_free(light)
+instance_destroy()
 </string>
           </argument>
         </arguments>
@@ -58,24 +76,23 @@ first = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-if mouse_check_button_pressed(mb_left)
+            <string>
+if !surface_exists(light)
 {
-instance_create(mouse_x,mouse_y,lightFX)
-}
-*/
-
-vertex_begin(vb,vf)
-var _vb = vb;
-
-//Block
-with(objBlock)
-{
-scr_lightEngineQuad(_vb,x,y,x+sprite_width,y+sprite_height)
-scr_lightEngineQuad(_vb,x+sprite_width,y,x,y+sprite_height)
+light = surface_create(1600,1216);
 }
 
-vertex_end(vb)
+
+surface_set_target(light);
+draw_set_color(c_white);
+draw_rectangle(0,0,1600,1216,false);
+surface_reset_target();
+
+
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -98,40 +115,14 @@ vertex_end(vb)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var _u_pos = u_pos
-var _u_pos2 = u_pos2
-
-var _vb = vb;
-//draw_clear_alpha(c_black,0)
-with(lightFX)
+            <string>if surface_exists(light)
 {
+draw_set_blend_mode(bm_subtract);
+//draw_surface(light,view_xview,view_yview);
+draw_surface(light,0,0);
 
-//Shadow
-//draw_set_blend_mode_ext(bm_one,bm_zero)
-//draw_set_
-//draw_set_blend_mode(bm_subtract)
-shader_set(shd_shadow)
-shader_set_uniform_f(_u_pos2,x,y)
-vertex_submit(_vb,pr_trianglelist,-1)
-lightSetup.first = 0
-
-
-//Light
-draw_set_blend_mode(bm_add)
-//draw_set_blend_mode_ext(bm_zero,bm_one)
-shader_set(shd_light)
-shader_set_uniform_f(_u_pos,x,y)
-//draw_rectangle(0,0,800,608,0)
-draw_rectangle(0,0,1600,1216,0)
-
-draw_set_blend_mode(bm_normal)
-
+draw_set_blend_mode(bm_normal);
 }
-
-
-
-
-shader_reset()
 </string>
           </argument>
         </arguments>

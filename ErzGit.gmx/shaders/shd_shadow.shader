@@ -20,6 +20,6 @@ pos += dis/sqrt(dis.x*dis.x + dis.y*dis.y) * 100000.;
 //######################_==_YOYO_SHADER_MARKER_==_######################@~
 void main()
 {
-    gl_FragColor = vec4(vec3(0.),0.5);
+    gl_FragColor = vec4(vec3(0.),0.75);
 }
 

@@ -848,6 +848,8 @@
       <object>objects\movingLightFX</object>
       <object>objects\lightFX</object>
       <object>objects\lightSetup</object>
+      <object>objects\lightingDark</object>
+      <object>objects\lightSource</object>
     </objects>
   </objects>
   <rooms name="rooms">

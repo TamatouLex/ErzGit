@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>dropped = false
 blockl = instance_create(x-16,y-16,objBlock)
-blockl.visible = true
+
+//blockl.visible = true
 </string>
           </argument>
         </arguments>
@@ -52,17 +53,10 @@ blockl.visible = true
             <kind>1</kind>
             <string>
 
-if dropped = false
-{
-blockl.x = x-16
-}
-else
-{
-blockl.x = x-16
-}
 
+blockl.x = x-16
 blockl.y = y-16
-//blockl.image_angle = image_angle
+
 </string>
           </argument>
         </arguments>

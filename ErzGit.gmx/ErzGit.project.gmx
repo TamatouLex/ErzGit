@@ -381,18 +381,23 @@
     <background>background\bg_prater</background>
     <background>background\bg_bricks</background>
     <background>background\bg_reumann</background>
-    <background>background\tileBoiler</background>
-    <background>background\tileTutorial</background>
-    <background>background\tileTurbostart</background>
-    <background>background\tileSewer2</background>
-    <background>background\tileSewer</background>
-    <background>background\tileHomebrew2</background>
-    <background>background\tileHomebrew</background>
-    <background>background\tileEndgame</background>
-    <background>background\tileStage1</background>
-    <background>background\tilePipe</background>
-    <background>background\tileWyatt</background>
-    <background>background\tileTrail</background>
+    <backgrounds name="IWBTGTiles">
+      <background>background\tileWyatt</background>
+      <background>background\tileTurbostart</background>
+      <background>background\tileBoiler</background>
+      <background>background\tileTutorial</background>
+      <background>background\tileStage1</background>
+      <background>background\tileHomebrew</background>
+      <background>background\tileHomebrew2</background>
+      <background>background\tileSewer</background>
+      <background>background\tileSewer2</background>
+      <background>background\tileEndgame</background>
+      <background>background\tilePipe</background>
+      <background>background\tileTrail</background>
+      <background>background\tileTrain</background>
+      <background>background\tileTrainU</background>
+      <background>background\tileWoodMetal</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_plat1</path>
@@ -871,6 +876,10 @@
       <room>rooms\rFehlstart</room>
       <room>rooms\rWyatt</room>
       <room>rooms\rSixTrails</room>
+      <room>rooms\rPipeMaze</room>
+      <room>rooms\rHaw</room>
+      <room>rooms\rTurbostart</room>
+      <room>rooms\rPropRoom</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

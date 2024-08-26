@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>1216</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -164,6 +164,7 @@
     <instance objName="objBlock" x="704" y="672" name="inst_F7E81255" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="832" name="inst_8CDB0BB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="616" y="632" name="inst_9DEBB530" locked="0" code="roomTo = rPipeMaze&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayer" x="736" y="64" name="inst_60FD7CE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileTrail" x="64" y="0" w="32" h="32" xo="64" yo="32" id="10007147" name="inst_2ACD5EF9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

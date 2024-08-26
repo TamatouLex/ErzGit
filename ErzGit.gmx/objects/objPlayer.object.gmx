@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>frozen = false; //sets if the player can move or not
 
+
 lightSize = 0 //Wie groß der Light Umris ist
 lightDir = 1 //ob das Light gerade großer oder kleiner wird
 
@@ -182,6 +183,8 @@ if lightSize &lt; 230
 lightDir = lerp(lightDir,1,0.1)
 }
 
+if surface_exists(light)
+{
 draw_set_blend_mode(bm_subtract);
 surface_set_target(light);
 //draw_ellipse_color(x-size/2-view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview,c_white,c_black,false);
@@ -189,6 +192,7 @@ draw_ellipse_color(x-lightSize/2,y-lightSize/2,x+lightSize/2,y+lightSize/2,c_whi
 
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
+}
 </string>
           </argument>
         </arguments>

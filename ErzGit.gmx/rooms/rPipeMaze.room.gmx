@@ -83,7 +83,7 @@
     <instance objName="objBlock" x="1152" y="320" name="inst_3B330B1E" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1184" y="416" name="inst_924233E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1152" y="256" name="inst_8BA7C18B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="800" y="608" name="inst_42C98203" locked="0" code="" scaleX="19.6129035949707" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChanger" x="800" y="608" name="inst_42C98203" locked="0" code="roomTo = rPropRoom&#xA;" scaleX="19.6129035949707" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilePipe" x="288" y="256" w="32" h="32" xo="32" yo="32" id="10008769" name="inst_304969FE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

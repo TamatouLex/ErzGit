@@ -29,6 +29,7 @@
 
 light = surface_create(1600,1216);
 
+color = c_white
 </string>
           </argument>
         </arguments>
@@ -84,7 +85,7 @@ light = surface_create(1600,1216);
 
 
 surface_set_target(light);
-draw_set_color(c_white);
+draw_set_color(color);
 draw_rectangle(0,0,1600,1216,false);
 surface_reset_target();
 

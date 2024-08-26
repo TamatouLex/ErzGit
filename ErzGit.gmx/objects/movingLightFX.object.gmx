@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if instance_exists(objPlayer)
+&amp;&amp; room != rWindowRoom
 {
 x = objPlayer.x
 y = objPlayer.y

@@ -4,6 +4,7 @@ scrSetGlobalOptions();       //initialize global game options
 global.chadhp = 3
 global.curweapon = 0 //Welche Waffe er gerade hat
 global.lua = 0
+global.light = noone //Light Surface
 
 //Misc
 global.landcount = 80 //Wie lang er fallen muss für die lande animation

@@ -880,6 +880,7 @@
       <room>rooms\rHaw</room>
       <room>rooms\rTurbostart</room>
       <room>rooms\rPropRoom</room>
+      <room>rooms\rWindowRoom</room>
     </rooms>
     <room>rooms\rbgtest</room>
     <room>rooms\rtestroom2</room>

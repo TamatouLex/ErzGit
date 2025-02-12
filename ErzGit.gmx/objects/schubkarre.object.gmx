@@ -306,7 +306,8 @@ obj7735.minecartID = id
 }
 
 //Player gets OUT
-if obj7735.inMinecart = true
+if instance_exists(obj7735)
+&amp;&amp; obj7735.inMinecart = true
 &amp;&amp; (scrButtonCheckPressed(global.jumpButton))
 &amp;&amp; (scrButtonCheck(global.upButton))
 {

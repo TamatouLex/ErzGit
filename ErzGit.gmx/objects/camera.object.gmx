@@ -152,20 +152,23 @@ y = lerp(y,cameraflag.y + shakeY,0.1)
           <argument>
             <kind>1</kind>
             <string>///Debug Keys
-
+if global.lua = true
+{
 //TELEPORT 1
 if keyboard_check_pressed(ord('1'))
 {
-room = rTrolley
+room = rBLBNorthEast
 }
 
 //TELEPORT 2
 if keyboard_check_pressed(ord('2'))
 {
 room = rFehlstart
+if instance_exists(objPlayer)
+{
 objPlayer.x = 60
 objPlayer.y = 60
-
+}
 }
 
 //TELEPORT 3
@@ -179,6 +182,8 @@ if keyboard_check_pressed(ord('4'))
 {
 room = rMineCartRide
 obj7735.y = 100
+}
+
 }
 
 

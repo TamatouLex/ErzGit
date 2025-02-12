@@ -357,7 +357,6 @@
         <sprite>sprites\spr_sixTrailsWall</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprite230</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileAllTiles</background>

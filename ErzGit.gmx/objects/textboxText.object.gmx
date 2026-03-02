@@ -28,7 +28,7 @@
             <string>alpha = 0;
 print = "";
 time = 0;
-depth = depth - instance_number(objarial);
+depth = depth - instance_number(textboxText);
 
 destroy = 0
 </string>

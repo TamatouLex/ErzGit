@@ -25,7 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pause = 0
+            <string>//initialOffset = false //Für Paralax Script
+
+if !instance_exists(parallaxManager)
+{
+instance_create(x,y,parallaxManager)
+}
+
+pause = 0
 go = 1
 
 zoom_factor = 1
@@ -73,7 +80,7 @@ camera.roomDown = rtestroom2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_paralaxbg()
+            <string>//scr_paralaxbg()
 
 
 //Sichtbarkeit

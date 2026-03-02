@@ -25,21 +25,76 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>go = 0
-instance_create(x,y,dialogbox)
-char1=instance_create(x,y,diatestchara1)
-char1.image_xscale = 1
+            <string>scr_cutsceneCreate(spr_7735dia,bangjet)
 
-char2=instance_create(x,y-200,diatestchara2)
-char2.image_xscale = -1
-char2.sprite_index = spr_bangjet
-char2.image_speed = 0.1
-char2.image_xscale = -6
-char2.image_yscale = 6
-char2.charasize = 6
-char2.side = 1
-instance_create(x,y,dialogblackness)
-count = 0
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Text
+line[0] = "Yeah! Lang nicht gesehn, mein Kumpane!"
+lineE[0] = ""
+side[1] = whichChara.right;
+
+line[1] = "Oh gott, nein..."
+side[1] = whichChara.left;
+
+line[2] = "Lass uns keine Zeit verlieren! Wir müssen immernoch die BLBForce stoppen!"
+side[2] = whichChara.right;
+
+line[3] = "Müssen wir?"
+line[4] = "Müssen wir?"
+line[5] = "Kannst selber machen! Ich hab so garkeinen Bock"
+line[6] = "Wir treffen uns Hinter dem BLBHQ"
+line[7] = "Auf der Nord Seite um genau zu sein!"
+line[8] = "Bitte brauch nicht zu lange!"
+line[9] = "..."
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_cutscene()
+
+//Cutscene Ende
+if destroy = true
+{
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>
@@ -62,116 +117,117 @@ count = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>textx = 60
+            <string>/*
+textx = 60
 texty = 430
 
-if go = 0
+if text = 0
 {
 scr_textarial("Yeah! Lang nicht gesehn, mein Kumpane!#",0.75)
-go = 1
+text = 1
 diatestchara2.active = 1
 }
 
-if go = 2
+if text = 2
 {
 instance_destroy(objarial)
-scr_textarial("Oh Gott, nein...",0.75)
-go = 3
+scr_textarial("Oh texttt, nein...",0.75)
+text = 3
 diatestchara2.side = 1
 diatestchara1.active = 1
 diatestchara2.active = 0
 }
 
-if go = 4
+if text = 4
 {
 instance_destroy(objarial)
 scr_textarial("Lass uns keine Zeit verlieren! Wir müssen immernoch die BLBForce stoppen!",0.75)
-go = 5
+text = 5
 diatestchara1.active = 0
 diatestchara2.active = 1
 }
 
-if go = 6
+if text = 6
 {
 instance_destroy(objarial)
 scr_textarial("Müssen wir?",0.75)
-go = 7
+text = 7
 diatestchara1.active = 1
 diatestchara2.active = 0
 }
 
-if go = 8
+if text = 8
 {
 instance_destroy(objarial)
-scr_textarial("Es ist ein Befehl vom Boss!",0.75)
-go = 9
+scr_textarial("Müssen wir?",0.75)
+text = 9
 diatestchara1.active = 0
 diatestchara2.active = 1
 }
 
-if go = 10
+if text = 10
 {
 if global.sevent1 = 0
 {
 evnt=instance_create(x,y,newevent)
 evnt.event = 1
 global.EmeetBangAtHQ = 1
-go = 11
+text = 11
 }
-else go = 12
+else text = 12
 }
 
-if go = 12
+if text = 12
 {
 instance_destroy(objarial)
 scr_textarial("Kannst selber machen! Ich hab so garkeinen Bock",0.75)
-go = 13
+text = 13
 diatestchara1.active = 1
 diatestchara2.active = 0
 }
 
-if go = 14
+if text = 14
 {
 instance_destroy(objarial)
 scr_textarial("Wir treffen uns Hinter dem BLBHQ",0.75)
-go = 15
+text = 15
 diatestchara1.active = 0
 diatestchara2.active = 1
 }
 
-if go = 16
+if text = 16
 {
 instance_destroy(objarial)
 scr_textarial("Auf der Nord Seite um genau zu sein!",0.75)
-go = 17
+text = 17
 diatestchara1.active = 0
 diatestchara2.active = 1
 }
 
-if go = 18
+if text = 18
 {
 instance_destroy(objarial)
 scr_textarial("Bitte brauch nicht zu lange!",0.75)
-go = 19
+text = 19
 diatestchara1.active = 0
 diatestchara2.active = 1
 }
 
-if go = 20
+if text = 20
 {
 instance_destroy(objarial)
 scr_textarial("...",0.75)
-go = 21
+text = 21
 diatestchara1.active = 1
 diatestchara2.active = 0
 }
 
-if go = 22
+if text = 22
 {
 instance_destroy(dialogtrigger)
 instance_destroy()
 instance_destroy(dialogbox)
-bangjet.go = true
+bangjet.text = true
 }
 </string>
           </argument>
@@ -195,7 +251,7 @@ bangjet.go = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>go += 1
+            <string>text += 1
 </string>
           </argument>
         </arguments>

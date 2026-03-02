@@ -190,7 +190,7 @@
       <sprite>sprites\spr_knifeitem</sprite>
       <sprite>sprites\spr_stoneitem</sprite>
     </sprites>
-    <sprites name="NPCs">
+    <sprites name="NPC/Cutscene">
       <sprite>sprites\spr_7735dia</sprite>
       <sprite>sprites\spr_pandyDia</sprite>
       <sprite>sprites\spr_drakken</sprite>
@@ -363,23 +363,27 @@
     <background>background\bAllTiles</background>
     <background>background\bMegaman</background>
     <background>background\bJumpThrough</background>
-    <background>background\bTree</background>
     <background>background\bStars</background>
     <background>background\tile_trees</background>
-    <background>background\testbg</background>
-    <background>background\bg_woods</background>
-    <background>background\background8</background>
-    <background>background\bg_bushes</background>
-    <background>background\bg_draschebridge</background>
-    <background>background\bg_bmxbg</background>
-    <background>background\bg_riesenrad</background>
-    <background>background\bg_lanterns</background>
+    <backgrounds name="ParallaxBG">
+      <background>background\testbg</background>
+      <background>background\bTree</background>
+      <background>background\bg_bushes</background>
+      <background>background\bg_AnimalTrees</background>
+      <backgrounds name="Background">
+        <background>background\bg_woods</background>
+        <background>background\bg_bmxbg</background>
+        <background>background\bg_draschebridge</background>
+        <background>background\bg_prater</background>
+        <background>background\bg_reumann</background>
+        <background>background\bg_riesenrad</background>
+      </backgrounds>
+      <background>background\bg_lanterns</background>
+    </backgrounds>
     <background>background\tile_dino</background>
     <background>background\tile_bistrobox</background>
     <background>background\tile_street</background>
-    <background>background\bg_prater</background>
     <background>background\bg_bricks</background>
-    <background>background\bg_reumann</background>
     <backgrounds name="IWBTGTiles">
       <background>background\tileWyatt</background>
       <background>background\tileTurbostart</background>
@@ -463,6 +467,11 @@
     <script>scripts\scr_paralaxbg.gml</script>
     <script>scripts\scr_changeRoom.gml</script>
     <script>scripts\scr_lightEngineQuad.gml</script>
+    <scripts name="Cutscene System">
+      <script>scripts\scr_cutsceneCreate.gml</script>
+      <script>scripts\scr_cutscene.gml</script>
+      <script>scripts\scr_textbox.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\loltest.shader</shader>
@@ -617,6 +626,7 @@
     <object>objects\ladderheight</object>
     <object>objects\debugtext</object>
     <object>objects\camera</object>
+    <object>objects\parallaxManager</object>
     <object>objects\cameraflag</object>
     <objects name="Effects">
       <object>objects\flash</object>
@@ -637,7 +647,7 @@
       <object>objects\conPandy</object>
       <object>objects\dialogbox</object>
       <objects name="Fonts">
-        <object>objects\objarial</object>
+        <object>objects\textboxText</object>
         <object>objects\objchoicetext</object>
         <object>objects\objeventstext</object>
         <object>objects\objdesctext</object>
@@ -753,7 +763,6 @@
       <object>objects\map7735Icon</object>
       <object>objects\mapArrow</object>
     </objects>
-    <object>objects\BGPlantMaster</object>
     <objects name="Bosses">
       <objects name="7736">
         <object>objects\clone7736</object>
@@ -761,7 +770,10 @@
         <object>objects\cloneBigShot</object>
       </objects>
     </objects>
-    <object>objects\BGPlant</object>
+    <objects name="BGObjects">
+      <object>objects\BGPlantMaster</object>
+      <object>objects\BGPlant</object>
+    </objects>
     <object>objects\explosion</object>
     <objects name="BlockOut">
       <object>objects\boRed</object>

@@ -28,7 +28,7 @@ global.carryButton[0] = ini_read_real("Controls","Carry",ord("X"));
 global.restartButton[0] = ini_read_real("Controls","Restart",ord("R"));
 global.skipButton[0] = ini_read_real("Controls","Skip",ord("S"));
 global.suicideButton[0] = ini_read_real("Controls","Suicide",ord("Q"));
-global.pauseButton[0] = ini_read_real("Controls","Pause",ord("P"));
+//global.pauseButton[0] = ini_read_real("Controls","Pause",ord("P"));
 global.alignLeftButton[0] = ini_read_real("Controls","Align_left",ord("A"));
 global.alignRightButton[0] = ini_read_real("Controls","Align_right",ord("D"));
 
@@ -54,7 +54,7 @@ if (global.controllerEnabled)
     global.restartButton[1] = ini_read_real("Controller","Restart",gp_face4);
     global.skipButton[1] = ini_read_real("Controller","Skip",gp_face2);
     global.suicideButton[1] = ini_read_real("Controller","Suicide",gp_select);
-    global.pauseButton[1] = ini_read_real("Controller","Pause",gp_start);
+    //global.pauseButton[1] = ini_read_real("Controller","Pause",gp_start);
     global.alignLeftButton[1] = ini_read_real("Controller","Align_left",gp_shoulderl);
     global.alignRightButton[1] = ini_read_real("Controller","Align_right",gp_shoulderr);
 }
